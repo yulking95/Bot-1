@@ -1737,8 +1737,8 @@ if (text.includes("placa"))
                 case 'travar':
                      const pesan = body.slice(5)
                       if (!isPremium) return reply(mess.only.premium)
-                      if (pesan.length > 10000) return client.sendMessage(from, 'ate 10k de caracteres', msgType.text, {quoted: mek}
-                        var nomor = mek,participants
+                      if (pesan.length > 10000) return client.sendMessage(from, 'ate 10k de caracteres', msgType.text, {quoted: mek})
+                        var nomor = mek.participants
                        const teks1 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
                        const teks2 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
                        const teks3 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
