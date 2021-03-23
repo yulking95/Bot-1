@@ -7,7 +7,6 @@ const {
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
-const { travar } = require('./src/trava')
 const { donosbot } = require('./src/donobot')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
@@ -1734,26 +1733,6 @@ if (text.includes("placa"))
 					if (!isGroupAdmins)return reply(mess.only.admin)
 					client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
-                case 'travar':
-                     const pesan = body.slice(5)
-                      if (!isPremium) return reply(mess.only.premium)
-                      if (pesan.length > 10000) return client.sendMessage(from, 'ate 10k de caracteres', msgType.text {quoted: mek})
-                       client.sendMessage(from, putagg, image, {quoted: mek, caption: trava(prefix)})
-                        var nomor = mek.participant
-                       const teks1 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
-                       const teks2 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
-                       const teks3 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
-                       const teks4 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\n Mensagem : ${pesan}`
-                      var options = {
-                         text: teks1,
-                         text: teks2,
-                         text: teks3,
-                         text: teks4,
-                         contextInfo: {mentionedJid: [nomor]},
-                     }
-                    client.sendMessage('556192247994@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('1 trava enviada')
-                    break
            case 'playmp3':
                 reply(mess.wait)
                 play = body.slice(9)
