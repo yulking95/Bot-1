@@ -2143,6 +2143,106 @@ case 'trap25':
 tujuh = fs.readFileSync('./assets/trap25.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
+case 'roc1':
+tujuh = fs.readFileSync('./assets/rock1.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc2':
+tujuh = fs.readFileSync('./assets/rock2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc3':
+tujuh = fs.readFileSync('./assets/rock3.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc4':
+tujuh = fs.readFileSync('./assets/rock4.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc5':
+tujuh = fs.readFileSync('./assets/rock5.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc6':
+tujuh = fs.readFileSync('./assets/rock6.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc7':
+tujuh = fs.readFileSync('./assets/rock7.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc8':
+tujuh = fs.readFileSync('./assets/rock8.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc9':
+tujuh = fs.readFileSync('./assets/rock9.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc10':
+tujuh = fs.readFileSync('./assets/rock10.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc11':
+tujuh = fs.readFileSync('./assets/rock11.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc12':
+tujuh = fs.readFileSync('./assets/rock12.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc13':
+tujuh = fs.readFileSync('./assets/rock13.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc14':
+tujuh = fs.readFileSync('./assets/rock14.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc15':
+tujuh = fs.readFileSync('./assets/rock15.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc16':
+tujuh = fs.readFileSync('./assets/rock16.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc17':
+tujuh = fs.readFileSync('./assets/rock17.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc18':
+tujuh = fs.readFileSync('./assets/rock18.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc19':
+tujuh = fs.readFileSync('./assets/rock19.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc20':
+tujuh = fs.readFileSync('./assets/rock20.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc21':
+tujuh = fs.readFileSync('./assets/rock21.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc22':
+tujuh = fs.readFileSync('./assets/rock22.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc23':
+tujuh = fs.readFileSync('./assets/rock23.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc24':
+tujuh = fs.readFileSync('./assets/rock24.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'roc25':
+tujuh = fs.readFileSync('./assets/rock25.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 case 'glub':
 tujuh = fs.readFileSync('./assets/glub.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
