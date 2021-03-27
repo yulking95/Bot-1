@@ -1054,16 +1054,16 @@ if (text.includes("placa"))
 					await limitAdd(sender) 
 					break 
 		    	case 'animecry':
-					cry = getRandom('.gif')
+					cry = getRandom('.gif')<
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
                    if (!isGroup) return reply(mess.only.group)
 					reply (mess.wait)
 					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(cry)
-						tujuh = fs.readFileSync('./assets/peita.webp');
 						buffer = fs.readFileSync(rano)
 						client.sendMessage(from, buffer, sticker, {quoted: mek})
+						tujuh = fs.readFileSync('./assets/peita.webp');
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender) 
