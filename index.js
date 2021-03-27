@@ -1054,7 +1054,7 @@ if (text.includes("placa"))
 					await limitAdd(sender) 
 					break 
 		    	case 'animecry':
-					cry = getRandom('.gif')<
+					cry = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
                    if (!isGroup) return reply(mess.only.group)
