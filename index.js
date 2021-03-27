@@ -1061,8 +1061,9 @@ if (text.includes("placa"))
 					reply (mess.wait)
 					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(cry)
-						tujuh = fs.readFileSync('./assets/peita.webp');
-						client.sendMessage(from, tujuh, sticker, {quoted: mek})
+						buffer = fs.readFileSync(rano)
+						client.sendMessage(from, buffer, sticker, {quoted: mek})
+						tujuh = fs.readFileSync('./assets/peita.web);
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender) 
@@ -2241,6 +2242,26 @@ client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audi
 break
 case 'roc25':
 tujuh = fs.readFileSync('./assets/rock25.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'rap1':
+tujuh = fs.readFileSync('./assets/rap1.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'rap2':
+tujuh = fs.readFileSync('./assets/rap2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'rap3':
+tujuh = fs.readFileSync('./assets/rap3.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'rap4':
+tujuh = fs.readFileSync('./assets/rap4.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'rap5':
+tujuh = fs.readFileSync('./assets/rap5.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
 case 'glub':
