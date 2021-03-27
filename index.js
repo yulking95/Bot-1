@@ -1061,6 +1061,7 @@ if (text.includes("placa"))
 					reply (mess.wait)
 					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(cry)
+						tujuh = fs.readFileSync('./assets/peita.webp');
 						buffer = fs.readFileSync(rano)
 						client.sendMessage(from, buffer, sticker, {quoted: mek})
 						fs.unlinkSync(rano)
