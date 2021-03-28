@@ -714,6 +714,12 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
+			if (messagesC.includes("menu")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/pressão.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
 			if (messagesC.includes("Hehehe")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/hehe.mp3');
