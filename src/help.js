@@ -4,14 +4,15 @@ const help = (prefix) => {
  <═════════════════════>
       *🇽 🇦 🇳 🇩 🇦 🇴  🇧 🇴 🇹  *
  <═════════════════════>
-
+ vai tentar peitar ${pushname}?
  ╭╮╮╱▔▔▔▔╲╭╭╮ 
  ╰╲╲▏▂╲╱▂▕╱╱╯
  ┈┈╲▏▇▏▕▇▕╱┈┈
  ┈┈╱╲▔▕▍▔╱╲┈┈ 
  ╭╱╱▕╋╋╋╋▏╲╲╮
  ╰╯╯┈╲▂▂╱┈╰╰ 
-  💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
+ 💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
+ *vai tentar peitar* ${pushname}*?*
                ☞︎︎︎Bᴏᴛ✌︎︎Mᴇɴᴜ☜︎︎︎
            Dᴏɴᴏ:✞︎Mᴇʟɪᴏᴅᴀs✞︎
        Cʀɪᴀᴅᴏʀ:Cᴀᴜss
@@ -20,7 +21,7 @@ const help = (prefix) => {
 ║
 ╠✰ *Xandão BOT* 
 ╠✰ 𝐃𝐎𝐍𝐎:  ⃬⃗Mᴇʟɪᴏᴅᴀs (Bᴀsᴇ ᴅᴏ Cᴀᴜss ǫᴜᴇ ᴇ ᴅᴏ Dᴀʀᴋ) 
-╠✰ *wa.me/+5589981246187*
+╠✰ *wa.me/5589981246187*
 ╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ║
@@ -197,11 +198,90 @@ const help = (prefix) => {
 ║☯︎ ➪ *${prefix}a*
 ║☯︎ ➪ *${prefix}fdp*
 ║☯︎ ➪ *${prefix}onich*
-║☯︎ ➪ *${prefix}beat1 (vai ate o beat 25)*
+║☯︎ ➪ *${prefix}beat1*
+║☯︎ ➪ *${prefix}beat2*
+║☯︎ ➪ *${prefix}beat3*
+║☯︎ ➪ *${prefix}beat4*
+║☯︎ ➪ *${prefix}beat5*
+║☯︎ ➪ *${prefix}beat6*
+║☯︎ ➪ *${prefix}beat7*
+║☯︎ ➪ *${prefix}beat8*
+║☯︎ ➪ *${prefix}beat9*
+║☯︎ ➪ *${prefix}beat10*
+║☯︎ ➪ *${prefix}beat11*
+║☯︎ ➪ *${prefix}beat12*
+║☯︎ ➪ *${prefix}beat13*
+║☯︎ ➪ *${prefix}beat14*
+║☯︎ ➪ *${prefix}beat15*
+║☯︎ ➪ *${prefix}beat16*
+║☯︎ ➪ *${prefix}beat17*
+║☯︎ ➪ *${prefix}beat18*
+║☯︎ ➪ *${prefix}beat19*
+║☯︎ ➪ *${prefix}beat20*
+║☯︎ ➪ *${prefix}beat21*
+║☯︎ ➪ *${prefix}beat22*
+║☯︎ ➪ *${prefix}beat23*
+║☯︎ ➪ *${prefix}beat24*
+║☯︎ ➪ *${prefix}beat25*
+║☯︎ ➪ *${prefix}trap1*
+║☯︎ ➪ *${prefix}trap2*
+║☯︎ ➪ *${prefix}trap3*
+║☯︎ ➪ *${prefix}trap4*
+║☯︎ ➪ *${prefix}trap5*
+║☯︎ ➪ *${prefix}trap6*
+║☯︎ ➪ *${prefix}trap7*
+║☯︎ ➪ *${prefix}trap8*
+║☯︎ ➪ *${prefix}trap9*
+║☯︎ ➪ *${prefix}trap10*
+║☯︎ ➪ *${prefix}trap11*
+║☯︎ ➪ *${prefix}trap12*
+║☯︎ ➪ *${prefix}trap13*
+║☯︎ ➪ *${prefix}trap14* *[A MELHOR MÚSICA✓]*
+║☯︎ ➪ *${prefix}trap15*
+║☯︎ ➪ *${prefix}trap16*
+║☯︎ ➪ *${prefix}trap17*
+║☯︎ ➪ *${prefix}trap18*
+║☯︎ ➪ *${prefix}trap19*
+║☯︎ ➪ *${prefix}trap20*
+║☯︎ ➪ *${prefix}trap21*
+║☯︎ ➪ *${prefix}trap22*
+║☯︎ ➪ *${prefix}trap23*
+║☯︎ ➪ *${prefix}trap24*
+║☯︎ ➪ *${prefix}trap25*
+║☯︎ ➪ *${prefix}roc1*
+║☯︎ ➪ *${prefix}roc2*
+║☯︎ ➪ *${prefix}roc3*
+║☯︎ ➪ *${prefix}roc4*
+║☯︎ ➪ *${prefix}roc5*
+║☯︎ ➪ *${prefix}roc6*
+║☯︎ ➪ *${prefix}roc7*
+║☯︎ ➪ *${prefix}roc8*
+║☯︎ ➪ *${prefix}roc9*
+║☯︎ ➪ *${prefix}roc10*
+║☯︎ ➪ *${prefix}roc11*
+║☯︎ ➪ *${prefix}roc12*
+║☯︎ ➪ *${prefix}roc13*
+║☯︎ ➪ *${prefix}roc14*
+║☯︎ ➪ *${prefix}roc15*
+║☯︎ ➪ *${prefix}roc16*
+║☯︎ ➪ *${prefix}roc17*
+║☯︎ ➪ *${prefix}roc18*
+║☯︎ ➪ *${prefix}roc19*
+║☯︎ ➪ *${prefix}roc20*
+║☯︎ ➪ *${prefix}roc21*
+║☯︎ ➪ *${prefix}roc22*
+║☯︎ ➪ *${prefix}roc23*
+║☯︎ ➪ *${prefix}roc24*
+║☯︎ ➪ *${prefix}roc25*
+║☯︎ ➪ *${prefix}rap1*
+║☯︎ ➪ *${prefix}rap2*
+║☯︎ ➪ *${prefix}rap3*
+║☯︎ ➪ *${prefix}rap4*
+║☯︎ ➪ *${prefix}rap5*
 ║☯︎ ➪ *${prefix}glub*
 ║
 ╠══༒︎〘 OUTROS /2 〙༒︎══
-║
+║☯︎ ➪ *${prefix}bot
 ║☯︎ ➪ *${prefix}antilink [1/0]*
 ║☯︎ ➪ *${prefix}brainly [pergunta]*
 ║☯︎ ➪ *${prefix}antiracismo [on/off]*
@@ -221,7 +301,7 @@ const help = (prefix) => {
 ║☯︎ ➪ *grita*
 ║☯︎ ➪ *bot lixo*
 ║
-╠══༒︎〘 CAUSS NO CONTROLE 〙༒︎══
+╠══༒︎〘 XANDÃO NO CONTROLE 〙༒︎══
 ║
 ║  *"base do lindo (DARK BOT 4.0)︎ ➪🚩*
 ║  *Número do dark: wa.me/+5522996215481\n Numero do Causs: wa.me/+5547992091566
