@@ -716,7 +716,7 @@ if (text.includes("placa"))
 	
 			if (messagesC.includes("menu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/pressão.mp3');
+			tujuh = fs.readFileSync('./assets/pressao.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
