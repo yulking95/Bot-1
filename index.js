@@ -1931,6 +1931,10 @@ case 'bem':
 tujuh = fs.readFileSync('./assets/bem.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
+case 'ecko':
+tujuh = fs.readFileSync('./assets/ecko.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 case 'a':
 tujuh = fs.readFileSync('./assets/a.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
