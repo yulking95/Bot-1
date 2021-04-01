@@ -707,6 +707,11 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("Vá tu")
 	}
+	
+		if (messagesC.includes("rai")){
+			client.updatePresence(from, Presence.composing)
+			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
+	}
 
 			if (messagesC.includes("bah")){
 			client.updatePresence(from, Presence.composing)
@@ -717,6 +722,12 @@ if (text.includes("placa"))
 			if (messagesC.includes("menu")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/pressao.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+			if (messagesC.includes("@558981246187")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/rai.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
