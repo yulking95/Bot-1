@@ -727,7 +727,7 @@ if (text.includes("placa"))
 	
 			if (messagesC.includes("@558981246187")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/rai.mp3');
+			tujuh = fs.readFileSync('./assets/chapa.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -775,7 +775,7 @@ if (text.includes("placa"))
 				
 			if (messagesC.includes("ei")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/chapa.mp3');
+			tujuh = fs.readFileSync('./assets/rai.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
