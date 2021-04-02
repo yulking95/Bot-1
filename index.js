@@ -754,6 +754,12 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/Dbz.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
+		
+			case (messagesC.includes("edit")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/edit.mp4');
+            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
+	          break
 	
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
