@@ -1999,7 +1999,6 @@ break
 case 'dono2':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
-client.sendMessage(from, tujuh, buffer, video, image, MessageType.text, {quoted: mek, caption: 'Boa tarde, rapeize 😎👍'})
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
