@@ -2005,7 +2005,7 @@ break
 case 'dono2':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
-sendVideo(quoted: mek '*Sapoha ai*')
+sendVideo(quoted: caption, '*Sapoha ai*')
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
@@ -2199,7 +2199,7 @@ case 'roc8':
 tujuh = fs.readFileSync('./assets/rock8.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-case 'roc9':
+case 'roc9': 
 tujuh = fs.readFileSync('./assets/rock9.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
