@@ -205,7 +205,7 @@ async function starts() {
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Falta bem poquinho, bem poquinho msm...')
+		start('2', 'Pera ae vey...')
 	})
 	client.on('open', () => {
 		success('2', 'Conectado parça')
@@ -277,7 +277,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-					wait: 'Calma ae vey, ta apressado pra dar né',
+					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
 					success: '️❬ ✔ ❭ Pronto vey 🖤',
 					levelon: '❬ ✔ ❭ *leveling* *ativado*',
 					leveloff: ' ❬ X ❭  *leveling* *desativado*',
@@ -294,7 +294,7 @@ async function starts() {
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
 					ownerB: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo do Meliodas. Registre-se para fazer amizade com o bot ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT MAN 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do Meliodas. Registre-se para fazer amizade com o bot ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT MAN 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -708,7 +708,12 @@ if (text.includes("placa"))
 			reply("Vá tu")
 	}
 	
-		if (messagesC.includes("rai")){
+		if (messagesC.includes("Rai")){
+			client.updatePresence(from, Presence.composing)
+			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
+	}
+	
+		if (messagesC.includes("Meliodas")){
 			client.updatePresence(from, Presence.composing)
 			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
 	}
@@ -1999,6 +2004,7 @@ break
 case 'dono2':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
+sendVideo(hasil, mek, 'Peita ou Respeita')
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
