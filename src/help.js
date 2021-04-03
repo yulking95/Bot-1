@@ -1,4 +1,4 @@
-const help = (prefix) => {
+const help = (pushname, prefix) => {
 
 	return `
  <═════════════════════>
