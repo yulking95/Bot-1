@@ -2004,7 +2004,8 @@ break
 case 'dono2':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
-sendVideo(hasil, mek, 'Peita ou Respeita')
+hasil = await getBuffer(randKey.result)
+sendVideo(hasil, mek, '*GELAP BOS :V*')
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
