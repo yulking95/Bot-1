@@ -343,7 +343,6 @@ async function starts() {
 			}
 	        pushname = client.contacts[sender] != undefined ? 
             client.contacts[sender].vname || client.contacts[sender].notify : undefined
-            }
 			const mentions = (teks, memberr, id) => {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
