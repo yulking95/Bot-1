@@ -326,6 +326,8 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
 			const ismod = mod.includes(sender)
+		    pushname = client.contacts[sender] != undefined ? 
+            client.contacts[sender].vname || client.contacts[sender].notify : undefined
 			const errorurl2 = 'https://i.ibb.co/dttZM8b/591530180aad.png'
 			const isadminbot = adminbotnumber.includes(sender)
 			const isfrendsowner = frendsowner.includes(sender)
@@ -341,8 +343,6 @@ async function starts() {
 			const sendMess = (hehe, teks) => {
 				client.sendMessage(hehe, teks, text)
 			}
-	        pushname = client.contacts[sender] != undefined ? 
-            client.contacts[sender].vname || client.contacts[sender].notify : undefined
 			const mentions = (teks, memberr, id) => {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
