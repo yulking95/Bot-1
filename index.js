@@ -699,11 +699,6 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("tmnc")){
-			client.updatePresence(from, Presence.composing)
-			reply("Vai vc, tu ja me disse q é mo bom")
-	}
-	
 		if (messagesC.includes("vsfd")){
 			client.updatePresence(from, Presence.composing)
 			reply("Vá tu")
@@ -725,7 +720,19 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("menu")){
+			if (messagesC.includes("mermão")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/irmao.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+		
+			if (messagesC.includes("tmnc")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/belmiro.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+			if (messagesC.includes("*menu")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/pressao.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
