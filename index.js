@@ -10,6 +10,7 @@ const { help } = require('./src/help')
 const { donosbot } = require('./src/donobot')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
+const { myanimes } = require('./src/animes')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
@@ -24,6 +25,8 @@ const { addsay } = require('./src/addsay')
 const { listsay } = require('./src/listsay')
 const { addfoto } = require('./src/addfoto')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
+pushname = client.contacts[sender] != undefined ? 
+client.contacts[sender].vname || client.contacts[sender].notify : undefined
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
@@ -326,8 +329,6 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
 			const ismod = mod.includes(sender)
-		    pushname = client.contacts[sender] != undefined ? 
-            client.contacts[sender].vname || client.contacts[sender].notify : undefined
 			const errorurl2 = 'https://i.ibb.co/dttZM8b/591530180aad.png'
 			const isadminbot = adminbotnumber.includes(sender)
 			const isfrendsowner = frendsowner.includes(sender)
@@ -844,6 +845,10 @@ if (text.includes("placa"))
 	            case 'menu':
                     putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
+                    break
+                case 'myanimes':
+                    putagg = await getBuffer(`https://i.ibb.co/W0tHsKh/Safadao.png`)
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix)})
                     break
 				case 'help1':
 				case 'menu1':
