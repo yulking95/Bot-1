@@ -25,8 +25,6 @@ const { addsay } = require('./src/addsay')
 const { listsay } = require('./src/listsay')
 const { addfoto } = require('./src/addfoto')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
-pushname = client.contacts[sender] != undefined ? 
-client.contacts[sender].vname || client.contacts[sender].notify : undefined
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
