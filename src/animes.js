@@ -1,7 +1,22 @@
 const myanimes = (prefix) => {
 
 	return `
-  ```Este e a lista de animes que eu ja assisti:```
+	
+ 💪🏻𝙰𝚀𝚄𝙸 𝙴 𝙾 𝚇𝙰𝙽𝙳Ã𝙾 𝙿𝙾𝚁𝚁𝙰💪🏻
+
+ ╭╮╮╱▔▔▔▔╲╭╭╮ 
+ ╰╲╲▏▂╲╱▂▕╱╱╯
+ ┈┈╲▏▇▏▕▇▕╱┈┈
+ ┈┈╱╲▔▕▍▔╱╲┈┈ 
+ ╭╱╱ ▕╋╋╋╋▏╲╲╮
+ ╰╯╯┈╲▂▂╱┈╰╰ 
+ 
+  𝙿𝚎𝚒𝚝𝚊 𝚘𝚞 𝚁𝚎𝚜𝚙𝚎𝚒𝚝𝚊 𝙼𝚎𝚛𝚘 𝙼𝚘𝚛𝚝𝚊𝚕
+             HAHAHAHA😜
+ =============𝙻𝚒𝚜𝚝𝚊=============
+ 
+ 👇 *Esta e a lista de animes que eu ja assisti:*👇
+  
 _Nanatsu No Taizai: conta a triste e engraçada historia de Meliodas e os Sete pecados capitais_
 https://animesonline.cc/anime/nanatsu-no-taizai-hd/
 
