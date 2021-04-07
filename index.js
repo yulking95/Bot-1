@@ -14,7 +14,7 @@ const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
 const { menu2 } = require('./src/menu2')
-const { rai } = require('./src/alist')
+const { alist } = require('./src/alist')
 const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
@@ -847,7 +847,7 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'rai':
+				case 'alist':
 					client.sendMessage(from, alist(prefix), text)
 					break
 					case 'kiss':
