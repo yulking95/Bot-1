@@ -10,7 +10,7 @@ const { help } = require('./src/help')
 const { donosbot } = require('./src/donobot')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
-const { animeslista } = require('./src/ran')
+const { animeslista } = require('./src/animelist')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
@@ -846,7 +846,7 @@ if (text.includes("placa"))
                     break
                 case 'animeslista':
                     putagg = await getBuffer(`https://i.ibb.co/YTnQ088/1617757166750.png`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: ran(prefix)})
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: animelist(prefix)})
                     break
 				case 'help1':
 				case 'menu1':
