@@ -845,7 +845,6 @@ if (text.includes("placa"))
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
                     break
                 case 'myanimes':
-                    putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
                     client.sendMessage(from, image, putagg, animesbrbr(prefix), text)
                     break
 				case 'help1':
