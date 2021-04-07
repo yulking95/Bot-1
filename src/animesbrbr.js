@@ -1,4 +1,4 @@
-const myanimes = (prefix) => {
+const animes = (prefix) => {
 
 	return `
  💪🏻𝙰𝚀𝚄𝙸 𝙴 𝙾 𝚇𝙰𝙽𝙳Ã𝙾 𝙿𝙾𝚁𝚁𝙰💪🏻
@@ -43,5 +43,5 @@ SE DIVIRTA E MALHE SEU BRAÇO SE E QUE ME ENTENDE HEHEHE
 
 O último anime e pra tu malhar esse teu braço vey fino`
 }
-exports.myanimes = myanimes
+exports.animes = animes
 
