@@ -849,7 +849,7 @@ if (text.includes("placa"))
 					break
 	            case 'animelist':
 	                putagg = await getBuffer(`https://i.ibb.co/YTnQ088/1617757166750.png`)
-					client.sendMessage(from, putagg donosbot(prefix), text)
+					client.sendMessage(from, putagg, image, {quoted: mek, caption: donobot(prefix)})
 					break
 					case 'kiss':
 				    try {    
