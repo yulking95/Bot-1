@@ -7,7 +7,6 @@ const {
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
-const { animelist } = require('./src/donobot')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
@@ -15,6 +14,7 @@ const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
 const { menu2 } = require('./src/menu2')
+const { rai } = require('./src/alist')
 const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
@@ -847,9 +847,8 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-	            case 'animelist':
-	                putagg = await getBuffer(`https://i.ibb.co/YTnQ088/1617757166750.png`)
-					client.sendMessage(from, putagg, image, {quoted: mek, caption: donobot(prefix)})
+				case 'rai':
+					client.sendMessage(from, alist(prefix), text)
 					break
 					case 'kiss':
 				    try {    
