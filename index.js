@@ -3955,8 +3955,13 @@ break
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://i.ibb.co/Q6TftwD/Meliodas.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*𝙲𝚁𝙸𝙰𝙳𝙾𝚁 𝙳𝙾 𝚇𝙰𝙽𝙳𝙰𝙾:Eae meu parsa, sou ꧁╰‿╯𝙼𝙴𝙻𝙸𝙾𝙳𝙰𝚂-𝚁𝙰𝙸╰‿╯꧂ Filho do rei demônio e sou criador do Bot Super Xandão \n*WPP:* wa.me/+558981246187\n\n\nEspero que tenham gostado do bot 💪\n*Kibadores vão se FUDER*️'})
+					break
+				case 'dono2':
+					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Causs\n*YOUTUBE:* https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g\n*WPP:* wa.me/+5547992091566\n*INSTA:* @animexx_png\n\n\nEspero que tenham gostado do bot 🐊🚩️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Causs\n*YOUTUBE:* https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g\n*WPP:* wa.me/+5547992091566\n*INSTA:* @animexx_png\n\n\nEspero que tenham gostado do bot 🐊🚩\n segue esse Goxtoso ai no yt ️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
@@ -3971,14 +3976,14 @@ break
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'lolizinha'})
 					})
 					break
-                                case 'lolih':
-                                        gatauda = body.slice(6)
-                                                            reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek})
-                                        await limitAdd(sender)
-                                        break
+                case 'lolih':
+                    gatauda = body.slice(6)
+                    reply(mess.wait)
+                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    await limitAdd(sender)
+                    break
 				case 'nsfwloli':
 					if (!isNsfw) return reply('*COMANDO SO FUNCIONA NO PV AMIGO.*')
 					loli.getNSFWLoli(async (err, res) => {
