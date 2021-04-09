@@ -1056,7 +1056,7 @@ if (text.includes("placa"))
 					var gbl2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
-					anu = await fetchJson(`https://videfikri.com/api/textmaker/hpotter/?text=Pikri%20gans)
+					anu = await fetchJson(`https://videfikri.com/api/textmaker/hpotter/?text=Pikri%20gans`})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
