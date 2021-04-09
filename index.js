@@ -1052,8 +1052,8 @@ if (text.includes("placa"))
 					break
                 case 'phlogo':
 					var gh = body.slice(10)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
+					var Pikri = gh.split("|")[0];
+					var gans = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
 					anu = await fetchJson(`https://videfikri.com/api/textmaker/hpotter/?text=Pikri%20gans`)
