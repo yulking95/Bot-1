@@ -1066,7 +1066,7 @@ if (text.includes("placa"))
 					gbl1 = gh.split("/")[0];
 					gbl2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/naruto?text=TEXT%20BANG&apikey=apivinz)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/naruto?text=TEXT%20BANG&apikey=apivinz`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
