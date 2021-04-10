@@ -1050,15 +1050,15 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'phlogo':
-					var gh = body.slice(10)
-					var glb1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Cadê o texto, hum')
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text=${text}`)
-					buffer = await getBuffer(anu.result)
+                case 'pornhublogo':
+                    if (!isGroup)return reply(mess.only.group)
+					gh = `${body.slice(12)}`
+					gbl1 = gh.split("/")[0];
+					gbl2 = gh.split("/")[1];
+					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${gbl1}&text2=${gbl2}&apikey=apivinz`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
+					await limitAdd(sender) 
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
