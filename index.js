@@ -1056,7 +1056,7 @@ if (text.includes("placa"))
 					var gbl2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text={text}`)
+					anu = await fetchJson(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text=${text}`)
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
