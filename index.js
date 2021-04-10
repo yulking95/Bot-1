@@ -1050,7 +1050,7 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'pornhublogo':
+                case 'phlogo':
                     if (!isGroup)return reply(mess.only.group)
 					gh = `${body.slice(12)}`
 					gbl1 = gh.split("/")[0];
@@ -1060,12 +1060,15 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
-				case 'primbonjodoh':
-					var gh = body.slice(14)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
-					reply(anu.result.hasil)
+                case 'matrixlogo':
+                    if (!isGroup)return reply(mess.only.group)
+					gh = `${body.slice(12)}`
+					gbl1 = gh.split("/")[0];
+					gbl2 = gh.split("/")[1];
+					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/naruto?text=TEXT%20BANG&apikey=apivinz)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					await limitAdd(sender) 
 					break
 				case 'ramaljadian':
 					var gh = body.slice(10)
