@@ -1052,11 +1052,11 @@ if (text.includes("placa"))
 					break
                 case 'phlogo':
 					var gh = body.slice(10)
-					var Pikri = gh.split("|")[0];
-					var gans = gh.split("|")[1];
+					var glb1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply(mess.wait)
-					anu = await fetchJson(`https://videfikri.com/api/textmaker/hpotter/?text=Pikri%20gans`)
+					anu = await fetchJson(`https://api.zeks.xyz/api/pubglogo?text1=TEXT1%20BANG&text2=TEXT2%20BANG&apikey=apivinz`)
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
