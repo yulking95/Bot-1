@@ -60,7 +60,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Meliodas\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' //Numero do whatsapp
             + 'END:VCARD'
 prefix = '*'
 blocked = []
@@ -1042,15 +1042,17 @@ if (text.includes("placa"))
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {caption: 'Nih dah jadi kak', quoted: mek})
 					break
-				case 'galaxtext':
-					if (args.length < 1) return reply('o que você quer tio')
-					teks = body.slice(12)
-					if (teks.length > 8) return reply('O texto é longo, com até 8 caracteres')
-					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+				case 'pubg':
+                    if (!isGroup)return reply(mess.only.group)
+					gh = `${body.slice(12)}`
+					gbl1 = gh.split("/")[0];
+					gbl2 = gh.split("/")[1];
+					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/pubglogo?text1=TEXT1%20BANG&text2=TEXT2%20BANG&apikey=apivinz`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
+					await limitAdd(sender) 
 					break
-                case 'gneon':
+                case 'matrix':
                     if (!isGroup)return reply(mess.only.group)
 					gh = `${body.slice(12)}`
 					gbl1 = gh.split("/")[0];
@@ -1060,13 +1062,23 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
-                case 'matrixlogo':
+                case 'naruto':
                     if (!isGroup)return reply(mess.only.group)
 					gh = `${body.slice(12)}`
 					gbl1 = gh.split("/")[0];
 					gbl2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=ZEKS&text2=API`, {method: 'get'})
+					buffer = await getBuffer(`https://api.zeks.xyz/api/naruto?text=TEXT%20BANG&apikey=apivinz`, {method: 'get'})
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					await limitAdd(sender) 
+					break
+				case 'bneon':
+                    if (!isGroup)return reply(mess.only.group)
+					gh = `${body.slice(12)}`
+					gbl1 = gh.split("/")[0];
+					gbl2 = gh.split("/")[1];
+					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=apivinz&text=Mamank`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
