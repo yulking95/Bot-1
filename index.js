@@ -1050,13 +1050,13 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'phlogo':
+                case 'gneon':
                     if (!isGroup)return reply(mess.only.group)
 					gh = `${body.slice(12)}`
 					gbl1 = gh.split("/")[0];
 					gbl2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${gbl1}&text2=${gbl2}&apikey=apivinz`, {method: 'get'})
+					buffer = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=apivinz&text=Mamank`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
@@ -1066,7 +1066,7 @@ if (text.includes("placa"))
 					gbl1 = gh.split("/")[0];
 					gbl2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=ZEKS&text2=API`)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=ZEKS&text2=API`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
