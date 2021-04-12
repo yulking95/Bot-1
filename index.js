@@ -711,9 +711,9 @@ if (text.includes("placa"))
 			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
 	}
 	
-		if (messagesC.includes("Meliodas")){
+		if (messagesC.includes("*meliodas")){
 			client.updatePresence(from, Presence.composing)
-			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
+			reply("Saca só")
 	}
 
 			if (messagesC.includes("bah")){
@@ -2008,10 +2008,9 @@ case 'beat9':
 tujuh = fs.readFileSync('./assets/beatn.m4a');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-case 'dono2':
+case 'meliodas':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
-sendVideo(from, buffer, tujuh, MessageType.text, {quoted: mek, caption: 'Rabo' })
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
