@@ -3184,21 +3184,15 @@ break
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'logo':
-					if (args.length < 1) return reply(mess.blank)
-					teks = body.slice(7)
-					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
-					reply('*Sem pressão, aqui e Xandão*')
-					buffer = await getBuffer(`https://tristion.sirv.com/download.jpg?text.0.text=${teks}&text.0.position.x=-50%25&text.0.position.y=-15%25&text.0.size=39&text.0.color=3c3333&text.0.font.family=Roboto%20Slab&text.0.font.weight=600&text.0.background.color=000000&text.0.outline.color=ff0000`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Plaquinha aí meu parsa😎'})
-					break
-					case 'pubg':
-					if (args.length < 1) return reply(mess.blank)
-					teks = body.slice(7)
-					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
-					reply('*Sem pressão, aqui e Xandão*')
-					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/game?text=${teks}&text2=${teks}%20${teks}`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Plaquinha aí meu parsa😎'})
+                case 'phlogo':
+					var gh = body.slice(10)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Cadê o texto, hum')
+					reply(mess.wait)
+					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
@@ -3844,6 +3838,17 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
+					break
+                case 'installbot':
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'termux-setup-storage'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'pkg install git'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'pkg install ffmpeg'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'pkg install wget'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'pkg install nodejs'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'git clone https://github.com/Meliodas-rai/Bot'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'cd Bot'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'bash install.sh'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'npm start'})
 					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
