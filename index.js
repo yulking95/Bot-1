@@ -3184,15 +3184,13 @@ break
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'phlogo':
-					var gh = body.slice(10)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Cadê o texto, hum')
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
+                case 'logo':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 10) return reply('O texto é longo, até 10 caracteres')
+					reply('*Estou fazendo, se der erro tente novamente ✓*')
+					buffer = await getBuffer(`https://tristion.sirv.com/download.jpg?text.0.text={$teks}&text.0.position.x=-50%25&text.0.position.y=-15%25&text.0.size=39&text.0.color=3c3333&text.0.font.family=Roboto%20Slab&text.0.font.weight=600&text.0.background.color=000000&text.0.outline.color=ff0000`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'legenda-da-imagem'})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
