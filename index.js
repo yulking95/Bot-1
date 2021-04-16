@@ -3199,7 +3199,7 @@ break
 					teks3 = body.slice(7)
 					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
 					reply('*Sem pressão, aqui e Xandão*')
-					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/game?text=${teks}&text2=${teks}%20${teks}`)
+					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/game?text=${teks}&text2=${teks2}%20${teks3}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Plaquinha aí meu parsa😎'})
 					break
 				case 'primbonjodoh':
