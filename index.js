@@ -3187,10 +3187,20 @@ break
                 case 'logo':
 					if (args.length < 1) return reply(mess.blank)
 					teks = body.slice(7)
-					if (teks.length > 10) return reply('O texto é longo, até 10 caracteres')
-					reply('*Estou fazendo, se der erro tente novamente ✓*')
+					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
+					reply('*Sem pressão, aqui e Xandão*')
 					buffer = await getBuffer(`https://tristion.sirv.com/download.jpg?text.0.text=${teks}&text.0.position.x=-50%25&text.0.position.y=-15%25&text.0.size=39&text.0.color=3c3333&text.0.font.family=Roboto%20Slab&text.0.font.weight=600&text.0.background.color=000000&text.0.outline.color=ff0000`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'legenda-da-imagem'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Plaquinha aí meu parsa😎'})
+					break
+					case 'pubg':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					teks2 = body.slice(7)
+					teks3 = body.slice(7)
+					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
+					reply('*Sem pressão, aqui e Xandão*')
+					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/game?text=${teks}&text2=${teks}%20${teks}`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Plaquinha aí meu parsa😎'})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
