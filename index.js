@@ -2011,6 +2011,8 @@ break
 case 'meliodas':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
+memein = await kagApi.memeindo()
+client.sendMessage(from, image, video, {quoted: mek, caption: 'Peita ou Respeita'
 break
 case 'beat10':
 tujuh = fs.readFileSync('./assets/beatd.mp3');
@@ -3838,18 +3840,6 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
-					break
-                case 'installbot':
-                   if (!isUser) return reply(mess.only.userB)
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'termux-setup-storage'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'pkg install git'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'pkg install ffmpeg'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'pkg install wget'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'pkg install nodejs'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'git clone https://github.com/Meliodas-rai/Bot'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'cd Bot'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'bash install.sh'})
-					client.sendMessage(from, buffer, {quoted: mek, caption: 'npm start'})
 					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
