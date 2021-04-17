@@ -3184,12 +3184,19 @@ break
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
+                case 'melzinho':
+					if (args.length < 1) return reply(mess.blank)
+					anaa = body.slice(6)
+					reply(mess.wait)
+					offz = await getBuffer(`https://mistic-api-br.herokuapp.com/api/glitch?text=${anaa}&text2=${anaa}%20${anaa}`)
+					client.sendMessage(from, offz, image, {caption: 'neon', quoted: mek})
+					break
                 case 'agua':
 					if (args.length < 1) return reply(mess.blank)
 					teks = body.slice(7)
 					if (teks.length > 10) return reply('Ae vey, Xandão so faz ate 10 letra, diminui ae')
 					reply('*Calma ae leke, Xandão da fazendo aqui*')
-					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/ocean?text=${teks}`)
+					factjason = await getFactjason(`https://mistic-api-br.herokuapp.com/api/ocean?text=${teks}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Beba agua'})
 					break
 				case 'primbonjodoh':
