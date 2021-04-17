@@ -3193,11 +3193,11 @@ break
 					break
                 case 'agua':
 					if (args.length < 1) return reply(mess.blank)
-					teks = body.slice(7)
-					if (teks.length > 10) return reply('Ae vey, Xandão so faz ate 10 letra, diminui ae')
-					reply('*Calma ae leke, Xandão da fazendo aqui*')
-					factjason = await getFactjason(`https://mistic-api-br.herokuapp.com/api/ocean?text=${teks}`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Beba agua'})
+					anaa = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/ocean?text=${anaa}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
