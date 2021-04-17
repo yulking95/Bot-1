@@ -3184,15 +3184,13 @@ break
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'phlogo':
-					var gh = body.slice(10)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Cadê o texto, hum')
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
+                case 'agua':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 10) return reply('Ae vey, Xandão so faz ate 10 letra, diminui ae')
+					reply('*Calma ae leke, Xandão da fazendo aqui*')
+					buffer = await getBuffer(`https://mistic-api-br.herokuapp.com/api/ocean?text=${teks}`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Beba agua'})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
