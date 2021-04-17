@@ -701,11 +701,6 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("vsfd")){
-			client.updatePresence(from, Presence.composing)
-			reply("Vá tu")
-	}
-	
 		if (messagesC.includes("Rai")){
 			client.updatePresence(from, Presence.composing)
 			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
@@ -722,7 +717,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("mermão")){
+			if (messagesC.includes("mermao")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/irmao.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -751,13 +746,7 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/hehe.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
-	
-			if (messagesC.includes("peitaeu")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/peitaeu.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
+
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/oibot.m4a');
@@ -769,7 +758,38 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/Dbz.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
-
+            if (messagesC.includes("vsfd")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/vsfd.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+            
+            if (messagesC.includes("gay")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/gay.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+          if (messagesC.includes("kkkkkk")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/kkk.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+          if (messagesC.includes("vida")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/vida.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+          if (messagesC.includes("gostoso")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/gostoso.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+          if (messagesC.includes("eita")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/eita.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
+          
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Sexo.mp3');
@@ -3198,6 +3218,16 @@ break
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/ocean?text=${anaa}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					break
+                case 'battle':
+				    gh = body.slice(7)
+                    p1 = gh.split("|")[0];
+                    p2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Cadê o texto, hum')
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/bf?text=${p1}&text2=${p2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
