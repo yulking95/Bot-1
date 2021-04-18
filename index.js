@@ -3214,8 +3214,8 @@ break
 					break
                 case 'battle':
 				    gh = body.slice(7)
-                    p1 = gh.split("|")[0];
-                    p2 = gh.split("|")[1];
+                    p1 = gh.split("/")[0];
+                    p2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/bf?text=${p1}&text2=${p2}`, {method: 'get'})
@@ -3224,8 +3224,8 @@ break
 					break
                 case 'bug':
 					gh = body.slice(7)
-                    p1 = gh.split("|")[0];
-                    p2 = gh.split("|")[1];
+                    p1 = gh.split("/")[0];
+                    p2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
 					anu = await fetchJson(`https://restapi-exe.herokuapp.com/api/glitch?text=${p1}&text2=${p2}`, {method: 'get'})
@@ -3234,17 +3234,18 @@ break
 					break
                 case 'pubg':
 					gh = body.slice(7)
-                    p1 = gh.split("|")[0];
-                    p2 = gh.split("|")[1];
+                    p1 = gh.split("/")[0];
+                    p2 = gh.split("/")[1];
+                    p3 = gh.split("/")[2];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
-					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=API%20${p2}`, {method: 'get'})
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=${p2}%20$${p3}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'naruto':
+case 'narutologo':
 					if (args.length < 1) return reply(mess.blank)
-					p1 = body.slice(5)
+					p1 = body.slice(11)
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/naruto?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
@@ -3260,7 +3261,7 @@ break
 					break
                 case 'hrptr':
 					if (args.length < 1) return reply(mess.blank)
-					p1 = body.slice(5)
+					p1 = body.slice(6)
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/harry?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
@@ -3268,7 +3269,7 @@ break
 					break
                 case 'cemiterio':
 					if (args.length < 1) return reply(mess.blank)
-					p1 = body.slice(5)
+					p1 = body.slice(9)
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/cimiterio?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
@@ -3276,7 +3277,7 @@ break
 					break
                 case 'sombra':
 					if (args.length < 1) return reply(mess.blank)
-					p1 = body.slice(5)
+					p1 = body.slice(7)
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/shadow?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
