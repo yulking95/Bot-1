@@ -3204,13 +3204,6 @@ break
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'melzinho':
-					if (args.length < 1) return reply(mess.blank)
-					anaa = body.slice(6)
-					reply(mess.wait)
-					offz = await getBuffer(`https://mistic-api-br.herokuapp.com/api/glitch?text=${anaa}&text2=${anaa}%20${anaa}`)
-					client.sendMessage(from, offz, image, {caption: 'neon', quoted: mek})
-					break
                 case 'agua':
 					if (args.length < 1) return reply(mess.blank)
 					anaa = body.slice(5)
@@ -3228,6 +3221,66 @@ break
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/bf?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                case 'bug':
+					gh = body.slice(7)
+                    p1 = gh.split("|")[0];
+                    p2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Cadê o texto, hum')
+					reply('espere')
+					anu = await fetchJson(`https://restapi-exe.herokuapp.com/api/glitch?text=${p1}&text2=${p2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                case 'pubg':
+					gh = body.slice(7)
+                    p1 = gh.split("|")[0];
+                    p2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Cadê o texto, hum')
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=API%20${p2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                case 'naruto':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/naruto?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					break
+                case 'neon':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/neon?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					break
+                case 'hrptr':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/harry?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					break
+                case 'cemiterio':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/cimiterio?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					break
+                case 'sombra':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(5)
+					reply('espere')
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/shadow?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
