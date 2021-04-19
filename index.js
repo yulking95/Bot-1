@@ -12,10 +12,8 @@ const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
-const { destrava } = require('./src/destrava')
 const { menu2 } = require('./src/menu2')
 const { alist } = require('./src/alist')
-const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
 const { chentai } = require('./src/chentai')
@@ -3239,11 +3237,11 @@ break
                     p3 = gh.split("/")[2];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
-					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=${p2}%20$${p3}`, {method: 'get'})
+					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=${p3}%20$${p3}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-case 'narutologo':
+               case 'narutologo':
 					if (args.length < 1) return reply(mess.blank)
 					p1 = body.slice(11)
 					reply('espere')
@@ -3273,7 +3271,7 @@ case 'narutologo':
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/cimiterio?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: '...I morreu....', quoted: mek})
 					break
                 case 'sombra':
 					if (args.length < 1) return reply(mess.blank)
@@ -3281,7 +3279,7 @@ case 'narutologo':
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/shadow?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: ' ', quoted: mek})
 					break
 				case 'primbonjodoh':
 					var gh = body.slice(14)
