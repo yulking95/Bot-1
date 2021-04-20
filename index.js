@@ -950,6 +950,7 @@ if (text.includes("placa"))
 					break
 
 					if (messagesC.includes("prati")){
+					client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`lhttps://pastebin.com/raw/DD9bHRBr`, {method: 'get'})
                      anuk = await getBuffer(data.img)
                      dark = `Olá meu caro gafanhoto, Meliodas-rai pode estar offline no momento então espera ele chegar caraio, por enquando se divirt cmg, digite ${data.prefix} não abuse caraio`                     
