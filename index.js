@@ -56,11 +56,11 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Meliodas\n' // Nama kamu
-            + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' //Nomor whatsapp kamu
+            + 'FN:Meliodas\n' // Seu nome
+            + 'ORG:Lexa;\n' // Nome do Bot
+            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' // Numero do Whatsapp
             + 'END:VCARD'
-prefix = '*','#','+',
+prefix = '*','#','+'
 blocked = []
 limitawal = '999999999'
 cr = '*Meliodas*'
@@ -948,6 +948,15 @@ if (text.includes("placa"))
 					buffer88 = await getBuffer(`https://some-random-api.ml/canvas/youtube-comment?avatar=${res.display_url}&comment=${cmn}&username=${usnm}`)
 					client.sendMessage(from, buffer88, image, {quoted: mek, caption: `*${usnm}* : ${cmn}`})
 					break
+
+					if (messagesC.includes("bot")){
+					data = await fetchJson(`lhttps://pastebin.com/raw/DD9bHRBr`, {method: 'get'})
+                     anuk = await getBuffer(data.img)
+                     dark = `Olá meu caro gafanhoto, Meliodas-rai pode estar offline no momento então espera ele chegar caraio, por enquando se divirt cmg, digite ${data.prefix} não abuse caraio`                     
+					client.sendMessage(from, anuk, image, {quoted: mek, caption: dark})
+                    await limitAdd(sender)
+    }
+
 				case 'walpaperhd':
 				
 					if (args.length < 1) return reply('Cadê o texto tio')
