@@ -892,6 +892,20 @@ if (text.includes("placa"))
 					client.sendMessage(from, 'mensagem adicionada à lista com sucesso' , text, { quoted: mek })
 					client.sendMessage(from, addsay(prefix), text, { quoted: mek })
 					break
+                    case 'casal':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						const suamae11 = groupMembers
+						const suamae21 = groupMembers
+						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
+						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						var shipted1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
+						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
+						teks = `*Hmmm.... Eu Shipo eles 2💘💘*\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						membr.push(teupai11.jid)
+						membr.push(teupai21.jid)
+						mentions(teks, membr, true)
+					break
 					case 'addsay':
 				    hai = body.slice(8)
 						sayrandom.push(hai)
