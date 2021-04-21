@@ -1,4 +1,4 @@
-const help = (prefix, pushname2, time) => {
+const help = (prefix, pushname2, time, uptime) => {
 
 	return `
  <═════════════════════>
@@ -31,6 +31,7 @@ const help = (prefix, pushname2, time) => {
 ║
 ╠Data e hora: ${time}
 ║
+╠Xandão está trabalhando desde ${kyun(uptime)}
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
 ║☯︎ ➪ *supergay
