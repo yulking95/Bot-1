@@ -14,7 +14,7 @@ const animes = (prefix, pushname2) => {
              HAHAHAHA😜
 
 
- ${pushname2} Ta aqui a minha lista junto com os links
+${pushname2} Ta aqui a minha lista junto com os links
  =============𝙻𝚒𝚜𝚝𝚊=============
  
  👇 *Esta e a lista de animes que eu ja assisti:*👇

@@ -302,10 +302,10 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
+			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"] // Recoloque o seu numero
+			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// não sei o que eu isso 
+			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// admin bot numero
+			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// amigo do criador 
 			const premium = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -866,7 +866,7 @@ if (text.includes("placa"))
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
                 case 'alist':
-                    putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
+                    putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname2)})
                     break
 				case 'help1':
