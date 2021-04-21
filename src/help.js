@@ -1,4 +1,4 @@
-const help = (timer, pushname2, prefix) => {
+const help = (timer, pushname, prefix) => {
 
 	return `
  <═════════════════════>
