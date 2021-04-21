@@ -941,11 +941,13 @@ if (text.includes("placa"))
                       const cuz14 = groupMembers
                       const cuzao12 = cu12[Math.floor(Math.random() * cu12.length)]
                       const cuzao11 = cu11[Math.floor(Math.random() * cu11.length)]
-                      const cuzin21 = cuzin21[Math.floor(Math.random() * cuzin21.length)]
-                      const cuzin22 = cuzin22[Math.floor(Math.random() * cuzin22.length)]
+                      const cuzin21 = cuz13[Math.floor(Math.random() * cuz13.length)]
+                      const cuzin22 = cuz14[Math.floor(Math.random() * cuz14.length)]
                       reply(`*${pushname2} Esses são os mais cuzoes do grupo\n\n@${cuzao11.jid.split('@')[0]} \n@${cuzao12.jid.split('@')[0]} \n @${cuzin21.jid.split('@')[0]} \n@${cuzin22.jid.split('@')[0]} \n\n Cortesia de Super Xandão`)
                       membr.push(cu11.jid)
                       membr.push(cu12.jid)
+                      membr.push(cuz13.jid)
+                      membr.push(cuz14.jid)
                       mentions(teks, membr, true)
                        break
 					case 'addsay':
