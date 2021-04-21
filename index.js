@@ -915,7 +915,7 @@ if (text.includes("placa"))
                          const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
                          var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
                          const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
-                         reply (`𝑰𝒂𝒆 ${pushname} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
+                         reply (`𝑰𝒂𝒆 ${pushname2} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
                          membr.push(gays11.jid)
                          membr.push(gays21.jid)
                          mentions(teks, membr, true)
