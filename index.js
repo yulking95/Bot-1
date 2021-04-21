@@ -1937,6 +1937,14 @@ if (text.includes("placa"))
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*GELAP BOS :V*')
 				break
+				 case 'naruto':
+				 data = fs.readFileSync('./image/naruto.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*Narutoooooo!!!!*')
+				break
                 case 'alerta':
 				 data = fs.readFileSync('./src/alerta.js');
                  jsonData = JSON.parse(data);
@@ -1961,17 +1969,7 @@ if (text.includes("placa"))
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
-	
-				case 'naruto':
 
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Naruto`, {method: 'get'})
-					naru = JSON.parse(JSON.stringify(anu));
-					to =  naru[Math.floor(Math.random() * naru.length)];
-					nye = await getBuffer(to)
-					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
-					await limitAdd(sender)
-					break 
 				case 'nsfwboquete':
 
 					reply(mess.wait)
@@ -1980,26 +1978,6 @@ if (text.includes("placa"))
 					to =  naru[Math.floor(Math.random() * naru.length)];
 					nye = await getBuffer(to)
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
-					await limitAdd(sender)
-					break 
-				case 'minato':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Minato`, {method: 'get'})
-					min = JSON.parse(JSON.stringify(anu));
-					ato =  min[Math.floor(Math.random() * min.length)];
-					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
-					await limitAdd(sender)
-					break 
-				case 'boruto':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Boruto`, {method: 'get'})
-					bor = JSON.parse(JSON.stringify(anu));
-					uto =  bor[Math.floor(Math.random() * bor.length)];
-					nye = await getBuffer(uto)
-					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 				case 'animecry':
