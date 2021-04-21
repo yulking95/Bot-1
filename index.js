@@ -3281,10 +3281,9 @@ break
 					gh = body.slice(7)
                     p1 = gh.split("/")[0];
                     p2 = gh.split("/")[1];
-                    p3 = gh.split("/")[2];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
-					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/game?text=${p1}&text2=${p3}%20$${p3}`, {method: 'get'})
+					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/pubg?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
