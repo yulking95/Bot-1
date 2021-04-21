@@ -9,6 +9,7 @@ const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
+const { animes } = require('./animes')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
@@ -864,6 +865,10 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
+                case 'alist':
+                    putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname2)})
+                    break
 				case 'help1':
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
@@ -932,7 +937,7 @@ if (text.includes("placa"))
                       membr.push(gostosa12.jid)
                       mentions(teks, membr, true)
                        break
-                    case 'cuzao':
+                    case 'lindos':
                      if (!isGroup) return reply(mess.only.group)
                       membr = []
                       const cu12 = groupMembers
@@ -943,7 +948,7 @@ if (text.includes("placa"))
                       const cuzao11 = cu11[Math.floor(Math.random() * cu11.length)]
                       const cuzin21 = cuz13[Math.floor(Math.random() * cuz13.length)]
                       const cuzin22 = cuz14[Math.floor(Math.random() * cuz14.length)]
-                      reply(`*${pushname2} Esses são os mais cuzoes do grupo\n\n@${cuzao11.jid.split('@')[0]} \n@${cuzao12.jid.split('@')[0]} \n @${cuzin21.jid.split('@')[0]} \n@${cuzin22.jid.split('@')[0]} \n\n Cortesia de Super Xandão`)
+                      reply(`*${pushname2} Esses são os mais lindos do grupo\n${groupName}\n\n@554791347623\n@${cuzao11.jid.split('@')[0]} \n@${cuzao12.jid.split('@')[0]} \n@${cuzin21.jid.split('@')[0]} \n@${cuzin22.jid.split('@')[0]} \n\n Cortesia de Super Xandão`)
                       membr.push(cu11.jid)
                       membr.push(cu12.jid)
                       membr.push(cuz13.jid)

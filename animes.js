@@ -1,4 +1,4 @@
-const animes = (prefix) => {
+const animes = (prefix, pushname2) => {
 
 	return `
  💪🏻𝙰𝚀𝚄𝙸 𝙴 𝙾 𝚇𝙰𝙽𝙳Ã𝙾 𝙿𝙾𝚁𝚁𝙰💪🏻
@@ -12,6 +12,9 @@ const animes = (prefix) => {
  
   𝙿𝚎𝚒𝚝𝚊 𝚘𝚞 𝚁𝚎𝚜𝚙𝚎𝚒𝚝𝚊 𝙼𝚎𝚛𝚘 𝙼𝚘𝚛𝚝𝚊𝚕
              HAHAHAHA😜
+
+
+ ${pushname2} Ta aqui a minha lista junto com os links
  =============𝙻𝚒𝚜𝚝𝚊=============
  
  👇 *Esta e a lista de animes que eu ja assisti:*👇
