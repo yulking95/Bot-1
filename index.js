@@ -862,7 +862,7 @@ if (text.includes("placa"))
 			switch(command) {
 	            case 'menu':
                     putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, timer)})
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
 				case 'help1':
 				case 'menu1':
