@@ -274,7 +274,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
-			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
+			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
 					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
@@ -315,7 +315,7 @@ async function starts() {
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const groupId = isGroup ? groupMetadata.jid : ''
-			const time = moment.tz('America/Piaui').format('DD/MM HH:mm:ss')
+			const time = moment.tz('America/Sao_Paulo').format('DD/MM HH:mm:ss')
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
