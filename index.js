@@ -3263,7 +3263,7 @@ break
                     p2 = gh.split("/")[1];
 					if (args.length < 1) return reply('Cadê o texto, hum')
 					reply('espere')
-					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/bf?text=${p1}&text2=${p2}`, {method: 'get'})
+					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/battlefield?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
