@@ -10,8 +10,8 @@ const help = (pushname, prefix) => {
  ┈┈╲▏▇▏▕▇▕╱┈┈
  ┈┈╱╲▔▕▍▔╱╲┈┈ 
  ╭╱╱▕╋╋╋╋▏╲╲╮
- ╰╯╯┈╲▂▂╱┈╰╰ 
- 💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
+ ╰╯╯┈╲▂▂╱┈╰╰╯
+💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
      𝚅𝚊𝚒 𝚃𝚎𝚗𝚝𝚊𝚛 ${pushname2}?
                ☞︎︎︎Bᴏᴛ✌︎︎Mᴇɴᴜ☜︎︎︎
            Dᴏɴᴏ:✞︎Mᴇʟɪᴏᴅᴀs✞︎
@@ -19,11 +19,17 @@ const help = (pushname, prefix) => {
 ┌─────────❶.❷────────
 ║〘 INFORMAÇÕES 〙
 ║
-╠✰ *Xandão BOT* 
+╠✰ *Super Xandão parsa, Peita ou Respeita* 
 ╠✰ 𝐃𝐎𝐍𝐎:  ⃬⃗Mᴇʟɪᴏᴅᴀs (Bᴀsᴇ ᴅᴏ Cᴀᴜss ǫᴜᴇ ᴇ ᴅᴏ Dᴀʀᴋ) 
-╠✰ *wa.me/5589981246187*
-╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: ON
+╠✰ Quer falar com o Causs? acessa: https://wa.me/5547992091566
+╠✰ Nmr do Dono: *wa.me/5589981246187*
+╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: BRABO COMO SEMPRE💪⚡
 ║
+╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
+║
+║☯︎ ➪ *supergay
+║☯︎ ➪ *gostosa
+║☯︎ ➪ *casal
 ║
 ╠══༒︎〘 MENU 〙༒︎══
 ║
@@ -126,7 +132,6 @@ const help = (pushname, prefix) => {
 ║☯︎ ➪ **gcpf*
 ║☯︎ ➪ **gbin*
 ║☯︎ ➪ **pack*
-║☯︎ ➪ **destrava*
 ║☯︎ ➪ **gpessoa*
 ║
 ╠══༒︎〘 GRUPO 〙༒︎══
@@ -302,10 +307,9 @@ const help = (pushname, prefix) => {
 ║☯︎ ➪ *bot lixo*
 ║
 ╠══༒︎〘 XANDÃO NO CONTROLE 〙༒︎══
-║
-║  *"base do lindo (DARK BOT 4.0)︎ ➪🚩*
-║  *Número do dark: wa.me/+5522996215481\n Numero do Causs: wa.me/+5547992091566
-║Obs:o dark responder uma pessoa no mesmo dia e raro
+║ 
+║Numero do Causs: wa.me/5547992091566
+║Se ele não responder manda dnv pq ele e ocupado só nao liga porra
 ╚═〘 Xandão Bot 〙`
 }
 exports.help = help
