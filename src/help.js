@@ -31,8 +31,7 @@ const help = (prefix, pushname2, time) => {
 ║
 ╠Data e hora: ${time}
 ║
-╠Xandão tá trabalhando à: ${pad(hours)} Horas, ${pad(minutes)} Minutos e ${pad(seconds)} Segundos.
-║
+╠══Xandao ta trabalhando à: ${kyun(uptime)}
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
 ║☯︎ ➪ *supergay
@@ -319,11 +318,6 @@ const help = (prefix, pushname2, time) => {
 ║Numero do Causs: wa.me/5547992091566
 ║Se ele não responder manda dnv pq ele e ocupado só nao liga porra
 ╚═〘 Xandão Bot 〙`
-}
-
-exports.help = help
-
-// Função hora
 function kyun(seconds){
   function pad(s){
     return (s < 10 ? '0' : '') + s;
@@ -331,5 +325,10 @@ function kyun(seconds){
   var hours = Math.floor(seconds / (60*60));
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
+
+  //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
   return `${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
 }
+}
+exports.help = help
+
