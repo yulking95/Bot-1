@@ -1282,13 +1282,11 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://zeksapi.herokuapp.com/api/watercolour?text1=${coli1}&text2=${coli2}&apikey=xptnbot352`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                  case 'covid19':                     
-					data = await fetchJson(`https://api-gdr.herokuapp.com/api/covidbr`, {method: 'get'})
-                     anuk = await getBuffer(data.img)
-                     dark = `ATIVOS: ${data.ativo} \n\nCASOS: {data.casos} \n\nCASOS HOJE: ${data.casos_hoje} \n\nCURADOS: ${data.curados} \n\nMORTES: ${data.mortes} \n\nMORTES HOJE: ${data.mortes_hoje}\n\n CORTESIA DE ⚡💪SUPER XANDÃO💪⚡`                     
-					client.sendMessage(from, dark, anuk, image, {quoted: mek, caption: dark})
-                    await limitAdd(sender)
-                    break           
+                case 'covidbr':
+                    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/covidbr`)
+                    resp = `Ativos: ${anu.ativo}\nCasos: ${anu.casos}\nCasos Hoje: ${anu.casos_hoje}\nCasos Criticos: ${anu.criticos}\nMortes: ${anu.mortes}\nMortes Hoje: ${anu.mortes_hoje}`
+                    client.sendMessage(from, resp, text,  {quoted: mek}
+                   break
 				case 'testing2':
 					var gh = body.slice(9)
 					coli1 = gh.split("|")[0];
@@ -3265,7 +3263,7 @@ break
 					reply('espere')
 					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/battlefield?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'BattleField', quoted: mek})
 					break
                 case 'bug':
 					gh = body.slice(7)
@@ -3275,7 +3273,7 @@ break
 					reply('espere')
 					anu = await fetchJson(`https://restapi-exe.herokuapp.com/api/glitch?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'bugado vey', quoted: mek})
 					break
                 case 'pubg':
 					gh = body.slice(7)
@@ -3285,7 +3283,7 @@ break
 					reply('espere')
 					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/pubg?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'pubg', quoted: mek})
 					break
                case 'narutologo':
 					if (args.length < 1) return reply(mess.blank)
@@ -3293,7 +3291,15 @@ break
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/naruto?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'Naruto', quoted: mek})
+					break
+               case 'coffee':
+					if (args.length < 1) return reply(mess.blank)
+					p1 = body.slice(11)
+					reply('espere')
+					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/coffee?text=${p1}`, {method: 'get'})
+                    buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'Coffee', quoted: mek})
 					break
                 case 'neon':
 					if (args.length < 1) return reply(mess.blank)
@@ -3309,7 +3315,7 @@ break
 					reply('espere')
 					anu = await fetchJson(`https://mistic-api-br.herokuapp.com/api/harry?text=${p1}`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'neon', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'Harry Potter', quoted: mek})
 					break
                 case 'cemiterio':
 					if (args.length < 1) return reply(mess.blank)
