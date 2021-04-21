@@ -316,7 +316,6 @@ async function starts() {
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const groupId = isGroup ? groupMetadata.jid : ''
-			const time = moment.tz('America/Piaui').format('DD/MM HH:mm:ss')
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
