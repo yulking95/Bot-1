@@ -932,6 +932,18 @@ if (text.includes("placa"))
                       membr.push(gostosa12.jid)
                       mentions(teks, membr, true)
                        break
+                    case 'cuzao':
+                     if (!isGroup) return reply(mess.only.group)
+                      membr = []
+                      const cu12 = groupMembers
+                      const cu11 = groupMembers
+                      const cuzao12 = cu12[Math.floor(Math.random() * cu12.length)]
+                      const cuzao11 = cu11[Math.floor(Math.random() * cu11.length)]
+                      reply(`*${pushname}Esses são os mais cuzoes do grupo\n\n@${cuzao11.jid.split('@')[0]} @${cuzao12.jid.split('@')[0]} \n\nCOLOQUE AQUI O QUE VOCE QUISER`)
+                      membr.push(cu11.jid)
+                      membr.push(cu12.jid)
+                      mentions(teks, membr, true)
+                       break
 					case 'addsay':
 				    hai = body.slice(8)
 						sayrandom.push(hai)
