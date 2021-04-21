@@ -31,7 +31,8 @@ const help = (prefix, pushname2, time, uptime) => {
 ║
 ╠Data e hora: ${time}
 ║
-╠Xandão está trabalhando desde ${kyun(uptime)}
+╠Xandão está trabalhando à: ${pad(hours)} Horas \n${pad(minutes)} Minutos \ne ${pad(seconds)} segundos
+║
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
 ║☯︎ ➪ *supergay
