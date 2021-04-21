@@ -1,4 +1,4 @@
-const help = (timer, pushname, prefix) => {
+const help = (time, pushname, prefix) => {
 
 	return `
  <═════════════════════>
@@ -12,7 +12,7 @@ const help = (timer, pushname, prefix) => {
  ╭╱╱▕╋╋╋╋▏╲╲╮
  ╰╯╯┈╲▂▂╱┈╰╰╯
 💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
-     𝚅𝚊𝚒 𝚃𝚎𝚗𝚝𝚊𝚛 ${pushname}?
+     𝚅𝚊𝚒 𝚃𝚎𝚗𝚝𝚊𝚛 ${pushname2}?
                ☞︎︎︎Bᴏᴛ✌︎︎Mᴇɴᴜ☜︎︎︎
            Dᴏɴᴏ:✞︎Mᴇʟɪᴏᴅᴀs✞︎
        Cʀɪᴀᴅᴏʀ:Cᴀᴜss
@@ -29,7 +29,7 @@ const help = (timer, pushname, prefix) => {
 ║
 ╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: BRABO COMO SEMPRE💪⚡
 ║
-╠Data e hora: ${timer}
+╠Data e hora: ${time}
 ║
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
