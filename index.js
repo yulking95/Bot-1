@@ -1285,7 +1285,7 @@ if (text.includes("placa"))
                 case 'covidbr':
                     anu = await fetchJson(`https://api-gdr.herokuapp.com/api/covidbr`)
                     resp = `Ativos: ${anu.ativo}\nCasos: ${anu.casos}\nCasos Hoje: ${anu.casos_hoje}\nCasos Criticos: ${anu.criticos}\nMortes: ${anu.mortes}\nMortes Hoje: ${anu.mortes_hoje}`
-                    client.sendMessage(from, resp, text,  {quoted: mek}
+                    client.sendMessage(from, resp, text,  {quoted: mek})
                    break
 				case 'testing2':
 					var gh = body.slice(9)
