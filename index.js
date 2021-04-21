@@ -1283,10 +1283,10 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                   case 'covid19':                     
-					data = await fetchJson(`https://api-gdr.herokuapp.com/api/covid`, {method: 'get'})
+					data = await fetchJson(`https://api-gdr.herokuapp.com/api/covidbr`, {method: 'get'})
                      anuk = await getBuffer(data.img)
                      dark = `ATIVOS: ${data.ativo} \n\nCASOS: {data.casos} \n\nCASOS HOJE: ${data.casos_hoje} \n\nCURADOS: ${data.curados} \n\nMORTES: ${data.mortes} \n\nMORTES HOJE: ${data.mortes_hoje}\n\n CORTESIA DE ⚡💪SUPER XANDÃO💪⚡`                     
-					client.sendMessage(from, anuk, image, {quoted: mek, caption: dark})
+					client.sendMessage(from, dark, anuk, image, {quoted: mek, caption: dark})
                     await limitAdd(sender)
                     break           
 				case 'testing2':
