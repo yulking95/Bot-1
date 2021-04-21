@@ -873,9 +873,6 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'alist':
-					client.sendMessage(from, alist(prefix), text)
-					break
 					case 'kiss':
 				    try {    
 					
