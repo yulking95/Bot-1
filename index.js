@@ -906,18 +906,32 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
+                    case 'supergay':
+                       if (!isGroup) return reply(mess.only.group)
+                         membr = []
+                         const gays11 = groupMembers
+                         const gays21 = groupMembers
+                         const gay12 = gays11[Math.floor(Math.random() * gays11.length)]
+                         const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
+                         var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
+                         const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
+                         reply (`𝑰𝒂𝒆 ${pushname} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
+                         membr.push(gays11.jid)
+                         membr.push(gays21.jid)
+                         mentions(teks, membr, true)
+                    break
                     case 'topgays':
 					if (!isGroup) return reply(mess.only.group)
 						membr = []
 						const gay1 = groupMembers
 						const gay2 = groupMembers
-						const gays20 = suamae11[Math.floor(Math.random() * suamae11.length)]
-						const gays21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						const gays20 = gay1[Math.floor(Math.random() * gay1.length)]
+						const gays21 = gays21[Math.floor(Math.random() * gays21.length)]
 						var top1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
 						const top = top1[Math.floor(Math.random() * top1.length)]
 						teks = `*ESSES SÃO OS MAIS GAYS DO GRUPO*\n\n1= @${gay1.jid.split('@')[0]}\n\ne esse\n\n2= @${gays21.jid.split('@')[0]}\ncom uma porcentagem de: ${top}`
-						membr.push(teupai11.jid)
-						membr.push(teupai21.jid)
+						membr.push(gay1.jid)
+						membr.push(gays21.jid)
 						mentions(teks, membr, true)
 					break
                     case 'gostosa':
