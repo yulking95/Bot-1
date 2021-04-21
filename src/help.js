@@ -1,4 +1,4 @@
-const help = (prefix, pushname2, timer) => {
+const help = (prefix, pushname2, time) => {
 
 	return `
  <═════════════════════>
@@ -29,7 +29,7 @@ const help = (prefix, pushname2, timer) => {
 ║
 ╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: BRABO COMO SEMPRE💪⚡
 ║
-╠Data e hora: ${timer}
+╠Data e hora: ${time}
 ║
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
