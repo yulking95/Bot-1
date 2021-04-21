@@ -31,7 +31,7 @@ const help = (prefix, pushname2, time, uptime) => {
 ║
 ╠Data e hora: ${time}
 ║
-╠Xandão está trabalhando à: ${kyun(uptime)}
+╠Xandão tá trabalhando à: ${kyun(uptime)}
 ║
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
@@ -322,3 +322,13 @@ const help = (prefix, pushname2, time, uptime) => {
 }
 exports.help = help
 
+// Função hora
+function kyun(seconds){
+  function pad(s){
+    return (s < 10 ? '0' : '') + s;
+  }
+  var hours = Math.floor(seconds / (60*60));
+  var minutes = Math.floor(seconds % (60*60) / 60);
+  var seconds = Math.floor(seconds % 60);
+  return `${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
+}
