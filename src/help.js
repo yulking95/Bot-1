@@ -1,4 +1,4 @@
-const help = (prefix, pushname2, time, uptime) => {
+const help = (prefix, pushname2, time) => {
 
 	return `
  <═════════════════════>
@@ -31,7 +31,7 @@ const help = (prefix, pushname2, time, uptime) => {
 ║
 ╠Data e hora: ${time}
 ║
-╠Xandão tá trabalhando à: ${kyun(uptime)}
+╠Xandão tá trabalhando à: ${pad(hours)} Horas, ${pad(minutes)} Minutos e ${pad(seconds)} Segundos.
 ║
 ╠══༒〘 COMANDOS NOVOS 〙༒︎ ︎══
 ║
@@ -320,6 +320,7 @@ const help = (prefix, pushname2, time, uptime) => {
 ║Se ele não responder manda dnv pq ele e ocupado só nao liga porra
 ╚═〘 Xandão Bot 〙`
 }
+
 exports.help = help
 
 // Função hora
