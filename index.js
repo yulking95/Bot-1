@@ -316,6 +316,7 @@ async function starts() {
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const groupId = isGroup ? groupMetadata.jid : ''
+			const time = moment.tz('America/Piaui').format('DD/MM HH:mm:ss')
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
@@ -837,7 +838,7 @@ if (text.includes("placa"))
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
                 hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*GELAP BOS :V*')
+                sendImage(hasil, mek, 'meme')
 	}
 
 		if (messagesC.includes("Te amo")){
@@ -1282,6 +1283,13 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://zeksapi.herokuapp.com/api/watercolour?text1=${coli1}&text2=${coli2}&apikey=xptnbot352`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
+                  case 'covid19':                     
+					data = await fetchJson(`https://api-gdr.herokuapp.com/api/covid`, {method: 'get'})
+                     anuk = await getBuffer(data.img)
+                     dark = `ATIVOS: ${data.ativo} \n\nCASOS: {data.casos} \n\nCASOS HOJE: ${data.casos_hoje} \n\nCURADOS: ${data.curados} \n\nMORTES: ${data.mortes} \n\nMORTES HOJE: ${data.mortes_hoje}\n\n CORTESIA DE ⚡💪SUPER XANDÃO💪⚡`                     
+					client.sendMessage(from, anuk, image, {quoted: mek, caption: dark})
+                    await limitAdd(sender)
+                    break           
 				case 'testing2':
 					var gh = body.slice(9)
 					coli1 = gh.split("|")[0];
