@@ -877,7 +877,7 @@ if (text.includes("placa"))
 					case 'bejar':
 					if (!isGroup) return reply(mess.only.group)
 						membr = []
-						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em @${sender.split("@s.whatsapp.net")[0]}`
+						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em @${mentionedJid.split("@s.whatsapp.net")[0]}`
 						mentions(teks, membr, true)
 					break
 
@@ -1414,11 +1414,11 @@ if (text.includes("placa"))
 						if (isNsfw) return reply('O modo nsfw já está ativo')
 						nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply(`\`\`\`✓Ativado com sucesso o modo nsfw no grupo\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Ativado com sucesso o modo nsfw no grupo\`\`\` *${groupName}*`)
 					} else if ((args[0]) === 'off') {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply(`\`\`\`✓Modo nsfw desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Modo nsfw desativado com sucesso no grupo\`\`\` *${groupName}*`)
 					} else {
 						reply('On para ativar, Off para desligar')
 					}
@@ -1441,7 +1441,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                  case 'nomegp':
-		             if (args.length < 1) return reply ('o nome do grupo é: *${groupMetadata.subject}*')
+		             if (args.length < 1) return reply (`o nome do grupo é: *${groupName}*`)
 		             break
 				case 'loli2':
 					if (!isAnime) return reply('❌ *Deve ativar o modo Anime* ❌')
