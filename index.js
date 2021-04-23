@@ -876,9 +876,8 @@ if (text.includes("placa"))
 					break
 					case 'bejar':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroup) return reply('Só em grupo caralho')
 						membr = []
-						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em @${mentioned.split("@s.whatsapp.net")[0]}`
+						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em @${sender.split("@s.whatsapp.net")[0]}`
 						mentions(teks, membr, true)
 					break
 
