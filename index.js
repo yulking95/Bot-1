@@ -874,11 +874,11 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'beijar':
-				if (!isGroup) return reply(mess.only.group)
-				if (args.length < 1) return reply('menciona o cara mn')
-				reply(mess.wait)
-				client.sendMessage(from, 'eita, @${num.split('@')[0]} deu um beijo em .....')
+					case 'bejar':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						teks = `Oloko, @${num.split('@')[0]} deu um beijo em @${sender.split("@s.whatsapp.net")[0]}`
+						mentions(teks, membr, true)
 					break
 
 					case 'kiss':
