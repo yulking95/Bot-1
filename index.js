@@ -863,7 +863,7 @@ if (text.includes("placa"))
 			switch(command) {
 	            case 'menu':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
+                    putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
                 case 'alist':
