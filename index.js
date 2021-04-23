@@ -224,7 +224,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝚘𝚕𝚊 𝚖𝚎𝚞 𝚌𝚊𝚛𝚘 𝚐𝚊𝚏𝚊𝚗𝚑𝚘𝚝𝚘@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${mdata.subject}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
+				teks = `𝚘𝚕𝚊 𝚖𝚎𝚞 𝚌𝚊𝚛𝚘 𝚐𝚊𝚏𝚊𝚗𝚑𝚘𝚝𝚘@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${groupName}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -292,9 +292,9 @@ async function starts() {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
 					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD XANDÃO BOT*',
-					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
-					ownerB: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
+					benned: 'Você foi banido, contate o dono para te desbanir',
+					ownerG: 'Só o Meliodas pode usar esse comando parsa',
+					ownerB: 'Só o Meliodas pode usar esse comando parsa',
 					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do Meliodas. Registre-se para fazer amizade com o bot ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT MAN 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
@@ -877,7 +877,7 @@ if (text.includes("placa"))
 					case 'bejar':
 					if (!isGroup) return reply(mess.only.group)
 						membr = []
-						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em @${num.split("@s.whatsapp.net")[0]}`
+						teks = `Oloko, @${sender.split("@s.whatsapp.net")[0]} deu um beijo em ${"mentionedJid": [num]}})`
 						mentions(teks, membr, true)
 					break
 
