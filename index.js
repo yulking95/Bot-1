@@ -276,6 +276,8 @@ async function starts() {
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
 			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
+			const mentioned = mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null return
+			mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 
 			mess = {
 					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
@@ -872,7 +874,7 @@ if (text.includes("placa"))
                 	membr = []
                 	const membros = groupMembers
                 	var beijo = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
-                	teks = `eita bixo,deu um beijo em @${mentioned[0].split('@')[0]}\n esses tem uma porcentagem de transar entre ${beijo} e ${beijo} Cuidado com o filho hihihihi`
+                	teks = `eita bixo,deu um beijo em @${mentioned.jid.split('@')[0]}\n esses tem uma porcentagem de transar entre ${beijo} e ${beijo} Cuidado com o filho hihihihi`
                 	membr.push(membros.jid)
                 	mentions(teks)
                 break
