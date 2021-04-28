@@ -275,35 +275,35 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
-			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
+			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
 					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
-					success: '️❬ ✔ ❭ Pronto vey 🖤',
-					levelon: '❬ ✔ ❭ *leveling* *ativado*',
-					leveloff: ' ❬ X ❭  *leveling* *desativado*',
-					levelnoton: '❬ X ❭ *leveling não ativado*',
-					levelnol: '*error* 0 °-°',
+					success: 'Pronto',
+					levelon: '*leveling* *ativado*',
+					leveloff: '*leveling* *desativado*',
+					levelnoton: ' *leveling não ativado*',
+					levelnol: '*ERROR* °-°',
 					error: {
-				stick: '*Bem, falhe, tente novamente ^_^*',
-				Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
+				stick: 'Não deu pra converter a foto/video na figurinha parsa, A vida e triste',
+				Iv: 'Link invalido'
 				},
 				only: {
-					group: '[❗] Este comando só pode ser usado em grupos! ❌',
-					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD XANDÃO BOT*',
+					group: 'Este comando so pode ser usado nos grupos maninho',
+					premium: `Ei {pushname2} Só usuarios PREMIUMS podem usar este comando*`,
+					mod: 'ESTE PEDIDO É ESPECÍFICO PARA O MODERADOR DO ⚡SUPER XANDÃO⚡*',
 					benned: 'Você foi banido, contate o dono para te desbanir',
 					ownerG: 'Só o Meliodas pode usar esse comando parsa',
 					ownerB: 'Só o Meliodas pode usar esse comando parsa',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do Meliodas. Registre-se para fazer amizade com o bot ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT MAN 」──`,
-					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
-					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
+					userB: `──「 LISTA 」──\nOlá ${pushname} !\nVocê não esta registrado como amigo do meu dono então pessa para ele te adicionar como amigo\n\n──「 ⚡Super Xandão⚡ 」──`,
+					admin: 'Este comando só pode ser usado por administradores de grupo!',
+					Badmin: 'Este comando so pode ser usado quando o ⚡SUPER XANDÃO⚡ se torna ADM do grupo parsa',
 				}
 			}
 
 			const botNumber = client.user.jid
 			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"] // Recoloque o seu numero
-			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// não sei o que eu isso 
+			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// Moderador do bot
 			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// admin bot numero
 			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// amigo do criador 
 			const premium = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net"]
@@ -830,7 +830,7 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/tmnc.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
-
+	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
 			data = fs.readFileSync('./src/darkjokes.js');
@@ -862,18 +862,106 @@ if (text.includes("placa"))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECEBIDO\x1b[1;37m]', time, color('Menssagem'), 'do parsa', color(sender.split('@')[0]), 'No grupo', color(groupName), 'Artigo :', color(args.length))
 			switch(command) {
 	            case 'menu':
+	            case 'help':
 	            	uptime = process.uptime ()
                     putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname, time)})
                     break
                 case 'alist':
                     putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname2)})
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname)})
                     break
 				case 'help1':
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+				case 'install':
+		if (!isGroup) return reply("este comando so pode ser usado em grupos")
+		reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
+			setTimeout( () => {
+			client.sendMessage(from)
+			}, 10000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("termux-setup-storage")
+			}, 9000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("pkg install git")
+			}, 8000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("pkg install ffmpeg")
+			}, 7000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("pkg install wget")
+			}, 6000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("pkg install nodejs")
+			}, 5000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("git clone https://github.com/Meliodas-rai/Bot")
+			}, 4000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("cd Bot")
+			}, 3000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("bash install.sh")
+			}, 2000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("Esses são os comando do ⚡Super Xandão⚡")
+			}, 1000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("Se divirta parsa😎")
+			}, 0)
+		}
+				break
+				case 'cornos':
+				putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
+				if (!isGroup) return reply(mess.only.group)
+					membr = []
+					const corno1 = groupMembers
+					const corno2 = groupMembers
+					const corno3 = groupMembers
+					const corno4 = groupMembers
+					const corno5 = groupMembers
+					const corno6 = groupMembers
+					const corno7 = groupMembers
+					const corno8 = groupMembers
+					const corno9 = groupMembers
+					const corno10 = groupMembers
+					const corno11 = groupMembers
+					var cornos5 = cornos5[Math.floor(Math.random() * cornos5.length)]
+					var cornos6 = cornos6[Math.floor(Math.random() * cornos6.length)]
+					var cornos7 = cornos7[Math.floor(Math.random() * cornos7.length)]
+					var cornos8 = cornos8[Math.floor(Math.random() * cornos8.length)]
+					var cornos9 = cornos9[Math.floor(Math.random() * cornos9.length)]
+					var cornos10 = cornos10[Math.floor(Math.random() * cornos10.length)]
+					var cornos11 = cornos11[Math.floor(Math.random() * cornos11.length)]
+					var cornos12 = cornos12[Math.floor(Math.random() * cornos12.length)]
+					var cornos13 = cornos13[Math.floor(Math.random() * cornos13.length)]
+					var cornos14 = cornos14[Math.floor(Math.random() * cornos14.length)]
+					var porcentagemcorno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `Esse ai tem o chifre batendo na lua ksksksks`]
+					const porcentagemcorno = [Math.floor(Math.random() * porcentagemcorno.length)]
+					Menssagem = `Sem pressão ${pushname} aqui e Xandão\nlista de cornos do grupo ${groupName}\nCornos:\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos6.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos7.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos8.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos9.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos10.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos11.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n\n⚡💪Cortesia do Super Xandão💪⚡`
+					membr.push(corno1.jid)
+					membr.push(corno2.jid)
+					membr.push(corno3.jid)
+					membr.push(corno5.jid)
+					membr.push(corno6.jid)
+					membr.push(corno7.jid)
+					membr.push(corno8.jid)
+					membr.push(corno9.jid)
+					membr.push(corno10.jid)
+					membr.push(corno11.jid)
+					mentions(Menssagem, membr, true)
 					case 'kiss':
 				    try {    
 					
@@ -918,7 +1006,7 @@ if (text.includes("placa"))
                          const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
                          var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
                          const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
-                         reply (`𝑰𝒂𝒆 ${pushname2} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
+                         teks = `𝑰𝒂𝒆 ${pushname2} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`
                          membr.push(gays11.jid)
                          membr.push(gays21.jid)
                          mentions(teks, membr, true)
@@ -1061,7 +1149,7 @@ if (text.includes("placa"))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}`
+					teks = `*Titulo* : ${anu.title}`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -1160,69 +1248,6 @@ if (text.includes("placa"))
 					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'encode64':
-
-				encode64 = `${body.slice(10)}`
-				anu = await fetchJson(`https://api.i-tech.id/hash/bs64?key=${TechApi}&type=encode&string=${encode64}`, {method: 'get'})
-				frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break 
-				case 'decode64':
-
-				decode64 = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.i-tech.id/hash/bs64?key=${TechApi}&type=decode&string=${decode64}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'decode32':
-
-				decode32 = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.i-tech.id/hash/bs32?key=${TechApi}&type=decode&string=${decode32}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'encode32':
-
-				encode32 = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.i-tech.id/hash/bs32?key=${TechApi}&type=encode&string=${encode32}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'encbinary':
-
-				encbinary = `${body.slice(11)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/binary/?encode=${encbinary}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'decbinary':
-
-				decbin = `${body.slice(11)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/binary/?decode=${decbin}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'encoctal':
-
-				encoc = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/octal/?encode=${encoc}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender)
-					break  
-				case 'decoctal':
-
-				decoc = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/octal/?decode=${decoc}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'becrypt':
-
-				becry = `${body.slice(10)}`
-				anu = await fetchJson(`https://api.i-tech.id/hash/bcrypt?key=${TechApi}&string=${becry}`, {method: 'get'})
-				frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-				await limitAdd(sender) 
-				break 
 					case 'hashidentifier':
 
 					  hash = `${body.slice(16)}`
@@ -1723,7 +1748,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ NO CONTROLE🐊🚩*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*⚡Super Xandão⚡ NO CONTROLE*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1885,7 +1910,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
 				    break
                 case 'image':
-					if (args.length < 1) return reply('O que você quer procurar, mana?')
+					if (args.length < 1) return reply('O que você quer procurar, mano?')
 					goo = body.slice(7)
 					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
 					reply(mess.wait)
