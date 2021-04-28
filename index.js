@@ -922,7 +922,7 @@ if (text.includes("placa"))
 				reply("Se divirta parsa😎")
 			}, 0)
 		}
-		
+
 				case 'cornos':
 				putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
 				if (!isGroup) return reply(mess.only.group)
@@ -962,6 +962,7 @@ if (text.includes("placa"))
 					membr.push(corno10.jid)
 					membr.push(corno11.jid)
 					mentions(Menssagem, membr, true)
+					break
 					case 'kiss':
 				    try {    
 					
