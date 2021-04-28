@@ -276,7 +276,7 @@ async function starts() {
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
 			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
-			const mentioned = mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null return
+			const (mentioned = mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
 			mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 
 			mess = {
