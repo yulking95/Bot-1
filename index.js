@@ -881,15 +881,15 @@ if (text.includes("placa"))
 			setTimeout( () => {
 			client.sendMessage(from, Presence.composing)
 			reply("COMANDOS")
-			}, 10000)
+			}, 1000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("termux-setup-storage")
-			}, 8000)
+			}, 2000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("pkg install git")
-			}, 6000)
+			}, 3000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("pkg install ffmpeg")
@@ -897,15 +897,15 @@ if (text.includes("placa"))
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("pkg install wget")
-			}, 2000)
+			}, 5000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("pkg install nodejs")
-			}, 1000)
+			}, 6000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("git clone https://github.com/Meliodas-rai/Bot")
-			}, 10000)
+			}, 7000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("cd Bot")
@@ -913,15 +913,15 @@ if (text.includes("placa"))
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("bash install.sh")
-			}, 6000)
+			}, 9000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("Ta ai")
-			}, 4000)
+			}, 10000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("Se divirta parsa😎")
-			}, 1000)
+			}, 11000)
 					break
 					case 'kiss':
 				    try {    
