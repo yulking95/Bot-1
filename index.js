@@ -879,48 +879,49 @@ if (text.includes("placa"))
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
 			setTimeout( () => {
-			client.sendMessage(from)
+			client.sendMessage(from, Presence.composing)
+			reply("COMANDOS")
 			}, 10000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("termux-setup-storage")
-			}, 9000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("pkg install git")
 			}, 8000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install ffmpeg")
-			}, 7000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("pkg install wget")
+				reply("pkg install git")
 			}, 6000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install nodejs")
-			}, 5000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("git clone https://github.com/Meliodas-rai/Bot")
+				reply("pkg install ffmpeg")
 			}, 4000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("cd Bot")
-			}, 3000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("bash install.sh")
+				reply("pkg install wget")
 			}, 2000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("Esses são os comando do ⚡Super Xandão⚡")
+				reply("pkg install nodejs")
 			}, 1000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
+				reply("git clone https://github.com/Meliodas-rai/Bot")
+			}, 10000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("cd Bot")
+			}, 8000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("bash install.sh")
+			}, 6000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("Ta ai")
+			}, 4000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
 				reply("Se divirta parsa😎")
-			}, 0)
+			}, 1000)
 					break
 					case 'kiss':
 				    try {    
