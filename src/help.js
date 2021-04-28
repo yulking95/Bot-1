@@ -1,4 +1,4 @@
-const help = (prefix, pushname2, time) => {
+const help = (prefix, pushname, time) => {
 
 	return `
  <═════════════════════>
@@ -12,7 +12,7 @@ const help = (prefix, pushname2, time) => {
  ╭╱╱▕╋╋╋╋▏╲╲╮
  ╰╯╯┈╲▂▂╱┈╰╰╯
 💪 𝙏𝙚𝙣𝙩𝙖 𝙥𝙚𝙞𝙩𝙖𝙧 𝙥𝙧𝙖 𝙩𝙪 𝙫𝙚𝙧 𝙝𝙚𝙝𝙚 💪
-     𝚅𝚊𝚒 𝚃𝚎𝚗𝚝𝚊𝚛 ${pushname2}?
+     𝚅𝚊𝚒 𝚃𝚎𝚗𝚝𝚊𝚛 ${pushname}?
                ☞︎︎︎Bᴏᴛ✌︎︎Mᴇɴᴜ☜︎︎︎
            Dᴏɴᴏ:✞︎Mᴇʟɪᴏᴅᴀs✞︎
        Cʀɪᴀᴅᴏʀ:Cᴀᴜss
@@ -37,6 +37,8 @@ const help = (prefix, pushname2, time) => {
 ║☯︎ ➪ *supergay
 ║☯︎ ➪ *gostosa
 ║☯︎ ➪ *casal
+║☯︎ ➪ ${prefix}cornos
+║☯︎ ➪ ${prefix}
 ║
 ╠══༒︎〘 MENU 〙༒︎══
 ║
@@ -322,12 +324,12 @@ function kyun(seconds){
   function pad(s){
     return (s < 10 ? '0' : '') + s;
   }
-  var hours = Math.floor(seconds / (60*60));
-  var minutes = Math.floor(seconds % (60*60) / 60);
-  var seconds = Math.floor(seconds % 60);
+  var Horas = Math.floor(seconds / (60*60));
+  var Minutos = Math.floor(seconds % (60*60) / 60);
+  var Segundos = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
+  return `${pad(Horas)} Horas ${pad(Minutos)} Minutos ${pad(Segundos)} Segundos`
 }
 }
 exports.help = help
