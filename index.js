@@ -875,6 +875,46 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+				case 'cornos':
+				putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
+				if (!isGroup) return reply(mess.only.group)
+					membr = []
+					const corno1 = groupMembers
+					const corno2 = groupMembers
+					const corno3 = groupMembers
+					const corno4 = groupMembers
+					const corno5 = groupMembers
+					const corno6 = groupMembers
+					const corno7 = groupMembers
+					const corno8 = groupMembers
+					const corno9 = groupMembers
+					const corno10 = groupMembers
+					const corno11 = groupMembers
+					var cornos5 = cornos5[Math.floor(Math.random() * cornos5.length)]
+					var cornos6 = cornos6[Math.floor(Math.random() * cornos6.length)]
+					var cornos7 = cornos7[Math.floor(Math.random() * cornos7.length)]
+					var cornos8 = cornos8[Math.floor(Math.random() * cornos8.length)]
+					var cornos9 = cornos9[Math.floor(Math.random() * cornos9.length)]
+					var cornos10 = cornos10[Math.floor(Math.random() * cornos10.length)]
+					var cornos11 = cornos11[Math.floor(Math.random() * cornos11.length)]
+					var cornos12 = cornos12[Math.floor(Math.random() * cornos12.length)]
+					var cornos13 = cornos13[Math.floor(Math.random() * cornos13.length)]
+					var cornos14 = cornos14[Math.floor(Math.random() * cornos14.length)]
+					var porcentagemcorno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `Esse ai tem o chifre batendo na lua ksksksks`]
+					const porcentagemcorno = [Math.floor(Math.random() * porcentagemcorno.length)]
+					Menssagem = `Sem pressão ${pushname} aqui e Xandão\nlista de cornos do grupo ${groupName}\nCornos:\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos6.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos7.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos8.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos9.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos10.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos11.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n\n???Cortesia do Super Xandão???`
+					membr.push(corno1.jid)
+					membr.push(corno2.jid)
+					membr.push(corno3.jid)
+					membr.push(corno5.jid)
+					membr.push(corno6.jid)
+					membr.push(corno7.jid)
+					membr.push(corno8.jid)
+					membr.push(corno9.jid)
+					membr.push(corno10.jid)
+					membr.push(corno11.jid)
+					mentions(Menssagem, membr, true)
+					break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
