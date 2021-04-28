@@ -916,12 +916,16 @@ if (text.includes("placa"))
 			}, 9000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("Ta ai")
+				reply("npm start")
 			}, 10000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("Se divirta parsa😎")
+				reply("Ta ai")
 			}, 11000)
+			setTimeout( () => {
+				client.updatePresence(from, Presence.composing)
+				reply("Se divirta parsa😎")
+			}, 12000)
 					break
 					case 'kiss':
 				    try {    
