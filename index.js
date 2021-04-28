@@ -867,6 +867,12 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname, time)})
                     break
+                case 'beijar':
+                	if (!isGroup) return reply(mess.only.group)
+                	var beijo = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+                	teks = `eita bixo, @${sender.jid.split('@')[0]} deu um beijo em @${mentioned.jid.split('@')[0]}\n esses tem uma porcentagem de transar entre ${beijo} e ${beijo} Cuidado com o filho hihihihi`
+                	mentions(teks)
+                break
                 case 'alist':
                     putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname)})
@@ -874,47 +880,6 @@ if (text.includes("placa"))
 				case 'help1':
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
-					break
-				case 'cornos':
-				putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
-				if (!isGroup) return reply(mess.only.group)
-					membr = []
-					const corno1 = groupMembers
-					const corno2 = groupMembers
-					const corno3 = groupMembers
-					const corno4 = groupMembers
-					const corno5 = groupMembers
-					const corno6 = groupMembers
-					const corno7 = groupMembers
-					const corno8 = groupMembers
-					const corno9 = groupMembers
-					const corno10 = groupMembers
-					const corno11 = groupMembers
-					var cornos5 = cornos5[Math.floor(Math.random() * cornos5.length)]
-					var cornos6 = cornos6[Math.floor(Math.random() * cornos6.length)]
-					var cornos7 = cornos7[Math.floor(Math.random() * cornos7.length)]
-					var cornos8 = cornos8[Math.floor(Math.random() * cornos8.length)]
-					var cornos9 = cornos9[Math.floor(Math.random() * cornos9.length)]
-					var cornos10 = cornos10[Math.floor(Math.random() * cornos10.length)]
-					var cornos11 = cornos11[Math.floor(Math.random() * cornos11.length)]
-					var cornos12 = cornos12[Math.floor(Math.random() * cornos12.length)]
-					var cornos13 = cornos13[Math.floor(Math.random() * cornos13.length)]
-					var cornos14 = cornos14[Math.floor(Math.random() * cornos14.length)]
-					var cornos25 = cornos25[Math.floor(Math.random() * cornos15.length)]
-					var porcentagemcornos = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `Esse ai tem o chifre batendo na lua ksksksks`]
-					const porcentagemcorno = porcentagemcornos[Math.floor(Math.random() * porcentagemcornos.length)]
-					teks = `Sem pressão ${pushname} aqui e Xandão\nlista de cornos do grupo ${groupName}\nCornos:\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos6.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos7.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos8.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos9.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos10.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n@${cornos11.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemcorno}\n\n???Cortesia do Super Xandão???`
-					membr.push(corno1.jid)
-					membr.push(corno2.jid)
-					membr.push(corno3.jid)
-					membr.push(corno5.jid)
-					membr.push(corno6.jid)
-					membr.push(corno7.jid)
-					membr.push(corno8.jid)
-					membr.push(corno9.jid)
-					membr.push(corno10.jid)
-					membr.push(corno11.jid)
-					mentions(teks, membr, true)
 					break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
@@ -1465,6 +1430,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                  case 'nomegp':
+                 if (!isGroup) return reply(`Este comando só pode ser usado em grupos`)
 		             if (args.length < 1) return reply (`o nome do grupo é: *${groupName}*`)
 		             break
 				case 'loli2':
@@ -1733,14 +1699,14 @@ if (text.includes("placa"))
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.blockUser (`${body.slice(7)}@c.us`, "add")
-					client.sendMessage(from, `perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
+					client.sendMessage(from, `Blz Meliodas esse cara aqui ja foi bloqueado ${body.slice(7)}@c.us`, text)
 					break
 				case 'premiumlist':
 					teks = '╭────*「 *PREMIUM USER👑* 」\n'
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *✞Xandão︎ BOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *⚡Super Xandão⚡* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -2514,7 +2480,7 @@ break
 					break
 			  case 'next':
                
-                if (isGroup) return  reply( 'NÃO PODE ESTAR EM GRUPO KAK')
+                if (!isGroup) return reply(`SÓ PODE SER USADO EM GRUPOS`)
                 await reply('Ache um companheiro >_<')
                 await reply(`wa.me/${anug}`)
                 await reply( `Par encontrado: 🐊\n*${prefix}next* — Encontre novos parceiros`)
@@ -2944,15 +2910,15 @@ break
                    reply(hasil)
                    await limitAdd(sender)
                    break
-					case 'totaluser':
+					case 'usuarios':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS ⚡Super Xandão⚡* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *⚡Super Xandão⚡* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -3190,7 +3156,7 @@ break
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					open = {
-					text: `Grupo aberto pelo administrador @${sender.split("@")[0]}\nsekarang *todos os participantes* pode enviar mensagens`,
+					text: `Grupo aberto pelo administrador @${sender.split("@")[0]}\nAgora *todos os participantes* pode enviar mensagens`,
 					contextInfo: { mentionedJid: [sender] }
 					}
 					client.groupSettingChange (from, GroupSettingChange.messageSend, false)
@@ -3378,7 +3344,7 @@ break
 					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-                      case 'gay1': 
+                      case 'teste': 
                                         var imgbb = require('imgbb-uploader')
                                          if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
                                          ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -4016,7 +3982,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o meu bot_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Meliodas-rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡Super Xandão⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Meliodas-rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -4388,7 +4354,7 @@ break
                                         linkgc = await client.groupInviteCode(from)
                                         reply('https://chat.whatsapp.com/'+linkgc)
                                         break
-                                case 'leave':
+                                case 'sair':
                                         if (!isGroup) return reply(mess.only.group)
                                         if (isGroupAdmins || isOwner) {
                                             client.groupLeave(from)
@@ -4558,7 +4524,7 @@ break
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[ERROR]','red'), 'eita pexti vey comando n registrado', color(sender.split('@')[0]))
+						console.log(color('[ERRO]','red'), 'Eita bixo, comando não registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
