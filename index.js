@@ -889,7 +889,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, help1(prefix), text)
 					break
 				if (messagesC.includes("rai")){
-					client.updatePresence(from Presence.composing)
+					client.updatePresence(from, Presence.composing)
 					client.sendMessage(from, {quoted: mek, caption: hehehe(prefix)})
 				}
 				case 'install':
