@@ -702,7 +702,7 @@ if (text.includes("placa"))
 
 		if (messagesC.includes("rai")){
 			client.updatePresence(from, Presence.composing)
-			reply(`(\__/)`)
+			reply(`(`\`__/)`)
 	}
 
 		if (messagesC.includes("Causs")){
