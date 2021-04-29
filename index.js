@@ -700,9 +700,9 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("Rai")){
+		if (messagesC.includes("rai")){
 			client.updatePresence(from, Presence.composing)
-			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
+			reply(`(\__/)`)
 	}
 
 		if (messagesC.includes("Causs")){
@@ -800,6 +800,12 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/Sexo.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
+
+	if (messagesC.includes("xandao")){
+			client.updatePresence(from, Presence.composing) 
+	     	const d = fs.readFileSync('./sticker/pqp.webp');
+            client.sendMessage(from, d, sticker, {quoted: mek})
+    }
 	
 				if (messagesC.includes("canta")){
 			client.updatePresence(from, Presence.composing)
@@ -886,22 +892,6 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'beijar':
-				if (!isGroup) return reply(`Esse comando só pode ser usado em grupos ${pushname}`)
-				if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-				if (mentioned.length > 1) {
-						teks = 'Opaaaaaaaa\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						client.sendMessage(from, mentioned)
-					} else {
-						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0]split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
-						client.sendMessage(from, mentioned)
-					}
-				break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
