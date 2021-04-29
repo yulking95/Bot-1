@@ -17,6 +17,7 @@ const { menu2 } = require('./src/menu2')
 const { alist } = require('./src/alist')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
+const { rai } = require('./hehehe')
 const { chentai } = require('./src/chentai')
 const { gcpf } = require('./src/gcpf')
 const { addsay } = require('./src/addsay')
@@ -700,11 +701,6 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("rai")){
-			client.updatePresence(from, Presence.composing)
-			reply(`(`\`__/)`)
-	}
-
 		if (messagesC.includes("Causs")){
 			client.updatePresence(from, Presence.composing)
 			reply(`Gostosooooooooooo, muito gostoso`)
@@ -892,6 +888,10 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+				if (messagesC.includes("rai")){
+					client.updatePresence(from Presence.composing)
+					client.sendMessage(from, {quoted: mek, caption: hehehe(prefix)})
+				}
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
