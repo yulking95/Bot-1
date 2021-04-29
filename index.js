@@ -4312,7 +4312,7 @@ break
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0]split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
+						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
