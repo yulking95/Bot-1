@@ -1,6 +1,6 @@
 const hehehe = (prefix) => {
 	return`
-	 (`\_`_/)
+	 (____)
      (•ㅅ•)  
   _＿ノ ヽ ノ＼  __
 /  / ⌒Ｙ⌒ Ｙ     ヽ
@@ -8,7 +8,7 @@ const hehehe = (prefix) => {
 |   ﾉ⌒＼ ￣￣ヽ    ノ
 ヽ＿_＿ ＞､ ＿＿_ ／
    ｜( 王 ﾉ〈   
-   	 /ﾐー―彡```\``
+   	 /ﾐー―彡/`
 }
 exports.hehehe = hehehe
 
