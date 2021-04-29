@@ -890,8 +890,17 @@ if (text.includes("placa"))
 				if (!isGroup) return reply(`Esse comando só pode ser usado em grupos ${pushname}`)
 				if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-				reply(`Eita mano ${sender.split("@")[0]} deu um beijo em @${mentioned[0]split('@')[0]}`, mentioned, true)
-				client.sendMessage(from, mentioned)
+				if (mentioned.length > 1) {
+						teks = 'Opaaaaaaaa\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.sendMessage(from, mentioned)
+					} else {
+						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0]split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
+						client.sendMessage(from, mentioned)
+					}
 				break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
