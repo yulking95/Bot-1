@@ -1,4 +1,4 @@
-const help = (prefix, pushname, time) => {
+const help = (prefix, sender, pushname, time) => {
 
 	return `
  <═════════════════════>
@@ -26,6 +26,8 @@ const help = (prefix, pushname, time) => {
 ╠✰ Quer falar com o Causs? acessa: https://wa.me/5547992091566
 ║
 ╠✰ Nmr do Dono: *wa.me/5589981246187*
+║
+╠✰ Seu link do zap parsa: wa.me/${sender.split("@")[0]}
 ║
 ╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: BRABO COMO SEMPRE💪⚡
 ║
