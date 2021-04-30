@@ -873,7 +873,7 @@ if (text.includes("placa"))
 	            case 'help':
 	            	uptime = process.uptime ()
                     putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname, time)})
+                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
                     break
                   if (messagesC.includes("eita")){
 					 client.updatePresence(from, Presence.composing) 
