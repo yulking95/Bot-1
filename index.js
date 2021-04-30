@@ -897,7 +897,7 @@ if (text.includes("placa"))
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
 			setTimeout( () => {
 			client.sendMessage(from, Presence.composing)
-			reply("COMANDOS")
+			reply("Você irá precisar do Termux instalado e dois celulares, quando pedir y/n digite Y e de enter, se pedir Y/N/M/S ou algo do tipo digite Y e de enter, aí e só ir fazendo isso ate aparecer o qr code")
 			}, 1000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
@@ -905,24 +905,12 @@ if (text.includes("placa"))
 			}, 2000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install git")
+				reply("pkg install git && pkg install ffmpeg && pkg install wget && pkg install nodejs && git clone https://github.com/Meliodas-rai/Bot")
 			}, 3000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install ffmpeg")
+				reply("depois de colocar esse comando gigante, digite o seguinte")
 			}, 4000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("pkg install wget")
-			}, 5000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("pkg install nodejs")
-			}, 6000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("git clone https://github.com/Meliodas-rai/Bot")
-			}, 7000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("cd Bot")
@@ -937,12 +925,8 @@ if (text.includes("placa"))
 			}, 10000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("Ta ai")
+				reply(`${pushname}instale o bot e se divirta e trolle seus amigos com o\n   ⚡Super Xandão⚡`)
 			}, 11000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply("Se divirta parsa😎")
-			}, 12000)
 					break
 					case 'kiss':
 				    try {    
