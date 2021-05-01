@@ -6,6 +6,7 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
+const { eu } = require('./Fxc7/eu')
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
@@ -875,6 +876,10 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
                     break
+                case 'eu':
+                putagg = await getBuffer(`https://i.ibb.co/TthtCSG/pakipariu-doido.jpg`)
+                client.sendMessage(from, putagg, image, {quoted: mek, caption: eu()})
+                break
                   if (messagesC.includes("eita")){
 					 client.updatePresence(from, Presence.composing) 
 	     			 const d = fs.readFileSync('./sticker/eita.webp');
@@ -1052,14 +1057,6 @@ if (text.includes("placa"))
 						fs.writeFileSync('./src/say.json', JSON.stringify(sayrandom))
 						reply(`Sucesso, Disse ${hai} Adicionado ao banco de dados`)
 						break
-					case 'eu':
-				 data = fs.readFileSync('./Fxc7/eu.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = Math.floor(Math.random() * jsonData.length);
-                 randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*Aq Você kakakakka*')
-				break
                    case 'saylist':
 					teks = 'Esta é a lista de dizeres :\n'
 					for (let awokwkwk of sayrandom) {
