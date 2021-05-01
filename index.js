@@ -888,10 +888,23 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				if (messagesC.includes("rai")){
-					client.updatePresence(from, Presence.composing)
-					client.sendMessage(from, {quoted: mek, caption: hehehe(prefix)})
-				}
+				case 'otakus:'
+				if (!isGroup) return reply(mess.only.group)
+				membr = []
+				const otaku1 = groupMembers
+				const otaku2 = groupMembers
+				const otaku3 = groupMembers
+				const otaku4 = groupMembers
+				const otakus1 = otaku1[Math.floor(Math.random() * otaku1.length)]
+				const otakua2 = otaku2[Math.floor(Math.random() * otaku2.length)]
+				const otakus3 = otaku3[Math.floor(Math.random() * otaku3.length)]
+				const otakuw4 = otaku4[Math.floor(Math.random() * otaku4.length)]
+				teks = `${pushname} esses são os otakus fedidos do grupo\n${otakus1}\n${otakus2}\n${otakus3}\n${otakus4}\n\nCortesia de ⚡Super Xandão⚡`
+				membr.push(otakus1.jid)
+				membr.push(otakus2.jid)
+				membr.push(otakus3.jid)
+				membr.push(otakus4.jid)
+				mentions(teks, membr, true)
 					break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
