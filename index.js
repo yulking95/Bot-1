@@ -889,7 +889,6 @@ if (text.includes("placa"))
 					client.sendMessage(from, help1(prefix), text)
 					break
 				case 'otakus:'
-				if (!isGroup) return reply(mess.only.group)
 				membr = []
 				const otaku1 = groupMembers
 				const otaku2 = groupMembers
