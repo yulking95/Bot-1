@@ -895,16 +895,41 @@ if (text.includes("placa"))
 				const otaku2 = groupMembers
 				const otaku3 = groupMembers
 				const otaku4 = groupMembers
+				const otaku5 = groupMembers
+				const otaku6 = groupMembers
+				const otaku7 = groupMembers
+				const otaku8 = groupMembers
+				const otaku9 = groupMembers
+				const otaku10 = groupMembers
 				const otakus1 = otaku1[Math.floor(Math.random() * otaku1.length)]
 				const otakus2 = otaku2[Math.floor(Math.random() * otaku2.length)]
 				const otakus3 = otaku3[Math.floor(Math.random() * otaku3.length)]
 				const otakus4 = otaku4[Math.floor(Math.random() * otaku4.length)]
-				teks = `${pushname} esses são os otakus fedidos do grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n\nCortesia de ⚡Super Xandão⚡`
+				const otakus5 = otaku5[Math.floor(Math.random() * otaku5.length)]
+				const otakus6 = otaku6[Math.floor(Math.random() * otaku6.length)]
+				const otakus7 = otaku7[Math.floor(Math.random() * otaku7.length)]
+				const otakus8 = otaku8[Math.floor(Math.random() * otaku8.length)]
+				const otakus9 = otaku9[Math.floor(Math.random() * otaku9.length)]
+				const otakus10 = otaku10[Math.floor(Math.random() * otaku10.length)]
+				teks = `${pushname} esses são os otakus fedidos do grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n@${otakus5.jid.split('@')[0]}\n@${otakus6.jid.split('@')[0]}\n@${otakus7.jid.split('@')[0]}\n@${otakus8.jid.split('@')[0]}\n@${otakus9.jid.split('@')[0]}\n@${otakus10.jid.split('@')[0]}\n\nSEM PRESSÃO AQUI É ⚡ Xandão ⚡`
 				membr.push(otakus1.jid)
 				membr.push(otakus2.jid)
 				membr.push(otakus3.jid)
 				membr.push(otakus4.jid)
+				membr.push(otakus5.jid)
+				membr.push(otakus6.jid)
+				membr.push(otakus7.jid)
+				membr.push(otakus8.jid)
+				membr.push(otakus9.jid)
+				membr.push(otakus10.jid)
 				mentions(teks, membr, true)
+					break
+				case 'github':
+				reply(`https://github.com/Meliodas-rai/Bot`)
+				setTimeout( () => {
+				client.sendMessage(from, Presence.composing)
+				reply(`${pushname} esse e o link da git do ⚡Super Xandão⚡`)
+				}, 1000)
 					break
 				case 'install':
 		if (!isGroup) return reply("este comando so pode ser usado em grupos")
