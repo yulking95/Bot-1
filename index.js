@@ -964,7 +964,7 @@ if (text.includes("placa"))
 			}, 10000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply(`${pushname}instale o bot e se divirta e trolle seus amigos com o\n   ⚡Super Xandão⚡`)
+				reply(`${pushname} instale o bot e se divirta e trolle seus amigos com o\n   ⚡Super Xandão⚡`)
 			}, 11000)
 					break
 					case 'kiss':
@@ -1052,6 +1052,14 @@ if (text.includes("placa"))
 						fs.writeFileSync('./src/say.json', JSON.stringify(sayrandom))
 						reply(`Sucesso, Disse ${hai} Adicionado ao banco de dados`)
 						break
+					case 'eu':
+				 data = fs.readFileSync('./Fxc7/eu.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*Aq Você kakakakka*')
+				break
                    case 'saylist':
 					teks = 'Esta é a lista de dizeres :\n'
 					for (let awokwkwk of sayrandom) {
