@@ -896,9 +896,9 @@ if (text.includes("placa"))
 				const otaku3 = groupMembers
 				const otaku4 = groupMembers
 				const otakus1 = otaku1[Math.floor(Math.random() * otaku1.length)]
-				const otakua2 = otaku2[Math.floor(Math.random() * otaku2.length)]
+				const otakus2 = otaku2[Math.floor(Math.random() * otaku2.length)]
 				const otakus3 = otaku3[Math.floor(Math.random() * otaku3.length)]
-				const otakuw4 = otaku4[Math.floor(Math.random() * otaku4.length)]
+				const otakus4 = otaku4[Math.floor(Math.random() * otaku4.length)]
 				teks = `${pushname} esses são os otakus fedidos do grupo\n${otakus1}\n${otakus2}\n${otakus3}\n${otakus4}\n\nCortesia de ⚡Super Xandão⚡`
 				membr.push(otakus1.jid)
 				membr.push(otakus2.jid)
