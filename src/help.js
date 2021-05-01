@@ -31,6 +31,8 @@ const help = (prefix, sender, pushname, time) => {
 ║
 ╠✰ 𝐒𝐓𝐀𝐓𝐔𝐒: BRABO COMO SEMPRE💪⚡
 ║
+╠✰ Velocidade: ${process.uptime()}
+║
 ╠Data e hora: ${time}
 ║
 ╠══Xandao ta trabalhando à: ${kyun(uptime)}
