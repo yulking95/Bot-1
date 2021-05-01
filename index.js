@@ -888,7 +888,8 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'otakus:'
+				case 'otakus':
+				if (!isGroup) return reply(`Comando so pode ser utiizado em grupos parsa`)
 				membr = []
 				const otaku1 = groupMembers
 				const otaku2 = groupMembers
