@@ -304,7 +304,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","55898130-9535@s.whatsapp.net"] // Recoloque o seu numero
+			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"] // Recoloque o seu numero
 			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// Moderador do bot
 			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// admin bot numero
 			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// amigo do criador 
@@ -1007,20 +1007,31 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
-                    case 'supergay':
-                       if (!isGroup) return reply(mess.only.group)
-                         membr = []
-                         const gays11 = groupMembers
-                         const gays21 = groupMembers
-                         const gay12 = gays11[Math.floor(Math.random() * gays11.length)]
-                         const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
-                         var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
-                         const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
-                         teks = `𝑰𝒂𝒆 ${pushname} 𝑶𝒔 𝑺𝒖𝒑𝒆𝒓𝑮𝒂𝒚𝒔 𝒅𝒐 𝑮𝒓𝒖𝒑𝒐 𝒔𝒂̃𝒐 𝒆𝒔𝒔𝒆𝒔 𝒅𝒐𝒊𝒔 𝒂𝒒𝒖𝒊 @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`
-                         membr.push(gays11.jid)
-                         membr.push(gays21.jid)
-                         mentions(teks, membr, true)
-                    break
+					case 'supergaay':
+					putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
+					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
+					membr = []
+					const gay1 = groupMembers
+					const gay2 = groupMembers
+					const gay3 = groupMembers
+					const gay4 = groupMembers
+					const gay5 = groupMembers
+					const gays1 = gay1[Math.floor(Math.random() * gay1.length)]
+					const gays2 = gay2[Math.floor(Math.random() * gay2.length)]
+					const gays2 = gay3[Math.floor(Math.random() * gay3.length)]
+					const gays2 = gay4[Math.floor(Math.random() * gay4.length)]
+					const gays2 = gay5[Math.floor(Math.random() * gay5.length)]
+					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+					const porcentagemgay = porcentagem[Math.floor(Math.random() * porcentagem.length)]
+					teks = `${pushname} Esses são os mais SuperGays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡Xandão⚡ ta aqui`
+					membr.push(gays1.jid)
+					membr.push(gays2.jid)
+					membr.push(gays3.jid)
+					membr.push(gays4.jid)
+					membr.push(gays5.jid)
+					mentions(teks, membr, true)
+					client.sendMessage(from, putagg, image)
+					break
                     case 'gostosa':
                      if (!isGroup) return reply(mess.only.group)
                       membr = []
