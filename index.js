@@ -1008,7 +1008,6 @@ if (text.includes("placa"))
 						mentions(teks, membr, true)
 					break
 					case 'supergaay':
-					putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
 					const gay1 = groupMembers
@@ -1030,7 +1029,6 @@ if (text.includes("placa"))
 					membr.push(gays4.jid)
 					membr.push(gays5.jid)
 					mentions(teks, membr, true)
-					client.sendMessage(from, putagg, image)
 					break
                     case 'gostosa':
                      if (!isGroup) return reply(mess.only.group)
