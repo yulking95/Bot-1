@@ -1033,19 +1033,19 @@ if (text.includes("placa"))
 					case 'cornos':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
-					const gay1 = groupMembers
-					const gay2 = groupMembers
-					const gay3 = groupMembers
-					const gay4 = groupMembers
-					const gay5 = groupMembers
-					const gays1 = gay1[Math.floor(Math.random() * gay1.length)]
-					const gays2 = gay2[Math.floor(Math.random() * gay2.length)]
-					const gays3 = gay3[Math.floor(Math.random() * gay3.length)]
-					const gays4 = gay4[Math.floor(Math.random() * gay4.length)]
-					const gays5 = gay5[Math.floor(Math.random() * gay5.length)]
-					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `O chifre desse ai bate na lua ksksksk`]
-					const porcentagem = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
-					teks = `${pushname} Esses são os cornos do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡Xandão⚡ ta aqui`
+					const corno1 = groupMembers
+					const corno2 = groupMembers
+					const corno3 = groupMembers
+					const corno4 = groupMembers
+					const corno5 = groupMembers
+					const cornos1 = corno1[Math.floor(Math.random() * corno1.length)]
+					const cornos2 = corno2[Math.floor(Math.random() * corno2.length)]
+					const cornos3 = corno3[Math.floor(Math.random() * corno3.length)]
+					const cornos4 = corno4[Math.floor(Math.random() * corno4.length)]
+					const cornos5 = corno5[Math.floor(Math.random() * corno5.length)]
+					var porcentagemcorno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `O chifre desse ai bate na lua ksksksk`]
+					const porcentagemc = porcentagemcorno[Math.floor(Math.random() * porcentagemcorno.length)]
+					teks = `${pushname} Esses são os cornos do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n\n Sem pressão Neném, ⚡Xandão⚡ ta aqui`
 					membr.push(gays1.jid)
 					membr.push(gays2.jid)
 					membr.push(gays3.jid)
