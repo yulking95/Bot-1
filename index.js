@@ -304,10 +304,10 @@ async function starts() {
 
 			const botNumber = client.user.jid
 			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"] // Recoloque o seu numero
-			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// Moderador do bot
-			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// admin bot numero
-			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]// amigo do criador 
-			const premium = ["558981210976@s.whatsapp.net","584167147895@s.whatsapp.net","5491130465477@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net"]
+			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// Moderador do bot
+			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// admin bot numero
+			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// amigo do criador 
+			const premium = ["558981210976@s.whatsapp.net","584167147895@s.whatsapp.net","5491130465477@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net","558981309535@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
