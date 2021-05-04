@@ -18,7 +18,6 @@ const { menu2 } = require('./src/menu2')
 const { alist } = require('./src/alist')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
-const { rai } = require('./hehehe')
 const { chentai } = require('./src/chentai')
 const { gcpf } = require('./src/gcpf')
 const { addsay } = require('./src/addsay')
@@ -671,22 +670,12 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("Vsfd seu merda")
 	}
-			
-		if (messagesC.includes("Blz")){
-			client.updatePresence(from, Presence.composing)
-			reply("Aham")
-	}
-	
+
 		if (messagesC.includes("Lixo")){
 			client.updatePresence(from, Presence.composing)
 			reply("Teu pai")
 	}
-	
-		if (messagesC.includes("Bomdia")){
-			client.updatePresence(from, Presence.composing)
-			reply("☀️")
-	}
-	
+
 		if (messagesC.includes("krai")){
 			client.updatePresence(from, Presence.composing)
 			reply("hehehe")
@@ -702,11 +691,16 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("Causs")){
+		if (messagesC.includes("causs")){
 			client.updatePresence(from, Presence.composing)
-			reply(`Gostosooooooooooo, muito gostoso`)
+			reply("Gostosooooooooooo, muito gostoso")
 	}
 	
+		if (messagesC.includes("oiii")){
+			client.updatePresence(from, Presence.composing)
+			reply("Eae meu bom")
+	}
+
 		if (messagesC.includes("*meliodas")){
 			client.updatePresence(from, Presence.composing)
 			reply("Saca só")
@@ -4531,6 +4525,7 @@ break
 					}
 					break
 				case 'hidetag2':
+				    if (!isOwner) return reply(mess.only.owner)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isadminbot) return reply('Quem é Você?')
 					var value = body.slice(9)
