@@ -921,7 +921,6 @@ if (text.includes("placa"))
 				}, 1000)
 					break
 				case 'install':
-		if (!isGroup) return reply("este comando so pode ser usado em grupos")
 			reply(`Aqui os comandos do ⚡Super Xandão⚡ ${pushname}`)
 			setTimeout( () => {
 			client.sendMessage(from, Presence.composing)
@@ -983,7 +982,7 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
-					case 'supergay':
+					case 'gays':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
 					const gay1 = groupMembers
@@ -4350,6 +4349,24 @@ break
 					} else {
 						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
+					}
+					break
+					case 'zeze':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Berhasil Demote\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.sendMessage(from, mentioned)
+					} else {
+						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
+						client.sendMessage(from, mentioned)
 					}
 					break
 				case 'add':
