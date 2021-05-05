@@ -62,7 +62,25 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG:Lexa;\n' // Nome do Bot
             + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' // Numero do Whatsapp
             + 'END:VCARD'
-prefix = '*','#','+'
+prefix = '*'
+prefix = '#'
+prefix = '+'
+prefix = '/'
+prefix = '!'
+prefix = '@'
+prefix = '$'
+prefix = '%'
+prefix = '&'
+prefix = '('
+prefix = ')'
+prefix = '_'
+prefix = '-'
+prefix = '"'
+prefix = ':'
+prefix = ';'
+prefix = '.'
+prefix = ','
+prefix = '='
 blocked = []
 limitawal = '999999999'
 cr = '*Meliodas*'
@@ -200,7 +218,7 @@ async function starts() {
 	client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color('Escaneie o QR code acima'))
 	})
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
@@ -843,16 +861,6 @@ if (text.includes("placa"))
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, 'meme')
 	}
-
-		if (messagesC.includes("Te amo")){
-			client.updatePresence(from, Presence.composing)
-			reply("Eu tbm")
-	}
-	
-		if (messagesC.includes("Alguem ai pra jogar?")){
-			client.updatePresence(from, Presence.composing)
-			reply("Tem eu mais sou apenas um bot😢")
-	}
 	
 			colors = ['red','white','black','blue','yellow','green']
 			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
@@ -947,24 +955,16 @@ if (text.includes("placa"))
 			}, 3000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("depois de colocar esse comando gigante, digite o seguinte")
-			}, 4000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
 				reply("cd Bot")
-			}, 8000)
+			}, 5000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("bash install.sh")
-			}, 9000)
+			}, 6000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("npm start")
-			}, 10000)
-			setTimeout( () => {
-				client.updatePresence(from, Presence.composing)
-				reply(`${pushname} instale o bot e se divirta e trolle seus amigos com o\n   ⚡Super Xandão⚡`)
-			}, 11000)
+			}, 7000)
 					break
 					case 'kiss':
 				    try {    
