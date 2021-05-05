@@ -53,7 +53,7 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'XandãoBot'; 
+const BotName = '⚡Super Xandão⚡'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
@@ -63,10 +63,6 @@ const vcard = 'BEGIN:VCARD\n'
             + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' // Numero do Whatsapp
             + 'END:VCARD'
 prefix = '*'
-prefix = '#'
-prefix = '+'
-prefix = '/'
-prefix = '!'
 blocked = []
 limitawal = '999999999'
 cr = '*Meliodas*'
