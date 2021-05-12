@@ -880,7 +880,7 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-				case 'paus':
+				case 'pau':
 				if (!isGroup) return reply(mess.only.group)
 				membr = []
 				const pauz1 = groupMembers
@@ -888,21 +888,21 @@ if (text.includes("placa"))
 				const pauz3 = groupMembers
 				const pazu4 = groupMembers
 				const pauz5 = groupMembers
-				const paus1 = pauz1(Math.floor[Math.random() * pauz1.length])
-				const paus2 = pauz2(Math.floor[Math.random() * pauz2.length])
-				const paus3 = pauz3(Math.floor[Math.random() * pauz3.length])
-				const paus4 = pauz4(Math.floor[Math.random() * pauz4.length])
-				const paus5 = pauz5(Math.floor[Math.random() * pauz5.length])
+				const paus1 = pauz1[Math.floor(Math.random() * pauz1.length)]
+				const paus2 = pauz2[Math.floor(Math.random() * pauz2.length)]
+				const paus3 = pauz3[Math.floor(Math.random() * pauz3.length)]
+				const paus4 = pauz4[Math.floor(Math.random() * pauz4.length)]
+				const paus5 = pauz5[Math.floor(Math.random() * pauz5.length)]
 				var pcpau1 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau2 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau3 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau4 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau5 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
-				const pc1 = pcpau1(Math.floor[Math.random() * pcpau1.length])
-				const pc2 = pcpau2(Math.floor[Math.random() * pcpau2.length])
-				const pc3 = pcpau3(Math.floor[Math.random() * pcpau3.length])
-				const pc4 = pcpau4(Math.floor[Math.random() * pcpau4.length])
-				const pc5 = pcpau5(Math.floor[Math.random() * pcpau5.length])
+				const pc1 = pcpau1[Math.floor(Math.random() * pcpau1.length)]
+				const pc2 = pcpau2[Math.floor(Math.random() * pcpau2.length)]
+				const pc3 = pcpau3[Math.floor(Math.random() * pcpau3.length)]
+				const pc4 = pcpau4[Math.floor(Math.random() * pcpau4.length)]
+				const pc5 = pcpau5[Math.floor(Math.random() * pcpau5.length)]
 				teks = `Esses são os caras com o menor e maior pau do Grupo\n${groupName}\n\n@${paus1.jid.split('@')[0]}\n${pc1}\n@${paus2.jid.split('@')[0]}\n${pc2}\n@${paus3.jid.split('@')[0]}\n${pc3}\n@${paus4.jid.split('@')[0]}\n${pc4}\n@${paus5.jid.split('@')[0]}\n${pc5}\n\n⚡Super Xandão⚡`
 				membr.push(paus1.jid)
 				membr.push(paus2.jid)
