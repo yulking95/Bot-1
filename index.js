@@ -1,3 +1,6 @@
+// Editado por Meliodas, a base e do causs que era do dark que era dos gringo
+// Canal do Causs: youtube.com/CaussZ
+// Canal do Darkkk: youtube.com/Darkkk
 const {
     WAConnection,
     MessageType,
@@ -877,6 +880,49 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+				case 'corno':
+				if (!isGroup) return reply(`Este comando só pode ser usado em grupos`)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+				const corno1 = groupMembers
+				const corno2 = groupMembers
+				const corno3 = groupMembers
+				const cornos1 = corno1(Math.floor[Math.random() * corno1.length])
+				const cornos2 = corno2(Math.floor[Math.random() * corno2.length])
+				const cornos3 = corno3(Math.floor[Math.random() * corno3.length])
+				var corno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+				const c = corno(Math.floor[Math.random() * corno.length])
+					break
+				case 'paus':
+				if (!isGroup) return reply(mess.only.group)
+				membr = []
+				const pau1 = groupMembers
+				const pau2 = groupMembers
+				const pau3 = groupMembers
+				const pau4 = groupMembers
+				const pau5 = groupMembers
+				const paus1 = pau1(Math.floor[Math.random() * pau1.length])
+				const paus2 = pau2(Math.floor[Math.random() * pau2.length])
+				const paus3 = pau3(Math.floor[Math.random() * pau3.length])
+				const paus4 = pau4(Math.floor[Math.random() * pau4.length])
+				const paus5 = pau5(Math.floor[Math.random() * pau5.length])
+				var pcpau1 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
+				var pcpau2 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
+				var pcpau3 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
+				var pcpau4 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
+				var pcpau5 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
+				const pc1 = pcpau1(Math.floor[Math.random() * pcpau1.length])
+				const pc2 = pcpau2(Math.floor[Math.random() * pcpau2.length])
+				const pc3 = pcpau3(Math.floor[Math.random() * pcpau3.length])
+				const pc4 = pcpau4(Math.floor[Math.random() * pcpau4.length])
+				const pc5 = pcpau5(Math.floor[Math.random() * pcpau5.length])
+				teks = `Esses são os caras com o menor e maior pau do Grupo\n${groupName}\n\n@${paus1.jid.split('@')[0]}\n${pc1}\n@${paus2.jid.split('@')[0]}\n${pc2}\n@${paus3.jid.split('@')[0]}\n${pc3}\n@${paus4.jid.split('@')[0]}\n${pc4}\n@${paus5.jid.split('@')[0]}\n${pc5}\n\n⚡Super Xandão⚡`
+				membr.push(paus1.jid)
+				membr.push(paus2.jid)
+				membr.push(paus3.jid)
+				membr.push(paus4.jid)
+				membr.push(paus5.jid)
+				mentions(teks, membr, true)
 				case 'otakus':
 				if (!isGroup) return reply(`Comando so pode ser utiizado em grupos parsa`)
 				membr = []
@@ -912,6 +958,43 @@ if (text.includes("placa"))
 				membr.push(otakus9.jid)
 				membr.push(otakus10.jid)
 				mentions(teks, membr, true)
+					break
+				case "ppt": //Feito por LUCAS
+				msgFilter.isFiltered(from)
+				if (args.length < 1) return reply(ptbr.tterro())
+				ppt = ["pedra","papel","tesoura"]
+				ppy = ppt[Math.floor(Math.random() * ppt.length)]
+				ppg = Math.floor(Math.random() * 13) + 349
+				pptb = ppy
+				pph = `Você ganhou ${ppg} em xp`
+				if ((pptb == "pedra" && args == "papel") || 
+				(pptb == "papel" && args == "tesoura") || 
+				(pptb == "tesoura" && args == "pedra")) {
+				var vit = "vitoria"
+				} else if ((pptb == "pedra" && args == "tesoura") || 
+				(pptb == "papel" && args == "pedra") || 
+				(pptb == "tesoura" && args == "papel")) {
+				var vit = "derrota"
+				} else if ((pptb == "pedra" && args == "pedra") ||
+				(pptb == "papel" && args == "papel") ||
+				(pptb == "tesoura" && args == "tesoura")) {
+				var vit = "empate"
+				} else if (vit = "undefined") {
+				return reply(ptbr.tterro())
+				}
+				if (vit == "vitoria") {
+				var tes = "Vitória do jogador"
+				}
+				if (vit == "derrota" ) {
+				var tes = "A vitória é do Tiringa-BOT"
+				}
+				if (vit == "empate" ) {
+				var tes = "O jogo terminou em empate"
+				}
+				reply(`Tiringa-BOT jogou: ${pptb}\nO jogador jogou: ${args}\n\n${tes}`)
+				if (tes == "Vitória do jogador") {
+				reply(pph)
+				}
 					break
 				case 'github':
 				reply(`https://github.com/Meliodas-rai/Bot`)
@@ -4349,24 +4432,6 @@ break
 					} else {
 						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
-					}
-					break
-					case 'zeze':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Berhasil Demote\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						client.sendMessage(from, mentioned)
-					} else {
-						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
-						client.sendMessage(from, mentioned)
 					}
 					break
 				case 'add':
