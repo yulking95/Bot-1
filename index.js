@@ -745,6 +745,11 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
+			if (messagesC.includes("bu")){
+				client.sendMessage(from, Presence.composing)
+				reply("ce")
+	}
+	
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/oibot.m4a');
