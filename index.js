@@ -886,7 +886,7 @@ if (text.includes("placa"))
 				const pauz1 = groupMembers
 				const pauz2 = groupMembers
 				const pauz3 = groupMembers
-				const pazu4 = groupMembers
+				const pauz4 = groupMembers
 				const pauz5 = groupMembers
 				const paus1 = pauz1[Math.floor(Math.random() * pauz1.length)]
 				const paus2 = pauz2[Math.floor(Math.random() * pauz2.length)]
