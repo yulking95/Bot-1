@@ -883,16 +883,16 @@ if (text.includes("placa"))
 				case 'paus':
 				if (!isGroup) return reply(mess.only.group)
 				membr = []
-				const pau1 = groupMembers
-				const pau2 = groupMembers
-				const pau3 = groupMembers
-				const pau4 = groupMembers
-				const pau5 = groupMembers
-				const paus1 = pau1(Math.floor[Math.random() * pau1.length])
-				const paus2 = pau2(Math.floor[Math.random() * pau2.length])
-				const paus3 = pau3(Math.floor[Math.random() * pau3.length])
-				const paus4 = pau4(Math.floor[Math.random() * pau4.length])
-				const paus5 = pau5(Math.floor[Math.random() * pau5.length])
+				const pauz1 = groupMembers
+				const pauz2 = groupMembers
+				const pauz3 = groupMembers
+				const pazu4 = groupMembers
+				const pauz5 = groupMembers
+				const paus1 = pauz1(Math.floor[Math.random() * pauz1.length])
+				const paus2 = pauz2(Math.floor[Math.random() * pauz2.length])
+				const paus3 = pauz3(Math.floor[Math.random() * pauz3.length])
+				const paus4 = pauz4(Math.floor[Math.random() * pauz4.length])
+				const paus5 = pauz5(Math.floor[Math.random() * pauz5.length])
 				var pcpau1 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau2 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
 				var pcpau3 = ["Minuscúlo", `Pequenino`, `Pequeno`, `Médio`, `Grandinho`, `Grande`, `Grandão`, `Gigante`, `Gigantesco`, `Enorme`, `BATENDO NA LUA`, `QUEIMADO, TÃO GRANDE QUE BATEU NO SOL E QUEIMOU ksksksk`]
@@ -911,41 +911,41 @@ if (text.includes("placa"))
 				membr.push(paus5.jid)
 				mentions(teks, membr, true)
 				case 'otakus':
-				if (!isGroup) return reply(`Comando so pode ser utiizado em grupos parsa`)
-				membr = []
-				const otaku1 = groupMembers
-				const otaku2 = groupMembers
-				const otaku3 = groupMembers
-				const otaku4 = groupMembers
-				const otaku5 = groupMembers
-				const otaku6 = groupMembers
-				const otaku7 = groupMembers
-				const otaku8 = groupMembers
-				const otaku9 = groupMembers
-				const otaku10 = groupMembers
-				const otakus1 = otaku1[Math.floor(Math.random() * otaku1.length)]
-				const otakus2 = otaku2[Math.floor(Math.random() * otaku2.length)]
-				const otakus3 = otaku3[Math.floor(Math.random() * otaku3.length)]
-				const otakus4 = otaku4[Math.floor(Math.random() * otaku4.length)]
-				const otakus5 = otaku5[Math.floor(Math.random() * otaku5.length)]
-				const otakus6 = otaku6[Math.floor(Math.random() * otaku6.length)]
-				const otakus7 = otaku7[Math.floor(Math.random() * otaku7.length)]
-				const otakus8 = otaku8[Math.floor(Math.random() * otaku8.length)]
-				const otakus9 = otaku9[Math.floor(Math.random() * otaku9.length)]
-				const otakus10 = otaku10[Math.floor(Math.random() * otaku10.length)]
-				teks = `${pushname} esses são os otakus fedidos do grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n@${otakus5.jid.split('@')[0]}\n@${otakus6.jid.split('@')[0]}\n@${otakus7.jid.split('@')[0]}\n@${otakus8.jid.split('@')[0]}\n@${otakus9.jid.split('@')[0]}\n@${otakus10.jid.split('@')[0]}\n\nSEM PRESSÃO AQUI É ⚡ Xandão ⚡`
-				membr.push(otakus1.jid)
-				membr.push(otakus2.jid)
-				membr.push(otakus3.jid)
-				membr.push(otakus4.jid)
-				membr.push(otakus5.jid)
-				membr.push(otakus6.jid)
-				membr.push(otakus7.jid)
-				membr.push(otakus8.jid)
-				membr.push(otakus9.jid)
-				membr.push(otakus10.jid)
-				mentions(teks, membr, true)
-					break
+					if (!isGroup) return reply(`Comando so pode ser utiizado em grupos parsa`)
+					membr = []
+					const otaku1 = groupMembers
+					const otaku2 = groupMembers
+					const otaku3 = groupMembers
+					const otaku4 = groupMembers
+					const otaku5 = groupMembers
+					const otaku6 = groupMembers
+					const otaku7 = groupMembers
+					const otaku8 = groupMembers
+					const otaku9 = groupMembers
+					const otaku10 = groupMembers
+					const otakus1 = otaku1[Math.floor(Math.random() * otaku1.length)]
+					const otakus2 = otaku2[Math.floor(Math.random() * otaku2.length)]
+					const otakus3 = otaku3[Math.floor(Math.random() * otaku3.length)]
+					const otakus4 = otaku4[Math.floor(Math.random() * otaku4.length)]
+					const otakus5 = otaku5[Math.floor(Math.random() * otaku5.length)]
+					const otakus6 = otaku6[Math.floor(Math.random() * otaku6.length)]
+					const otakus7 = otaku7[Math.floor(Math.random() * otaku7.length)]
+					const otakus8 = otaku8[Math.floor(Math.random() * otaku8.length)]
+					const otakus9 = otaku9[Math.floor(Math.random() * otaku9.length)]
+					const otakus10 = otaku10[Math.floor(Math.random() * otaku10.length)]
+					teks = `${pushname} esses são os otakus fedidos do grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n@${otakus5.jid.split('@')[0]}\n@${otakus6.jid.split('@')[0]}\n@${otakus7.jid.split('@')[0]}\n@${otakus8.jid.split('@')[0]}\n@${otakus9.jid.split('@')[0]}\n@${otakus10.jid.split('@')[0]}\n\nSEM PRESSÃO AQUI É ⚡ Xandão ⚡`
+					membr.push(otakus1.jid)
+					membr.push(otakus2.jid)
+					membr.push(otakus3.jid)
+					membr.push(otakus4.jid)
+					membr.push(otakus5.jid)
+					membr.push(otakus6.jid)
+					membr.push(otakus7.jid)
+					membr.push(otakus8.jid)
+					membr.push(otakus9.jid)
+					membr.push(otakus10.jid)
+					mentions(teks, membr, true)
+						break
 				case "ppt": //Feito por LUCAS
 				msgFilter.isFiltered(from)
 				if (args.length < 1) return reply(ptbr.tterro())
