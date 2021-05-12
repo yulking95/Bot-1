@@ -910,6 +910,7 @@ if (text.includes("placa"))
 				membr.push(paus4.jid)
 				membr.push(paus5.jid)
 				mentions(teks, membr, true)
+					break
 				case 'otakus':
 					if (!isGroup) return reply(`Comando so pode ser utiizado em grupos parsa`)
 					membr = []
