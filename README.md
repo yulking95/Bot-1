@@ -1,9 +1,9 @@
+<p align="right">
+	<img src="./image/xandao.jpg">
+</p align="left">
+	<img src="./image/xandao3.jpg">
 <p align="center">
-	<img src="./image/xandao.png">
-</p>
-	<img src="./image/xandao3.png">
-<p>
-	<img src="./image/xandao2">
+	<img src="./image/xandao2.jpg">
 </p>
 
 <h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos `Causs`</h1>
