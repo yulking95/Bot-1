@@ -3,8 +3,8 @@
 	<img src="./image/xandao2.png">
 </p>
 <style>
-	a {
-		color: red;
+	.teste {
+		color: #00f2ff;
 	}
 </style>
 <h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos <h4 href="https://youtube.com/CaussZ">*Causs*</h4></h1>
