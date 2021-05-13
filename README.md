@@ -1,8 +1,10 @@
-<p align="right">
+<p align="right" height="300" width="300">
 	<img src="./image/xandao.jpg">
-</p align="left">
+</p>
+<p align="left" height="300" width="300">
 	<img src="./image/xandao3.jpg">
-<p align="center">
+</p>
+<p align="center" height="300" width="300">
 	<img src="./image/xandao2.jpg">
 </p>
 
