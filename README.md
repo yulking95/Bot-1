@@ -1,4 +1,4 @@
-<p align="right" height="300" width="300">
+<p>
 	<img src="./image/xandao.jpg">
 </p>
 <p align="left" height="300" width="300">
@@ -8,17 +8,17 @@
 	<img src="./image/xandao2.jpg">
 </p>
 
-<h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos `Causs`</h1>
+<h1> ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos "Causs"</h1>
 
 <a href="https://youtube.com/CaussZ"> Causs </a>
 
 Comandos pra instalar:
 
+* `termux-setup-storage`
+
 * `apt-get update `
 
 * `apt-get upgrade `
-
-* `termux-setup-storage`
 
 * `pkg install git `
 
