@@ -1,17 +1,14 @@
 <p align="center">
 	<img src="./image/xandao.png">
-	<img src="./image/xandao2.png">
 </p>
-<style>
-	.teste {
-		color: #00f2ff;
-	}
-</style>
-<h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos <h4 href="https://youtube.com/CaussZ">*Causs*</h4></h1>
-<div class="teste">
-	<a href="https://youtube.com/CaussZ"> CaussZ </a>
-</div>
+	<img src="./image/xandao3.png">
+<p>
+	<img src="./image/xandao2">
+</p>
 
+<h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos `Causs`</h1>
+
+<a href="https://youtube.com/CaussZ"> Causs </a>
 
 Comandos pra instalar:
 
@@ -42,8 +39,6 @@ Comandos pra instalar:
 ## Comandos do PM2 Monit
 
 * aperte o botão "CTRL" depois vá no teclado e aperte "C" Depois digite:
-
-* `pkg install pm2 `
 
 * `npm i -g pm2 `
 
