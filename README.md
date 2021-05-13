@@ -2,8 +2,16 @@
 	<img src="./image/xandao.png">
 	<img src="./image/xandao2.png">
 </p>
+<style>
+	.teste {
+		color: red;
+	}
+</style>
 <h1>Super ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos <h4 href="https://youtube.com/CaussZ">*Causs*</h4></h1>
-<a href="https://youtube.com/CaussZ" color="Black"> CaussZ </a>
+<div class="teste">
+	<a href="https://youtube.com/CaussZ"> CaussZ </a>
+</div>
+
 
 Comandos pra instalar:
 
