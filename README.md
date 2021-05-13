@@ -3,7 +3,7 @@
 	<img src="./image/xandao2.png">
 </p>
 <style>
-	.teste {
+	a {
 		color: red;
 	}
 </style>
