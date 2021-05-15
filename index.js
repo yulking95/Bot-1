@@ -1015,7 +1015,7 @@ if (text.includes("placa"))
 				client.updatePresence(from, Presence.composing)
 				reply("cd Bot")
 			}, 5000)
-			set elTimeout( () => {
+			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
 				reply("bash install.sh")
 			}, 6000)
