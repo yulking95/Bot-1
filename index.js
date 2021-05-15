@@ -8,7 +8,7 @@ const {
     Mimetype,
     GroupSettingChange
 } = require('@adiwajshing/baileys')
-const { color, bgcolor } = requiere('./lib/color')
+const { color, bgcolor } = require('./lib/color')
 const { eu } = require('./Fxc7/eu')
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
