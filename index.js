@@ -8,19 +8,19 @@ const {
     Mimetype,
     GroupSettingChange
 } = require('@adiwajshing/baileys')
-const { color, bgcolor } = require('./lib/color')
-const { eu } = require('./Fxc7/eu')
+const { color, bgcolor } = requiere('./lib/color')
+const { yo } = require('./Fxc7/yo)
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
 const { animes } = require('./animes')
 const { pack } = require('./src/pack')
-const { outros } = require('./src/outros')
+const { otros } = require('./src/otros')
 const { vipmenu } = require('./src/vipmenu')
 const { menu2 } = require('./src/menu2')
 const { alist } = require('./src/alist')
 const { gbin } = require('./src/gbin')
-const { gpessoa } = require('./src/gpessoa')
+const { gpersona } = require('./src/gpersona')
 const { chentai } = require('./src/chentai')
 const { gcpf } = require('./src/gcpf')
 const { addsay } = require('./src/addsay')
@@ -56,19 +56,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = '⚡Super Xandão⚡'; 
+const BotName = '⚡HH BOT⚡'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Meliodas\n' // Seu nome
-            + 'ORG:Lexa;\n' // Nome do Bot
-            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' // Numero do Whatsapp
+            + 'FN:yulking95\n' // Seu nome
+            + 'ORG:HH;\n' // Nome de bot
+            + 'TEL;type=CELL;type=VOICE;waid=51928564603:+51 928 564 603\n' // Numero do Whatsapp
             + 'END:VCARD'
 prefix = '*'
 blocked = []
 limitawal = '999999999'
-cr = '*Meliodas*'
+cr = '*yulking95*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -208,10 +208,10 @@ async function starts() {
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Pera ae vey...')
+		start('2', 'Esperando a ver...')
 	})
 	client.on('open', () => {
-		success('2', 'Conectado parça')
+		success('2', 'Conectado papu')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -228,7 +228,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝚘𝚕𝚊 𝚖𝚎𝚞 𝚌𝚊𝚛𝚘 𝚐𝚊𝚏𝚊𝚗𝚑𝚘𝚝𝚘@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${groupName}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
+				teks = `Hola mi estimad@ @${num.split('@')[0]}\nSea Bienvenido a  *${groupName}*\n\n lea las reglas en la descripción y evite ser baneado`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -239,7 +239,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝙱𝚘𝚒 𝚋𝚘𝚒 𝚋𝚘𝚒... 𝚋𝚘𝚒 𝚍𝚊 𝚌𝚊𝚛𝚊 𝚙𝚛𝚎𝚝𝚊 𝚜𝚎 𝚝𝚞 𝚏𝚘𝚒 𝚎𝚖𝚋𝚘𝚛𝚊 𝚌𝚎 𝚟𝚊𝚒 𝚜𝚎𝚗𝚝𝚊𝚛 𝚎 𝚗𝚊 𝚌𝚊𝚋𝚎ç𝚊@${num.split('@')[0]} 𝚔𝚔𝚔𝚔𝚔𝚔𝚔 😂👋`
+				teks = `𝙱𝚘𝚒 𝚋𝚘𝚒 𝚋𝚘𝚒... 𝚋𝚘𝚒 esa cara presta para sentarme ahi xd@${num.split('@')[0]} sjsjjs 😂👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -282,35 +282,35 @@ async function starts() {
 			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
-					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
+					wait: 'Espera prro, HH BOT esta trabajando ahora',
 					success: 'Pronto',
-					levelon: '*leveling* *ativado*',
-					leveloff: '*leveling* *desativado*',
-					levelnoton: ' *leveling não ativado*',
+					levelon: '*leveling* *activado*',
+					leveloff: '*leveling* *desactivado*',
+					levelnoton: ' *leveling no activado*',
 					levelnol: '*ERROR* °-°',
 					error: {
-				stick: 'Não deu pra converter a foto/video na figurinha parsa, A vida e triste',
+				stick: 'No se pudo convertir de foto/video a sticker, la vida es triste',
 				Iv: 'Link invalido'
 				},
 				only: {
-					group: 'Este comando so pode ser usado nos grupos maninho',
-					premium: `Ei {pushname2} Só usuarios PREMIUMS podem usar este comando*`,
-					mod: 'ESTE PEDIDO É ESPECÍFICO PARA O MODERADOR DO ⚡SUPER XANDÃO⚡*',
-					benned: 'Você foi banido, contate o dono para te desbanir',
-					ownerG: 'Só o Meliodas pode usar esse comando parsa',
-					ownerB: 'Só o Meliodas pode usar esse comando parsa',
-					userB: `──「 LISTA 」──\nOlá ${pushname} !\nVocê não esta registrado como amigo do meu dono então pessa para ele te adicionar como amigo\n\n──「 ⚡Super Xandão⚡ 」──`,
-					admin: 'Este comando só pode ser usado por administradores de grupo!',
-					Badmin: 'Este comando so pode ser usado quando o ⚡SUPER XANDÃO⚡ se torna ADM do grupo parsa',
+					group: 'Este comando solo puede ser usado en grupos prro',
+					premium: `Ei {pushname2} Solo usuarios PREMIUMS pueden usar este comando*`,
+					mod: 'ESTE PEDIDO ÉS ESPECÍFICO PARA LOS MODERADORES DE ⚡HH BOT⚡*',
+					benned: 'Usted fue baneado, contacte con el dueño para desbanear',
+					ownerG: 'Sólo Hatori puede usar este comando prro',
+					ownerB: 'Sólo Hatori puede usar este comando prro',
+					userB: `──「 LISTA 」──\nHolá ${pushname} !\nUsted no esta registrado como amigo de mi dueño, pulsa para que el te añada como amigo\n\n──「 ⚡HH BOT ⚡ 」──`,
+					admin: 'Este comando soló puede ser usado por administradores de grupo!',
+					Badmin: 'Este comando solo puede ser usado cuando el ⚡HH BOT⚡ se vuelve Admin del grupo',
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"] // Recoloque o seu numero
-			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// Moderador do bot
-			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// admin bot numero
-			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// amigo do criador 
-			const premium = ["558981210976@s.whatsapp.net","584167147895@s.whatsapp.net","5491130465477@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net","558981309535@s.whatsapp.net"]
+			const ownerNumber = ["51928564603@s.whatsapp.net","51928557626@s.whatsapp.net","51928564603@s.whatsapp.net"] // Recoloque o seu numero
+			const mod = [ownerNumber,"51928564603@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// Moderador do bot
+			const adminbotnumber = ["51928564603@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// admin bot numero
+			const frendsowner = ["51928564603@s.whatsapp.net","558981246187@s.whatsapp.net","558981309535@s.whatsapp.net"]// amigo do criador 
+			const premium = ["51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","5491130465477@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net","558981309535@s.whatsapp.net","558981309535@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -362,7 +362,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nome*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nParabéns!!  🎉🎉`)
+                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nombre*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nFelicidades!!  🎉🎉`)
                 }
             } catch (err) {
                 console.error(err)
@@ -371,7 +371,7 @@ async function starts() {
 if (text.includes("ip"))
   { const aris = text.replace(/!ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude* : ${res.data.latitude}\n ➸ *Longtitude* : ${res.data.longitude}\n ➸ *REGIÃO* : ${res.data.region_name}\n ➸ *UF* : ${res.data.region_code}\n ➸ *IP* : ${res.data.ip}\n ➸ *TIPO* : ${res.data.type}\n ➸ *CEP* : ${res.data.zip}\n ➸ *LOCALIDADE* : ${res.data.location.geoname_id}\n ➸ *CAPITAL* : ${res.data.location.capital}\n ➸ *DDD* : ${res.data.location.calling_code}\n ➸ *PAÍS* : ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIUDAD:*  ${res.data.city}\n ➸ *Latitude* : ${res.data.latitude}\n ➸ *Longtitude* : ${res.data.longitude}\n ➸ *REGION* : ${res.data.region_name}\n ➸ *UF* : ${res.data.region_code}\n ➸ *IP* : ${res.data.ip}\n ➸ *TIPO* : ${res.data.type}\n ➸ *CEP* : ${res.data.zip}\n ➸ *LOCALIDADE* : ${res.data.location.geoname_id}\n ➸ *CAPITAL* : ${res.data.location.capital}\n ➸ *DDD* : ${res.data.location.calling_code}\n ➸ *PAÍS* : ${res.data.location.country_flag_emoji}\n *📌BY:Bot*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }
@@ -432,21 +432,21 @@ if (text.includes("placa"))
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }		        
-
-        if (messagesC.includes("preto")){
+//comandos antiracismo
+        if (messagesC.includes("prieto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('calla, no diga eso,esta mal , mas bien te podrian banear ')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`tchau racista ${sender.split("@")[0]} usted sera expulsado de este grupo en 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Nesse grupo, não gostamos de racismos, que isso sirva de exemplo 🚶")
+			reply("En este grupo no nos gusta el racismo, que eso sirva de ejemplo 🚶")
 		}, 4000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
@@ -462,7 +462,7 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos, chau prro🤙")
 		}, 0)
 	}
 	
