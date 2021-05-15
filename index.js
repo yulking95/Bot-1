@@ -1887,7 +1887,7 @@ if (text.includes("placa"))
 			     case 'xvideos':
               	    if (args.length < 1) return reply('Falta el texto prro')
 
-')
+
                     anu = await fetchJson(`https://api.arugaz.my.id/api/media/xvideo/search?query=${body.slice(9)}`, {method: 'get'})
                     teks = `===============\n`
                     for (let b of anu.result) {
