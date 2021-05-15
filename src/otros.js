@@ -1,27 +1,27 @@
 const iklan = () => { 
 	return `           
-╔══✪〘 *OUTROS* 〙✪══
+╔══✪〘 *OTROS* 〙✪══
 ║
 ╠➥ *${prefix}linkgp*
 ╠➥ *${prefix}simih [1/0]*
 ╠➥ *${prefix}marcar*
 ╠➥ *${prefix}add [@]*
-╠➥ *${prefix}banir [@]*
+╠➥ *${prefix}banear [@]*
 ╠➥ *${prefix}promover [@]*
-╠➥ *${prefix}rebaixar*
+╠➥ *${prefix}rebajar*
 ╠➥ *${prefix}admins*
 ╠➥ *${prefix}marcar2*
-╠➥ *${prefix}bc [texto]* (ele faz uma ™)
+╠➥ *${prefix}bc [texto]* (el es una )
 ╠➥ *${prefix}marcar3*
 ╠➥ *${prefix}bloqueados*
 ╠➥ *${prefix}bloquear [@]*
 ╠➥ *${prefix}desbloquear [@]*
-╠➥ *${prefix}limpar*
+╠➥ *${prefix}limpiar*
 ╠➥ *${prefix}bc [ *texto* ]*
-╠➥ *${prefix}bemvindo [1/0]*
+╠➥ *${prefix}bienvenido [1/0]*
 ╠➥ *${prefix}clonar [@]*
 ╠➥ *${prefix}help1*
-╠➥ *${prefix}dono*
+╠➥ *${prefix}dueño*
 ╠➥ *${prefix}owner*
 ╠➥ *${prefix}tts [texto]*
 ╠➥ *${prefix}setnome*
@@ -29,13 +29,13 @@ const iklan = () => {
 ╠➥ *${prefix}setfoto*
 ╠➥ *${prefix}grupoinfo*
 ╠➥ *${prefix}ytmp4*
-╠➥ *${prefix}bomdia*
-╠➥ *${prefix}boanoite*
+╠➥ *${prefix}buendia*
+╠➥ *${prefix}buenasnoches*
 ╠➸ *${prefix}marcar*
 ╠➸ *${prefix}marcar2*
 ╠➸ *${prefix}marcar3*
 ║
-╚═〘  *DARKBOT* 〙
+╚═〘  *HH BOT* 〙
 `
 }
 exports.iklan = iklan
