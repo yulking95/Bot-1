@@ -1,8 +1,8 @@
-const gpessoa = (prefix) => {
+const gpersona = (prefix) => {
 
-return `*GERADORE DE DADOS PESSOAIS:*
+return `*GENERADOR DE DATOS PERSONALES:*
 
-*CAUSS NO CONTROLE* 🐊🚩
+*HATORI NO CONTROLA* 🐊🚩
 
 nome: Ester Giovanna Alice Nunes
 idade: 59
@@ -724,4 +724,4 @@ peso: 59
 tipo_sanguineo: A-
 cor: preto`
 }
-exports.gpessoa = gpessoa
+exports.gpersona = gpersona
