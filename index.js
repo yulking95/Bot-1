@@ -9,7 +9,7 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = requiere('./lib/color')
-const { yo } = require('./Fxc7/yo)
+const { eu } = require('./Fxc7/eu)
 const { help } = require('./src/help')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
