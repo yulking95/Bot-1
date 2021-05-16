@@ -8,18 +8,18 @@ const vipmenu = (prefix) => {
 ╠➸ *${prefix}premiumlist*
 ╠➸ *${prefix}delete*
 ╠➸ *${prefix}modapk*
-╠➸ *${prefix}indo10*
-╠➸ *${prefix}daftarvip [para virar Premium]*
+
+╠➸ *${prefix}daftarvip [para pasar a Premium]*
 ╠➸ *${prefix}qrcode*
 ╠➥ *${prefix}chentai*
 ╠➥ *${prefix}gcpf*
 ╠➥ *${prefix}gbin*
 ╠➥ *${prefix}pack*
 ╠➥ *${prefix}destrava*
-╠➥ *${prefix}gpessoa*
+╠➥ *${prefix}gpersona*
 ║
 ║
-╚══✪〘  CAUSS BOT 〙✪══
+╚══✪〘  HH BOT 〙✪══
 `
 }
 exports.vipmenu = vipmenu
