@@ -2,10 +2,12 @@ const gbin = () => {
 	return `       
 *BINS:* 
 
-*CAUSS NO CONTROLE* 🐊🚩
+*HATORI NO CONTROLA* 🐊🚩
 
 American Express,4867 427185 82182,3747,9869,$10228,3,2029,Harper Robinson,Southwell Road 8170,Zimbabwe
-American Express,4867 427185 28334,4676,6583,$6230,6,2023,Enrique Griffin,Dewar Street 7694,Slovenia
+
+
+4867 427185 28334,4676,6583,$6230,6,2023,Enrique Griffin,Dewar Street 7694,Slovenia
 American Express,4867 427185 22519,3430,4654,$8878,10,2025,Melanie Walter,St. Mattias Square 8709,Japan
 American Express,4867 427185 44588,9212,2340,$7247,12,2022,Leroy Vasquez,Tottenham Court Road 7741,France
 American Express,4867 427185 56939,2172,9576,$7914,6,2023,Bernardo Wood,Denmark Walk 8954,Sweden
