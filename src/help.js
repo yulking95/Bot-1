@@ -12,11 +12,11 @@ const help = (prefix, sender, pushname, time) => {
      ╭╱╱▕╋╋╋╋▏╲╲╮
      ╰╯╯┈╲▂▂╱┈╰╰╯
 
-   💪 xhupela prro 💪
+   💪 Comandos prro 💪
 
-  𝚅a a chupar?${pushname}?
+  *Todo lo que necesita*${pushname}?
 
-╭────「 INFO 」──────────────────╮
+╭────「 INFO 」───────╮
 │                                            
 
 
@@ -26,10 +26,10 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱ Contacto:         
 │https://wa.me/51928564603
 │                                            
-┣⊱ Nmr do Dono: 
-│wa.me/928564603
+┣⊱ Nro del Dueño: 
+│wa.me/51928564603
 │                                            
-┣⊱ Seu link:
+┣⊱ Su link:
 │wa.me/${sender.split("@")[0]}   
 │                                       
 ┣⊱ 𝐒𝐓𝐀𝐓𝐔𝐒: BRAVO          
@@ -42,7 +42,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱Trabajando a:    
 │${kyun(uptime)}
 │
-╰───────────────────────────────╯
+╰──────────────────────╯
 
 ╭────「 COMANDOS NUEVOS 」
 │                          
@@ -51,7 +51,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱   
 ┣⊱        
                  
-╰──────────────────────
+
 │═༒︎〘 MENU 〙༒︎══
 │
 ┣⊱  **sticker*
