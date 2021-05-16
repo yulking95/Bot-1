@@ -1,10 +1,10 @@
 <p align="center" height="300" width="300">
-	<img src="./image/xandao2.jpg">
+	<img src="./image/hh.jpg">
 </p>
 
-<h1> ⚡SUPER XANDÃO⚡ e um Bot de whatsapp feito com a base de um dos meu YouTubers favoritos <a href="https://youtube.com/CaussZ"> Causs </a></h1>
+<h1> ⚡HH BOT⚡ un bot de whatssap en español.</h1>
 
-Comandos pra instalar:
+Comandos para instalar:
 
 * `termux-setup-storage`
 
@@ -20,7 +20,7 @@ Comandos pra instalar:
 
 * `pkg install nodejs `
 
-* `git clone https://github.com/Meliodas-rai/Bot `
+* `git clone https://github.com/yulking95/Bot-1 `
 
 * `cd Bot `
 
@@ -28,11 +28,11 @@ Comandos pra instalar:
 
 * `npm start `
 
-* ESCANEIE O QR CODE QUE IRA APARECER COM O WHATSAPP 
+* ESCANEE EL CODIGO QR QUE LE APARECERA 
 
-## Comandos do PM2 Monit
+## Comandos de PM2 Monit
 
-* aperte o botão "CTRL" depois vá no teclado e aperte "C" Depois digite:
+*  APRIETE EL BOTON "CTRL" , DESPUES APRIETE EL BOTON "C" Y DIGITE LO SEGUIENTE:
 
 * `npm i -g pm2 `
 
@@ -40,7 +40,7 @@ Comandos pra instalar:
 
 * `pm2 monit `
 
-## Comandos para ligar o bot novamente
+## Comandos para activar el bot nuevamente
 
 * `cd Bot`
 
@@ -48,7 +48,7 @@ Comandos pra instalar:
 
 * `npm start `
 
-* APERTE NO BOTÂO "CTRL" DEPOIS VA NO TECLADO E APERTE "C" E DIGITE O SEGUINTE:
+* APRIETE EL BOTON "CTRL" , DESPUES APRIETE EL BOTON "C" Y DIGITE LO SEGUIENTE:
 
 * `pm2 start index.js `
 
@@ -56,8 +56,15 @@ Comandos pra instalar:
 
 ## MATERIAL
 
-* termux e dois celulares 
+* termux y dos celulares
 
-* OBS: o bot só pode ser instalador em celulares com o androind acima de 4.0 ou 5.0
+* OBS: el bot solo puede ser instalado en andriods superiores al 4.0 o 5.0
 
-<h3 align="center">⚡SUPER XANDÃO⚡</h3>
+## INFO EXTRA:
+
+Puedes tener el bot en un mismo celular,pero debes tener 2 whatsapps instalados 
+en tu celular, despues con el whatsapp del bot pones en whatsapp web y haces esto:
+tomas una foto al codigo qr con el otro celular y despues escaneas el qr de la foto 
+que tomaste, asi ya no necesitaras estar al tanto de 2 celulares
+
+<h3 align="center">⚡HH BOT⚡</h3>
