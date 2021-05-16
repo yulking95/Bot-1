@@ -259,7 +259,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  *canta*
 ┣⊱  *grita*                   
 │                             
-╰──────────────────╯
+╰──────────────────╯`
 
 function kyun(seconds){
   function pad(s){
@@ -271,6 +271,7 @@ function kyun(seconds){
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
   return `${pad(Horas)} Horas ${pad(Minutos)} Minutos ${pad(Segundos)} Segundos`
+
 }
 }
 exports.help = help
