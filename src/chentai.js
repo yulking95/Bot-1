@@ -1,7 +1,7 @@
 const chentai = () => { 
 	return `
 	
-	*Buenas prros👋👋* *COLECCIONEN SUS CODIGOS H😌*
+	*Buenas prros👋👋* *COLECCIONE SUS CODIGOS H😌*
 
 Código Nuclear [Doujin Hentai gênero NTR] (Netorare)
 
