@@ -879,7 +879,7 @@ if (text.includes("placa"))
            			 client.sendMessage(from, d, sticker, {quoted: mek})
     		}	
                 case 'alist':
-                    putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
+                    putagg = await getBuffer(`https://ibb.co/x2dmvP6`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname)})
                     break
 				case 'help1':
@@ -940,7 +940,7 @@ if (text.includes("placa"))
 					const otakus8 = otaku8[Math.floor(Math.random() * otaku8.length)]
 					const otakus9 = otaku9[Math.floor(Math.random() * otaku9.length)]
 					const otakus10 = otaku10[Math.floor(Math.random() * otaku10.length)]
-					teks = `${pushname} ellos son los mas otakus del grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n@${otakus5.jid.split('@')[0]}\n@${otakus6.jid.split('@')[0]}\n@${otakus7.jid.split('@')[0]}\n@${otakus8.jid.split('@')[0]}\n@${otakus9.jid.split('@')[0]}\n@${otakus10.jid.split('@')[0]}\n\nSIN PRESION⚡ HH BOT ⚡`
+					teks = `${pushname} estos son los mas otakus del grupo\n@${otakus1.jid.split('@')[0]}\n@${otakus2.jid.split('@')[0]}\n@${otakus3.jid.split('@')[0]}\n@${otakus4.jid.split('@')[0]}\n@${otakus5.jid.split('@')[0]}\n@${otakus6.jid.split('@')[0]}\n@${otakus7.jid.split('@')[0]}\n@${otakus8.jid.split('@')[0]}\n@${otakus9.jid.split('@')[0]}\n@${otakus10.jid.split('@')[0]}\n\nSIN PRESION⚡ HH BOT ⚡`
 					membr.push(otakus1.jid)
 					membr.push(otakus2.jid)
 					membr.push(otakus3.jid)
