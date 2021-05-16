@@ -1,20 +1,20 @@
 const daftarvip = (prefix) => { 
 	return `
 	
-*PREÇO DE LISTA VIP :*
+*PRECIO DE LISTA VIP :*
 
--Rp. 10 > Acessar recursos ViP
--Rp. 20 > Recursos VIP + Insira o bot no seu grupo!
+-S/. 10 > Acceder a recursos ViP
+-S/. 20 > Recursos VIP + Inserte el bot en su grupo!
 
-*SE QUER REGISTAR VIP :*
+*SE REQUIERE REGISTRAR VIP :*
 
-*Proprietário do bate-papo BOT :*
+*Proprietário del BOT :*
 
-_wa.me/554792091566 ou digite *${prefix}owner*_
+_wa.me/51928564603 o digite *${prefix}owner*_
 
 *NOTA*
 
-*GRUPO DO CAUSS 🐊🚩 :*
+*GRUPO DE HATORI HANZO 🐊🚩 :*
 _https://chat.whatsapp.com/IrKmqmFSUsUA1NUPS7D52l_ `
 }
 exports.daftarvip = daftarvip
