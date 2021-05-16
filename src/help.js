@@ -87,15 +87,10 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **buenasnoches*      
 ┣⊱  **mia*           
 ┣⊱  **rize*                 
-┣⊱  **naruto*                     
-┣⊱  *         
-┣⊱  **nsfwloli1*     
-┣⊱  *
-
-
-
-│                    
+┣⊱  **naruto*                             
+┣⊱  **nsfwloli1*                        
 ╰────────────────
+
 ╭─「 INTELIGÊNCIA 」
 │                         
 ┣⊱  **simih 1*            
@@ -103,22 +98,12 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **simi*               
 │                         
 ╰─────────────────
-╭──「 EN PRODUÇCION 」─╮
-│                       
-┣⊱  *             
-┣⊱  *                      
-┣⊱  *
-│                       
-╰─────────────────╯
 
 ╭───「 PREMIUM 」──╮
-│                       
-┣⊱  *             
-┣⊱  *           
+│                                
 ┣⊱  **premiumlist*      
 ┣⊱  **delete*           
-┣⊱  **modapk*           
-┣⊱  *           
+┣⊱  **modapk*             
 ┣⊱  **chentai*          
 ┣⊱  **gcpf*             
 ┣⊱  **gbin*             
@@ -174,7 +159,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **ola*                        
 ┣⊱  **bv*                         
 ┣⊱  **tchau*                      
-┣⊱  **bem*                        
+┣⊱  **sexo*                        
 ┣⊱  **a*                          
 ┣⊱  **fdp*                        
 ┣⊱  **onichan*                      
@@ -267,10 +252,10 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **antiracismo*    
 ┣⊱  **setnombrebot*                                                             
 ╰────────────────────╯
-╭──「 SEM PREFIX 」──╮
+╭──「 SIN PREFIJOS 」──╮
 │                            
-┣⊱  *bah*                                          
-┣⊱  *bv*                      
+┣⊱  *ola*                                          
+┣⊱  *gemido*                      
 ┣⊱  *canta*
 ┣⊱  *grita*                   
 │                             
