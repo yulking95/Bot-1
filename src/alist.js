@@ -1,7 +1,7 @@
 const rai = (prefix) => {
 
 	return `
- 💪🏻𝙰𝚀𝚄𝙸 𝙴 𝙾 𝚇𝙰𝙽𝙳Ã𝙾 𝙿𝙾𝚁𝚁𝙰💪🏻
+LISTA DE LOS MEJORES ANIMES
 
  ╭╮╮╱▔▔▔▔╲╭╭╮ 
  ╰╲╲▏▂╲╱▂▕╱╱╯
@@ -10,10 +10,11 @@ const rai = (prefix) => {
  ╭╱╱ ▕╋╋╋╋▏╲╲╮
  ╰╯╯┈╲▂▂╱┈╰╰ 
  
-  𝙿𝚎𝚒𝚝𝚊 𝚘𝚞 𝚁𝚎𝚜𝚙𝚎𝚒𝚝𝚊 𝙼𝚎𝚛𝚘 𝙼𝚘𝚛𝚝𝚊𝚕
-             HAHAHAHA😜
+    *Faltan muchos que*
+  Despues ire añadiendo😜
  
- 👇 *Esta e a lista de animes que eu ja assisti:*👇
+ 👇 *Esta es la lista de animes que yo ya añadí:*👇
+
   1. Fullmetal Alchemist: Brotherhood (2009)
 
 1 - Mejores anime de la historia - FullMetal Alchemist Brotherhood
@@ -635,33 +636,11 @@ Género: Misterio, Psicológico, Sobrenatural, Seinen
 Estudio: A-1 Pictures
 
 Satoru Fujinuma, un joven de Chiba con la habilidad sobrenatural de regresar el tiempo para prevenir pequeños accidentes, se ve involucrado en una red de asesinatos seriales que datan de su época en primaria. Para evitar una pérdida reciente y dolorosa, Satoru decide aprovechar su habilidad y regresar al pasado, donde comenzará a investigar, con el fin prevenir las muertes de varios de sus compañeros de clases y descubrir su conexión con los sucesos del presente. Esta serie corta tiene una premisa interesante, con un ritmo acelerado y mucha intriga. El final de la serie dividió a muchos fans, pero la historia y su desarrollo es lo suficientemente buena como para dejar eso de lado y decir que la serie es imperdible.
-_Nanatsu No Taizai: conta a triste e engraçada historia de Meliodas e os Sete pecados capitais_
-https://animesonline.cc/anime/nanatsu-no-taizai-hd/
+
+SE DIVIEso es todo por el momento..
 
 
-_Undefeated Bahamut: conta a historia de Lux Arcadia que possui uma espada que o emcobre com a armadura mais forte do mundo_
-https://animesonline.games/b/animes/undefeated-bahamut-chronicle
-
-
-_No Game no Life: conta a historia de dois irmãos Shiro e Sora, eles são a dupla de jogadores invencíveis denominados de Kuhako_
-https://animesonline.cc/temporada/no-game-no-life-1-temporada-online/
-
-
-_DanMachi: conta a historia de Bell Cranell, sua deusa Hestia e seus amigos, o sonho dele e ser um Herói, ele conhece uma garota muito linda por quem se apaixona_
-https://animesonline.cc/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatteiru-darou-ka/
-
-
-_Boku no Hero academia: Conta a história de Izuku Midorya, ele sonha em ser o herói mais poderoso de todos, mais ele nasceu sem um poder chamado de individualidade, mais ele gamha uma do seu herói preferido_
-https://www.myanimesonline.biz/animes/boku-no-hero-academia/
-
-
-_To Love Ru: conta a história PERVERTIDA e SORTUDA de Yuuki Rito, a sua SORTE começa quando uma alienígena GOSTOSA PRA PORRA aparece PELADA em sua banheira_, *n vou dar spoiler então vai assistir seu salafraio*
-https://animesync.biz/anime/to-love-ru-hd/
-
-SE DIVIRTA E MALHE SEU BRAÇO SE E QUE ME ENTENDE HEHEHE
-
-
-O último anime e pra tu malhar esse teu braço vey fino`
+`
 }
 exports.rai = rai
 
