@@ -18,10 +18,8 @@ const help = (prefix, sender, pushname, time) => {
 
 ╭────「 INFO 」───────╮
 │                                            
-
-
 ┣⊱ Dueño:                       
-│Hatori Hanzo  
+│ Hatori Hanzo  
 │                                            
 ┣⊱ Contacto:         
 │https://wa.me/51928564603
@@ -37,37 +35,23 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱ Velocidad:           
 │${process.uptime()}         
 │                                  
-┣⊱Dato y hora: ${time}                       
+┣⊱ Fecha y hora: ${time}                       
 │                                            
-┣⊱Trabajando a:    
+┣⊱ Trabajando a:    
 │${kyun(uptime)}
 │
-╰──────────────────────╯
-
-╭────「 COMANDOS NUEVOS 」
-│                          
-┣⊱               
-┣⊱                
-┣⊱   
-┣⊱        
-                 
+╰──────────────────────                      
 
 │═༒︎〘 MENU 〙༒︎══
 │
 ┣⊱  **sticker*
 ┣⊱  **toimg*
-┣⊱  *
-┣⊱  *
 ┣⊱  **tts*
 ┣⊱  **lolih*
 ┣⊱  **nsfwloli*
 ┣⊱  **url2img*
 ┣⊱  **leens*
-┣⊱  **wait*
-┣⊱  *
-│
-╭────「 OTROS 」────
-│                      
+┣⊱  **wait*                
 ┣⊱  **linkgp*          
 ┣⊱  **simih*     
 ┣⊱  **marcar*          
@@ -77,47 +61,33 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **rebajar*        
 ┣⊱  **admins*          
 ┣⊱  **marcar2*         
-┣⊱  **              
-┣⊱  ***   
+┣⊱  **marcar3*                 
 ┣⊱  **bloqueados*      
 ┣⊱  **bloquear*    
 ┣⊱  **desbloquear* 
 ┣⊱  **limpiar*          
-┣⊱  *
 ┣⊱  **bienvenido*  
 ┣⊱  **clonar*      
 ┣⊱  **help1*           
 ┣⊱  **dueño*            
 ┣⊱  **owner*           
-┣⊱  **tts*     
-┣⊱  *          
+┣⊱  **tts*           
 ┣⊱  **setfoto*         
 ┣⊱  **grupoinfo*       
 ┣⊱  **ytmp4*           
 ┣⊱  **buendia*          
-┣⊱  **buenasnoches*        
-┣⊱  **marcar*          
-┣⊱  *         
-┣⊱  *
-│                      
+┣⊱  **buenasnoches*                              
 ╰────────────────
 ╭────「 IMÁGENES 」──
 │                    
-┣⊱  **loli*          
-┣⊱  **loli1*         
-┣⊱  **hentai*        
-┣⊱  **          
+┣⊱  **loli*               
 ┣⊱  **porno*         
 ┣⊱  **buenasnoches*      
-┣⊱  **bomdia*        
+┣⊱  **buendia*        
 ┣⊱  **buenasnoches*      
 ┣⊱  **mia*           
-┣⊱  **rize*          
-┣⊱  **minato*        
-┣⊱  **naruto *       
-┣⊱  *
-┣⊱  **lofi*          
-┣⊱  **malkova*       
+┣⊱  **rize*                 
+┣⊱  **naruto*                     
 ┣⊱  *         
 ┣⊱  **nsfwloli1*     
 ┣⊱  *
@@ -164,7 +134,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **add*                 
 ┣⊱  **promover*            
 ┣⊱  **setfoto*
-┣⊱  **setname*     
+┣⊱  **setnombre*     
 ┣⊱  **rebajar*            
 ┣⊱  **admins*              
 ┣⊱  **marcar*              
@@ -175,51 +145,29 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **buendia*              
 ┣⊱  **buenastardes*            
 ┣⊱  **buenasnoches*            
-┣⊱  **setdesc*             
-┣⊱  *                 
+┣⊱  **setdesc (text)*                             
 │                          
 ╰─────────────────╯
 ╭───「 ESPECÍFICO 」──╮
 │                                  
-┣⊱  *
 ┣⊱  **clonar*                  
 ┣⊱  **dueño*                        
-┣⊱  **ping*                        
-┣⊱  *                      
-┣⊱  *                     
-┣⊱  **wame*                        
-┣⊱  *                  
+┣⊱  **ping*                                            
+┣⊱  **wame*                                         
 ┣⊱  **setppbot*   
 ┣⊱  **pinterest*                                   
-┣⊱  **desligar*   
 ┣⊱  **timer*                       
 │                                  
 ╰───────────────────╯
 ╭──────「 MÁS 」───╮
-│                              
-┣⊱  **neko*                    
-┣⊱  **ttp*                     
+│                                                                       
 ┣⊱  **testime*                 
 ┣⊱  **tomp3*                   
 ┣⊱  **modoanime*               
-┣⊱  **modonsfw*                
-┣⊱  *                
-┣⊱  *   
-┣⊱  *                
-┣⊱  **moddroid*                
-┣⊱  **xvideos*                 
-┣⊱  **nombregp*                  
-┣⊱  *               
-┣⊱  *                
-┣⊱  *                    
-┣⊱  *                    
-┣⊱  **alerta*                  
-┣⊱  **belle*                 
-┣⊱  
-
-
-┣⊱  *                 
-│                      
+┣⊱  **modonsfw*                             
+┣⊱  **moddroid*                                 
+┣⊱  **nombregp*                                   
+┣⊱  **alerta*                                      
 ╰──────────────────╯
 ╭──「 COMANDOS DE VOZ 」─
 │                                 
@@ -313,34 +261,21 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **glub*                       
 │                                 
 ╰──────────────────
-╭──────「 OUTROS/2 」──╮
-│                              
-┣⊱  *                     
-┣⊱  **antilink*          
-┣⊱  *      
+╭──────「 OTROS/2 」──╮
+│                                               
+┣⊱  **antilink*             
 ┣⊱  **antiracismo*    
-┣⊱  **setnomebot*              
-┣⊱  *                    
-│                              
+┣⊱  **setnombrebot*                                                             
 ╰────────────────────╯
 ╭──「 SEM PREFIX 」──╮
 │                            
-┣⊱  *bah*                     
-┣⊱  *oii*                     
+┣⊱  *bah*                                          
 ┣⊱  *bv*                      
-┣⊱  *cant*
+┣⊱  *canta*
 ┣⊱  *grita*                   
 │                             
 ╰──────────────────╯
-╭────────「 CRÉDITOS 」─────╮
-│                                   
-┣⊱    X      
-│                                   
-┣⊱    X    
-│                                   
-┣⊱    X 
-│                                   
-╰─────────────────────────╯`
+
 function kyun(seconds){
   function pad(s){
     return (s < 10 ? '0' : '') + s;
