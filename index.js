@@ -2118,7 +2118,7 @@ if (text.includes("placa"))
 					})
 					await limitAdd(sender) 
 					break 
-case 'onichan':
+case 'onichann':
 tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
