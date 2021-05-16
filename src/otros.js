@@ -24,7 +24,7 @@ const iklan = () => {
 ╠➥ *${prefix}dueño*
 ╠➥ *${prefix}owner*
 ╠➥ *${prefix}tts [texto]*
-╠➥ *${prefix}setnome*
+╠➥ *${prefix}setnombre*
 ╠➥ *${prefix}termux*
 ╠➥ *${prefix}setfoto*
 ╠➥ *${prefix}grupoinfo*
