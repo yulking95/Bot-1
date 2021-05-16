@@ -1,11 +1,11 @@
 const addsay = () => { 
 	return `
 	
-	*Adicionar mensagem*
+	*Añadir mensaje*
 	
-	Mensagem salva
+	Mensaje guardado
 	
 
-obrigado !`
+Gracias👍 !`
 }
 exports.addsay = addsay
