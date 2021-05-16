@@ -10,20 +10,20 @@ const menu2 = (prefix) => {
 ╠➥ *${prefix}loli [off]*
 ╠➥ *${prefix}nsfwloli [off]*
 ╠➥ *${prefix}url2img*
-╠➥ *${prefix}leens [na legenda]*
-╠➥ *${prefix}wait [na legenda]*
-╠➥ *${prefix}setprefix*
+╠➥ *${prefix}leens [con palabra]*
+╠➥ *${prefix}wait [con palabra]*
+╠➥ *${prefix}setprefijo*
 ║
 ╠══✪〘 IMAGENS 〙✪══
 ║
 ╠➸ *${prefix}loli* [off]
 ╠➸ *${prefix}loli1*
 ╠➸ *${prefix}hentai*
-╠➸ *${prefix}dono*
+╠➸ *${prefix}dueño*
 ╠➸ *${prefix}porno*
-╠➸ *${prefix}boanoite*
-╠➸ *${prefix}bomdia*
-╠➸ *${prefix}boatarde*
+╠➸ *${prefix}buenasnoches*
+╠➸ *${prefix}buendia*
+╠➸ *${prefix}buenastardes*
 ╠➸ *${prefix}mia*
 ╠➸ *${prefix}mia1*
 ╠➸ *${prefix}mia2*
@@ -37,14 +37,14 @@ const menu2 = (prefix) => {
 ╠➸ *${prefix}malkova*
 ╠➸ *${prefix}canal*
 ╠➸ *${prefix}nsfwloli1*
-╠➸ *${prefix}reislin*
+
 ║
 ╠══✪〘 INTELIGÊNCIA IA 〙✪══
 ║
-╠➸ *${prefix}simih 1 (para ativar)*
-╠➸ *${prefix}simih 0 (para desativar)*
-╠➥ *${prefix}simi (sua mensagem)*
+╠➸ *${prefix}simih 1 (para activar)*
+╠➸ *${prefix}simih 0 (para desactivar)*
+╠➥ *${prefix}simi (su mensaje)*
 ║
-╠══✪〘 *CAUSS BOT* 〙✪══`
+╠══✪〘 *HH BOT* 〙✪══`
 }
 exports.menu2 = menu2
