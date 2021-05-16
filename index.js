@@ -2841,7 +2841,7 @@ break
 						antilink.push(from)
 						fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
 						reply('Grupo anti-link activado con exito en este grupo✔️')
-						client.sendMessage(from,`Atencion a todos los miembros activos de este grupo,si usted envia un link de grupo, usted sera expulsado de este grupo`, text)
+						client.sendMessage(from,`Atencion a todos los miembros activos de este grupo,si usted envia un link de grupo, sera expulsado de este grupo`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isantilink) return reply('El modo de grupo anti-link fue deshabilitado ')
 						var ini = anti.clientOf(from)
