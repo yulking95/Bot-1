@@ -2,14 +2,10 @@ const menu2 = (prefix) => {
 	return `                 
 ╠══✪〘 MENU 〙✪══
 ║
-╠➥ *${prefix}figu*
 ╠➥ *${prefix}toimg*
-╠➥ *${prefix}meme*
-╠➥ *${prefix}memeindo*
 ╠➥ *${prefix}tts*
 ╠➥ *${prefix}loli [off]*
 ╠➥ *${prefix}nsfwloli [off]*
-╠➥ *${prefix}url2img*
 ╠➥ *${prefix}leens [con palabra]*
 ╠➥ *${prefix}wait [con palabra]*
 ╠➥ *${prefix}setprefijo*
@@ -31,11 +27,7 @@ const menu2 = (prefix) => {
 ╠➸ *${prefix}belle1*
 ╠➸ *${prefix}belle2*
 ╠➸ *${prefix}belle3*
-╠➸ *${prefix}akeno*
-╠➸ *${prefix}meme*   
-╠➸ *${prefix}lofi*
-╠➸ *${prefix}malkova*
-╠➸ *${prefix}canal*
+╠➸ *${prefix}akeno*  
 ╠➸ *${prefix}nsfwloli1*
 
 ║
