@@ -11,13 +11,11 @@ const iklan = () => {
 ╠➥ *${prefix}rebajar*
 ╠➥ *${prefix}admins*
 ╠➥ *${prefix}marcar2*
-╠➥ *${prefix}bc [texto]* (el es una )
 ╠➥ *${prefix}marcar3*
 ╠➥ *${prefix}bloqueados*
 ╠➥ *${prefix}bloquear [@]*
 ╠➥ *${prefix}desbloquear [@]*
 ╠➥ *${prefix}limpiar*
-╠➥ *${prefix}bc [ *texto* ]*
 ╠➥ *${prefix}bienvenido [1/0]*
 ╠➥ *${prefix}clonar [@]*
 ╠➥ *${prefix}help1*
@@ -27,7 +25,6 @@ const iklan = () => {
 ╠➥ *${prefix}setnombre*
 ╠➥ *${prefix}termux*
 ╠➥ *${prefix}setfoto*
-╠➥ *${prefix}grupoinfo*
 ╠➥ *${prefix}ytmp4*
 ╠➥ *${prefix}buendia*
 ╠➥ *${prefix}buenasnoches*
