@@ -637,10 +637,10 @@ Estudio: A-1 Pictures
 
 Satoru Fujinuma, un joven de Chiba con la habilidad sobrenatural de regresar el tiempo para prevenir pequeños accidentes, se ve involucrado en una red de asesinatos seriales que datan de su época en primaria. Para evitar una pérdida reciente y dolorosa, Satoru decide aprovechar su habilidad y regresar al pasado, donde comenzará a investigar, con el fin prevenir las muertes de varios de sus compañeros de clases y descubrir su conexión con los sucesos del presente. Esta serie corta tiene una premisa interesante, con un ritmo acelerado y mucha intriga. El final de la serie dividió a muchos fans, pero la historia y su desarrollo es lo suficientemente buena como para dejar eso de lado y decir que la serie es imperdible.
 
-SE DIVIEso es todo por el momento..
+*eso es todo por el momento*..`
 
 
-`
+
 }
 exports.rai = rai
 
