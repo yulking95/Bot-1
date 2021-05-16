@@ -1,6 +1,5 @@
-// Editado por Meliodas, a base e do causs que era do dark que era dos gringo
-// Canal do Causs: youtube.com/CaussZ
-// Canal do Darkkk: youtube.com/Darkkk
+// Editado por Hatori, a base e do causs que era do dark que era dos gringo
+
 const {
     WAConnection,
     MessageType,
@@ -664,14 +663,14 @@ if (text.includes("placa"))
 		}, 0)
 	} 
 	
-	if (messagesC.includes("hdp")){
+	if (messagesC.includes("hatori")){
 			client.updatePresence(from, Presence.composing)
-			reply("")
+			reply("el mas penon👌")
 	}
 	
-		if (messagesC.includes("corno")){
+		if (messagesC.includes("brynz")){
 			client.updatePresence(from, Presence.composing)
-			reply("Vsfd seu merda")
+			reply("que rico la chupas brynz")
 	}
 
 		if (messagesC.includes("Lixo")){
@@ -684,9 +683,9 @@ if (text.includes("placa"))
 			reply("hehehe")
 	}
 						
-		if (messagesC.includes("merda")){
+		if (messagesC.includes("pene")){
 			client.updatePresence(from, Presence.composing)
-			reply("e quem disse que isso e problema meu?")
+			reply("quieres nepe?")
 	}
 	
 		if (messagesC.includes("eae")){
@@ -699,26 +698,26 @@ if (text.includes("placa"))
 			reply("el mas Penon 👌")
 	}
 	
-		if (messagesC.includes("oiii")){
+		if (messagesC.includes("que tal")){
 			client.updatePresence(from, Presence.composing)
-			reply("Eae meu bom")
+			reply("bien")
 	}
 			// comando para audios
 
-		if (messagesC.includes("*Brynz")){
+		if (messagesC.includes("Brynz")){
 			client.updatePresence(from, Presence.composing)
 			reply("Que rico la chupa")
 	}
 
-			if (messagesC.includes("bah")){
+			if (messagesC.includes("pasen porno")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bahc.mp3');
+			tujuh = fs.readFileSync('./assets/callacagada.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("mermao")){
+			if (messagesC.includes("yamete kudasai")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/irmao.mp3');
+			tujuh = fs.readFileSync('./assets/yametekudasai.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 		
@@ -730,7 +729,7 @@ if (text.includes("placa"))
 	
 			if (messagesC.includes("*menu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/pressao.mp3');
+			tujuh = fs.readFileSync('./assets/bot.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -748,12 +747,12 @@ if (text.includes("placa"))
 
 			if (messagesC.includes("bu")){
 				client.sendMessage(from, Presence.composing)
-				reply("ce")
+				reply("e,..,e")
 	}
 	
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/oiboot.m4a');
+			tujuh = fs.readFileSync('./assets/bot.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -773,17 +772,17 @@ if (text.includes("placa"))
 	     	const d = fs.readFileSync('./sticker/gay.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
-          if (messagesC.includes("kkkkkk")){
+          if (messagesC.includes("jajaja")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/kkk.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
-          if (messagesC.includes("vida")){
+          if (messagesC.includes("gato")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/vida.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
-          if (messagesC.includes("gostoso")){
+          if (messagesC.includes("fino")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/gostoso.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
@@ -813,7 +812,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 			
-			if (messagesC.includes("risos")){
+			if (messagesC.includes("risas")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/kiko.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -825,7 +824,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 			
-			if (messagesC.includes("gemidinho")){
+			if (messagesC.includes("gemido")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/fodaze.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -2688,11 +2687,11 @@ break
 					}, 0) // 1000 = 1s,
 					break
 		        case 'gay':		
-	            	if (args.length < 1) return reply('marque seus amigos!')
+	            	if (args.length < 1) return reply('marque sus amigos!')
 					rate = body.slice(1)
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					client.sendMessage(from, 'Como usted es joto: *'+rate+'*\n\nSu porcentaje joto : '+ kl+'%', text, { quoted: mek })
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
