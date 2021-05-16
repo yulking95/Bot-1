@@ -1,6 +1,6 @@
 const listsay = () => { 
 	return `
 	
-	-Sua lista`
+	-Su lista`
             }
 exports.listsay = listsay
