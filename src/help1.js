@@ -31,7 +31,7 @@ const help1 = (prefix) => {
 
 ════════════════════
 *Hatori* 🤗
-*Digite dono para mais info*
+*Digite dueño para mas info*
 ════════════════════`
 }
 exports.help1 = help1
