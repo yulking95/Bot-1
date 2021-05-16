@@ -631,7 +631,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-		       /* if (messagesC.includes("https://")){
+		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply('usted es admin del grupo, entonces no te daran ban por usar links, rlx 🙂')
@@ -662,11 +662,11 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("5 segundos, chau prro 🤙")
 		}, 0)
-	}*//
+	} 
 	
 	if (messagesC.includes("hdp")){
 			client.updatePresence(from, Presence.composing)
-			reply("Teu pai")
+			reply("")
 	}
 	
 		if (messagesC.includes("corno")){
