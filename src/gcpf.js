@@ -304,7 +304,7 @@ const gcpf = () => {
 874.732.303-52
 549.647.418-34
 
-CAUSS NO CONTROLE 🐊🚩
+HATORI NO CONTROLA🐊🚩
 `
 }
 exports.gcpf = gcpf
