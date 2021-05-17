@@ -604,29 +604,29 @@ if (text.includes("placa"))
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado en 5 segundos`)
+		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado en 3 segundos😉`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
+		
+	
+			
+		
+		
+	
+	
+	
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
+			reply("1 segundos")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
+			reply("2 segundos")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundos chau prro🤙")
+			reply("3 segundos chau prro🤙")
 		}, 0)
 	}
 	
@@ -663,12 +663,12 @@ if (text.includes("placa"))
 		}, 0)
 	} 
 	
-	if (messagesC.includes("hatori")){
+	if (messagesC.includes("*hatori")){
 			client.updatePresence(from, Presence.composing)
 			reply("el mas penon👌")
 	}
 	
-		if (messagesC.includes("brynz")){
+		if (messagesC.includes("*brynz")){
 			client.updatePresence(from, Presence.composing)
 			reply("que rico la chupas brynz")
 	}
@@ -685,7 +685,7 @@ if (text.includes("placa"))
 						
 		if (messagesC.includes("pene")){
 			client.updatePresence(from, Presence.composing)
-			reply("quieres nepe?")
+			reply("quieres nepe?🥵🍆💦")
 	}
 	
 		if (messagesC.includes("eae")){
@@ -693,7 +693,7 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("Hatori")){
+		if (messagesC.includes("*Hatori")){
 			client.updatePresence(from, Presence.composing)
 			reply("el mas Penon 👌")
 	}
@@ -704,18 +704,18 @@ if (text.includes("placa"))
 	}
 			// comando para audios
 
-		if (messagesC.includes("Brynz")){
+		if (messagesC.includes("*Brynz")){
 			client.updatePresence(from, Presence.composing)
 			reply("Que rico la chupa")
 	}
 
-			if (messagesC.includes("pasen porno")){
+			if (messagesC.includes("pasenporno")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/callacagada.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("yamete kudasai")){
+			if (messagesC.includes("yamete")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/yametekudasai.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -745,9 +745,9 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
-			if (messagesC.includes("bu")){
+			if (messagesC.includes("xxx")){
 				client.sendMessage(from, Presence.composing)
-				reply("e,..,e")
+				reply("e,.,e")
 	}
 	
 			if (messagesC.includes("bot")){
