@@ -80,7 +80,7 @@ const help = (prefix, sender, pushname, time) => {
 ╰────────────────
 ╭────「 IMÁGENES 」──
 │                    
-┣⊱  **loli*               
+┣⊱             
 ┣⊱  **porno*         
 ┣⊱  **buenasnoches*      
 ┣⊱  **buendia*        
@@ -88,7 +88,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **mia*           
 ┣⊱  **rize*                 
 ┣⊱  **naruto*                             
-┣⊱  **nsfwloli1*                        
+┣⊱                         
 ╰────────────────
 
 ╭─「 INTELIGÊNCIA 」
@@ -157,11 +157,11 @@ const help = (prefix, sender, pushname, time) => {
 ╭──「 COMANDOS DE VOZ 」─
 │                                 
 ┣⊱  **ola*                        
-┣⊱  **bv*                         
-┣⊱  **tchau*                      
+┣⊱  ***                         
+┣⊱  ***                      
 ┣⊱  **sexo*                        
 ┣⊱  **a*                          
-┣⊱  **fdp*                        
+┣⊱  ***                        
 ┣⊱  **onichan*                      
 ┣⊱  **beat1*                      
 ┣⊱  **beat2*                      
@@ -258,6 +258,8 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  *gemido*                      
 ┣⊱  *canta*
 ┣⊱  *grita*                   
+┣⊱  *gime*                   
+
 │                             
 ╰──────────────────╯`
 
