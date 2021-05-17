@@ -4,7 +4,7 @@ const menu2 = (prefix) => {
 ║
 ╠➥ *${prefix}toimg*
 ╠➥ *${prefix}tts*
-╠➥ *${prefix}loli [off]*
+
 ╠➥ *${prefix}nsfwloli [off]*
 ╠➥ *${prefix}leens [con palabra]*
 ╠➥ *${prefix}wait [con palabra]*
@@ -12,9 +12,9 @@ const menu2 = (prefix) => {
 ║
 ╠══✪〘 IMAGENS 〙✪══
 ║
-╠➸ *${prefix}loli* [off]
-╠➸ *${prefix}loli1*
-╠➸ *${prefix}hentai*
+
+
+╠➸ *${prefix}pinterest*
 ╠➸ *${prefix}dueño*
 ╠➸ *${prefix}porno*
 ╠➸ *${prefix}buenasnoches*
