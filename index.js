@@ -865,7 +865,7 @@ if (text.includes("placa"))
 	            case 'menu':
 	            case 'help':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
+                    putagg = await getBuffer(`http://imgur.com/gallery/At1rDSa`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
                     break
                 case 'eu':
@@ -1058,8 +1058,8 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
-					case 'gays':
-					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
+					case '%gay':
+					if (!isGroup) return reply(`Este comando solo puede ser usado en grupos`)
 					membr = []
 					const gay1 = groupMembers
 					const gay2 = groupMembers
@@ -1073,7 +1073,7 @@ if (text.includes("placa"))
 					const gays5 = gay5[Math.floor(Math.random() * gay5.length)]
 					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
 					const porcentagem = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
-					teks = `${pushname} Esses são os mais SuperGays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡Xandão⚡ ta aqui`
+					teks = `${pushname} Estos son los mas jotos del grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCon un porcentaje de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCon un porcentaje de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCon un porcentaje de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCon un porcentaje de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCon un porcentaje de ${porcentagem}\n\n Sin presión, ⚡HH BOT⚡`
 					membr.push(gays1.jid)
 					membr.push(gays2.jid)
 					membr.push(gays3.jid)
@@ -1586,7 +1586,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek })
                     await limitAdd(sender)
 					break
-              case 'circlesticker':
+              case 'asticker':
     const pack = arg.split('|')[0]
     const author = arg.split('|')[1]
     if (isMedia && mimetype == 'image/jpeg') {
@@ -1823,7 +1823,7 @@ if (text.includes("placa"))
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.blockUser (`${body.slice(7)}@c.us`, "add")
-					client.sendMessage(from, `Blz Hatori te bloqueo ${body.slice(7)}@c.us`, text)
+					client.sendMessage(from, `Blz Hatori te bloqueo${body.slice(7)}@c.us`, text)
 					break
 					
 				case 'premiumlist':
@@ -2643,7 +2643,7 @@ break
 				break
                                 case 'afk':
                                         tels = body.slice(4)
-                                        if (args.length < 1) return reply('irme afk por una causa de?')                                  
+                                        if (args.length < 1) return reply('irme afk por causa de?')                                  
                                         var nom = mek.participant
                                         const tag = {
                                                 text: `@${nom.split("@s.whatsapp.net")[0]} * AFK ${tels} No molestar*`,
@@ -3349,7 +3349,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamaño : ${anu.result.size}\n\n*ESPERE UN POCO, NO SPAMEE EL CHAT*`
+                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamaño : ${anu.result.size}\n\n*ESPERE QUE TERMINE DE MANDAR EL AUDIO DEL OTRO WN Y RECIEN HAS EL TUYO, NO SPAMEE.*`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -4238,7 +4238,7 @@ break
 					prefix = args[0]
 					reply(`El prefijo fue alterado con éxito para : ${prefix}`)
 					break
-				case 'loli':
+				case 'looli':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
 						buffer = await getBuffer(res.url)
@@ -4448,7 +4448,7 @@ break
 						reply('Falló al añadir destino, quizas por que es una cuenta privada')
 					}
 					break
-				case 'banear':
+				case 'ban':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
