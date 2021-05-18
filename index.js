@@ -4121,12 +4121,12 @@ break
 				case 'akeno':
 					meme = await kagApi.memes()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFAocqaur5ZX1DPN6ZGP8PJy2cNppas_gYA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'akeno 👌'})
 					break
 				case 'loli1':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, entonces quiere ver lolis?'})
 					break
 				case 'hentai':
 					memein = await kagApi.memeindo()
@@ -4135,17 +4135,17 @@ break
 					break
 				case 'buendia':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`http://imgur.com/gallery/uTUtdGb`)
+					buffer = await getBuffer(`https://i.ibb.co/RHmFC4z/images-16.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Buen dia a todos <tres ❤️'})
 					break
 				case 'buenastardes':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/MguOe76`)
+					buffer = await getBuffer(`https://i.ibb.co/PMcT2QP/images-18.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Buenas tarde, gentee 😎👍'})
 					break
 				case 'buenasnoches':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/AFutbJy`)
+					buffer = await getBuffer(`https://i.ibb.co/2SdX8jz/images-17.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Buenas noches, haganse la paja y a mimir csm 👍'})
 					break
                 case 'belle':                 
