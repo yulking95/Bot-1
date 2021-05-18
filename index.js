@@ -693,9 +693,9 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("*Hatori")){
+		if (messagesC.includes("*Andy")){
 			client.updatePresence(from, Presence.composing)
-			reply("el mas Penon 👌")
+			reply("que rico culito tiene Andy🔥")
 	}
 	
 		if (messagesC.includes("que tal")){
@@ -836,7 +836,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 		
-			if (messagesC.includes("botperuano")){
+			if (messagesC.includes("peruano")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/botperuano.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -865,7 +865,7 @@ if (text.includes("placa"))
 	            case 'menu':
 	            case 'help':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`http://imgur.com/gallery/At1rDSa`)
+                    putagg = await getBuffer(`https://i.ibb.co/JmDv7Dr/Anime.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
                     break
                 case 'eu':
@@ -878,7 +878,7 @@ if (text.includes("placa"))
            			 client.sendMessage(from, d, sticker, {quoted: mek})
     		}	
                 case 'alist':
-                    putagg = await getBuffer(`https://ibb.co/x2dmvP6`)
+                    putagg = await getBuffer(`https://i.ibb.co/qDV0GXp/hatori.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: animes(prefix, pushname)})
                     break
 				case 'help1':
@@ -2118,7 +2118,7 @@ if (text.includes("placa"))
 					})
 					await limitAdd(sender) 
 					break 
-case 'onichann':
+case 'onichan':
 tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
@@ -4201,7 +4201,7 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADDq_64EbTI0NroP7CUoVeWmu1J06NnGHw&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Termmux ws muy conocido en el mundo de distribución Linux. Esta es una herramienta que facilita mucho las tareas del sistema. Ahora, yá pensó en utilizar el Terminal Linux en su Android? Esta és la propuesta de Termux.\n\n*TERMUX: UTILIZE EL TERMINAL EN SU ANDROID*\n\nLa utilización del Terminal aumenta mucho la productividad de los usuários que ya poseen un determinado nível de conocimiento técnico.\nCon el terminal, es posible hacer diversas y diferentes cosas, desde navegar entre los directórios e instalar programas, hasta descomprimir archivos y monitorear procesos.'})
 					break
-		    	case 'grupoinfo':
+		    	case 'ginfo':
                     client.updatePresence(from, Presence.composing)
                     if (!isGroup) return reply(mess.only.group)
                     ppUrl = await client.getProfilePicture(from) // leave empty to get your own
