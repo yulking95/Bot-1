@@ -709,7 +709,7 @@ if (text.includes("placa"))
 			reply("Que rico la chupa")
 	}
 
-			if (messagesC.includes("pasenporno")){
+			if (messagesC.includes("pasen porno")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/callacagada.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
