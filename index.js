@@ -709,7 +709,7 @@ if (text.includes("placa"))
 			reply("Que rico la chupa")
 	}
 
-			if (messagesC.includes("pasen porno")){
+			if (messagesC.includes("porno")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/callacagada.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -2118,7 +2118,7 @@ if (text.includes("placa"))
 					})
 					await limitAdd(sender) 
 					break 
-case 'onichan':
+case 'onichann':
 tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
@@ -4224,8 +4224,8 @@ break
 					break/*/
 				case 'dueño':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.ibb.co/Q6TftwD/Meliodas.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*𝙲𝚁𝙸𝙰𝙳𝙾𝚁 𝙳𝙾 𝚇𝙰𝙽𝙳𝙰𝙾:Eae meu parsa, sou ꧁╰‿╯𝙼𝙴𝙻𝙸𝙾𝙳𝙰𝚂-𝚁𝙰𝙸╰‿╯꧂ Filho do rei demônio e sou criador do Bot Super Xandão \n*WPP:* wa.me/+558981246187\n\n\nEspero que tenham gostado do bot 💪\n*Kibadores vão se FUDER*️'})
+					buffer = await getBuffer(`https://i.ibb.co/BNMVFJw/images-19.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ᏟᏒᎬᎪᎠᎾᏒ ᎠᎬ ᎻᎻ-ᏴᎾᏆ : Hatori Hanzo\n*WP:* wa.me/+51928564603\n\n\nEspero que esten disfrutando del bot 💪\n*Atte: HH*️'})
 					break
 				 /*case 'dono2':
 					memein = await kagApi.memeindo()
@@ -4238,7 +4238,7 @@ break
 					prefix = args[0]
 					reply(`El prefijo fue alterado con éxito para : ${prefix}`)
 					break
-				case 'looli':
+				case 'loli':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
 						buffer = await getBuffer(res.url)
