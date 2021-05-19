@@ -1,4 +1,4 @@
-// Editado por Hatori, a base e do causs que era do dark que era dos gringo
+// Editado por Hatori
 
 const {
     WAConnection,
@@ -60,9 +60,9 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:yulking95\n' // Seu nome
-            + 'ORG:HH;\n' // Nome de bot
-            + 'TEL;type=CELL;type=VOICE;waid=51928564603:+51 928 564 603\n' // Numero do Whatsapp
+            + 'FN:yulking95\n' // SU NOMBRE
+            + 'ORG:HH;\n' // NOMBRE DEL BOT
+            + 'TEL;type=CELL;type=VOICE;waid=51928564603:+51 928 564 603\n' // Numero dE Whatsapp
             + 'END:VCARD'
 prefix = '*'
 blocked = []
@@ -225,7 +225,7 @@ async function starts() {
 				try {
 					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+					ppimg = 'https://i.ibb.co/wSZW9Vk/images-21.jpg'
 				}
 				teks = `Hola mi estimad@ @${num.split('@')[0]}\nSea Bienvenido a  *${groupName}*\n\n lea las reglas en la descripción y evite ser baneado`
 				let buff = await getBuffer(ppimg)
@@ -305,10 +305,10 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["51928564603@s.whatsapp.net","51928557626@s.whatsapp.net","51928564603@s.whatsapp.net"] // Recoloque o seu numero
-			const mod = [ownerNumber,"51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]// Moderador do bot
+			const ownerNumber = ["51928564603@s.whatsapp.net","51928557626@s.whatsapp.net","51928564603@s.whatsapp.net"] // Recoloque su numero
+			const mod = [ownerNumber,"51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]// moderador de bot
 			const adminbotnumber = ["51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]// admin bot numero
-			const frendsowner = ["51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]// amigo do criador 
+			const frendsowner = ["51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]// amigo del creador
 			const premium = ["51928564603@s.whatsapp.net","593960159468@s.whatsapp.net","50589261089@s.whatsapp.net"]//lista de usuarios premium
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -600,21 +600,13 @@ if (text.includes("placa"))
 	        if (messagesC.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('usted es admin, entonces no te daran ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('usted es admin, entonces no te daran ban, rlx 🙂')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado en 3 segundos😉`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		
-	
-			
-		
-		
-	
-	
-	
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
@@ -633,33 +625,25 @@ if (text.includes("placa"))
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('usted es admin del grupo, entonces no te daran ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('usted es admin del grupo, entonces no te daran ban, rlx 🙂')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado dentro de 5 segundos`)
+		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado dentro de 3 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
+			reply("1 segundos")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
+			reply("2 segundos")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundos, chau prro 🤙")
+			reply("3 segundos, chau prro 🤙")
 		}, 0)
 	} 
 	
@@ -673,12 +657,11 @@ if (text.includes("placa"))
 			reply("que rico la chupas brynz")
 	}
 
-		if (messagesC.includes("Lixo")){
-			client.updatePresence(from, Presence.composing)
-			reply("Teu pai")
-	}
-
 		if (messagesC.includes("krai")){
+			client.updatePresence(from, Presence.composing)
+			reply("hehehe")
+	}
+		if (messagesC.includes("")){
 			client.updatePresence(from, Presence.composing)
 			reply("hehehe")
 	}
@@ -747,7 +730,7 @@ if (text.includes("placa"))
 
 			if (messagesC.includes("xxx")){
 				client.sendMessage(from, Presence.composing)
-				reply("e,.,e")
+				reply("no, puta.")
 	}
 	
 			if (messagesC.includes("bot")){
@@ -767,7 +750,7 @@ if (text.includes("placa"))
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
             
-            if (messagesC.includes("gay")){
+            if (messagesC.includes("joto")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/gay.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
@@ -1104,7 +1087,7 @@ if (text.includes("placa"))
 					membr.push(cornos5.jid)
 					mentions(teks, membr, true)
 					break
-                    case 'gostosa':
+                    case 'gostosa1':
                      if (!isGroup) return reply(mess.only.group)
                       membr = []
                       const gostosa12 = groupMembers
@@ -1138,7 +1121,7 @@ if (text.includes("placa"))
 				    hai = body.slice(8)
 						sayrandom.push(hai)
 						fs.writeFileSync('./src/say.json', JSON.stringify(sayrandom))
-						reply(`Sucess ${hai} Adicionado a la lista de deseos`)
+						reply(`Sucess ${hai} Añadido a la lista de deseos`)
 						break
                    case 'saylist':
 					teks = 'Esta es la lista de deseos :\n'
@@ -1895,7 +1878,7 @@ if (text.includes("placa"))
                     reply(teks.trim())
 			     	await limitAdd(sender) 
 			     	break 
-            case 'onichan':
+            case 'onichann':
             case 'bodoh':
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
                 break
@@ -2104,7 +2087,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-				case 'animecry':
+				/*case 'animecry':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
@@ -2117,8 +2100,8 @@ if (text.includes("placa"))
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender) 
-					break 
-case 'onichann':
+					break */
+case 'oni':
 tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
@@ -2677,13 +2660,13 @@ break
 					break
 				case 'testime':
 					setTimeout( () => {
-					client.sendMessage(from, 'O tempo acabou:v', text) // ur cods
+					client.sendMessage(from, 'O el tiempo acabo', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, 'Mais 5 segundos', text) // ur cods
+					client.sendMessage(from, ' 5 segundos', text) // ur cods
 					}, 5000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, '10 segundos para ir', text) // ur cods
+					client.sendMessage(from, '10 segundos', text) // ur cods
 					}, 0) // 1000 = 1s,
 					break
 		        case 'gay':		
@@ -2944,7 +2927,7 @@ break
 			        hasil = `${anu.result}`
 			        reply(hasil)
 			        break
-			    case 'infonomor':
+			    case 'infonumero':
                     anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infonomor?no=${body.slice(10)}`)
 			        hasil = `*número* \n${anu.nomor} *internacional* \n${anu.international}`
 			        reply(hasil)
@@ -3291,7 +3274,7 @@ break
 					client.sendMessa
 				case 'setppbot':
 				client.updatePresence(from, Presence.composing) 
-				if (!isQuotedImage) return reply(`Grupo abierto`)
+				if (!isQuotedImage) return reply(`ok`)
 					if (!isOwner) return reply(mess.only.ownerB)
 					enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(enmedia)
@@ -3403,7 +3386,7 @@ break
 					gh = body.slice(7)
                     p1 = gh.split("/")[0];
                     p2 = gh.split("/")[1];
-					if (args.length < 1) return reply('Cadê o texto, hum')
+					if (args.length < 1) return reply('falta un texto, hum')
 					reply('espere')
 					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/pubg?text=${p1}&text2=${p2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -3714,17 +3697,17 @@ break
 			    case 'fakereplay':
                    client.reply(from, 'ange mas', 'mending lari', "0816-5466368")
                    break
-				case 'infogc':
+				case 'infog':
 				client.updatePresence(from, Presence.composing)
 				if (!isGroup) return reply(mess.only.group)
 					try {
 					ppimg = await client.getProfilePicture(from)
 				} catch {
-					ppimg = 'https://i.ibb.co/NthF8ds/IMG-20201223-WA0740.jpg'
+					ppimg = 'https://i.ibb.co/d515yT0/images-22.jpg'
 				}
 					let buf = await getBuffer(ppimg)
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `*Nome do grupo :* ${groupName}\n*Descrição :* ${groupDesc}\n*Número de Administradores :* ${groupAdmins.length}\n*Número de membros :* ${groupMembers.length}`
+					teks += `*Nombre del grupo :* ${groupName}\n*Descripcion :* ${groupDesc}\n*Número de Administradores :* ${groupAdmins.length}\n*Número de miembros :* ${groupMembers.length}`
 					no = 0
 					for (let admon of groupAdmins) {
 						no += 1
@@ -3734,7 +3717,7 @@ break
 					break
 			    case 'owner':
                     client.sendMessage(from, {displayname: "Hatori", vcard: vcard}, MessageType.contact, { quoted: mek})
-                    client.sendMessage(from, 'puede donar ahi o mandar un msj pv ',MessageType.text, { quoted: mek} )
+                    client.sendMessage(from, 'puede mandar un msj pv ahi ',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
 				case 'fake':          
@@ -4201,16 +4184,16 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADDq_64EbTI0NroP7CUoVeWmu1J06NnGHw&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Termmux ws muy conocido en el mundo de distribución Linux. Esta es una herramienta que facilita mucho las tareas del sistema. Ahora, yá pensó en utilizar el Terminal Linux en su Android? Esta és la propuesta de Termux.\n\n*TERMUX: UTILIZE EL TERMINAL EN SU ANDROID*\n\nLa utilización del Terminal aumenta mucho la productividad de los usuários que ya poseen un determinado nível de conocimiento técnico.\nCon el terminal, es posible hacer diversas y diferentes cosas, desde navegar entre los directórios e instalar programas, hasta descomprimir archivos y monitorear procesos.'})
 					break
-		    	case 'ginfo':
+		    	case 'grupoinfo':
                     client.updatePresence(from, Presence.composing)
                     if (!isGroup) return reply(mess.only.group)
                     ppUrl = await client.getProfilePicture(from) // leave empty to get your own
 			        buffer = await getBuffer(ppUrl)
 		            client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOMBRE* : ${groupName}\n*MIEMBROS* : ${groupMembers.length}\n*ADMINS* : ${groupAdmins.length}\n*DESCRIPCIÓN* : ${groupDesc}`})
                     break
-				 /* case 'meme':
+				 case 'meme':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=MEME BRASIL`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=MEME PERU`, {method: 'get'})
 					ri = JSON.parse(JSON.stringify(anu));
 					ze =  ri[Math.floor(Math.random() * ri.length)];
 					nye = await getBuffer(ze)
@@ -4221,7 +4204,7 @@ break
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
-					break/*/
+					break
 				case 'dueño':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.ibb.co/BNMVFJw/images-19.jpg`)
@@ -4543,7 +4526,7 @@ break
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
 						reply('Desactivo con éxito el recurso de bienvenida en esre grupo 😞')
 					} else {
-						reply('1 para activar, 0 para desactivar, entiendes?')
+						reply('1 para activar, 0 para desactivar')
 					}
                                       break
 				case 'clonar':
