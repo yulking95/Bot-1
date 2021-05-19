@@ -661,9 +661,9 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("hehehe")
 	}
-		if (messagesC.includes("")){
+		if (messagesC.includes("*Andy")){
 			client.updatePresence(from, Presence.composing)
-			reply("hehehe")
+			reply("que riko culito tiene andy 🥰")
 	}
 						
 		if (messagesC.includes("pene")){
