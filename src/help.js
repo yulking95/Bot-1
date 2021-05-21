@@ -2,19 +2,11 @@ const help = (prefix, sender, pushname, time) => {
 
 	return `
  <══════════════════>
-       *HH BOT*
+         *HH BOT*
  <══════════════════>
- 
-     ╭╮╮╱▔▔▔▔╲╭╭╮ 
-     ╰╲╲▏▂╲╱▂▕╱╱╯
-     ┈┈╲▏▇▏▕▇▕╱┈┈
-     ┈┈╱╲▔▕▍▔╱╲┈┈ 
-     ╭╱╱▕╋╋╋╋▏╲╲╮
-     ╰╯╯┈╲▂▂╱┈╰╰╯
-
    💪 Comandos prro 💪
 
-  *Todo lo que necesita*${pushname}?
+  *Todo lo que necesita* ${pushname}?
 
 ╭────「 INFO 」───────╮
 │                                            
@@ -23,10 +15,7 @@ const help = (prefix, sender, pushname, time) => {
 │                                            
 ┣⊱ Contacto:         
 │https://wa.me/51928564603
-│                                            
-┣⊱ Nro del Dueño: 
-│wa.me/51928564603
-│                                            
+│                                                                                      
 ┣⊱ Su link:
 │wa.me/${sender.split("@")[0]}   
 │                                       
@@ -47,9 +36,6 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **sticker*
 ┣⊱  **toimg*
 ┣⊱  **tts*
-┣⊱  **lolih*
-┣⊱  **nsfwloli*
-┣⊱  **url2img*
 ┣⊱  **leens*
 ┣⊱  **wait*                
 ┣⊱  **linkgp*          
@@ -70,8 +56,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **clonar*      
 ┣⊱  **help1*           
 ┣⊱  **dueño*            
-┣⊱  **owner*           
-┣⊱  **tts*           
+┣⊱  **owner*                    
 ┣⊱  **setfoto*         
 ┣⊱  **grupoinfo*       
 ┣⊱  **ytmp4*           
@@ -79,16 +64,14 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **buenasnoches*                              
 ╰────────────────
 ╭────「 IMÁGENES 」──
-│                    
-┣⊱             
+│                           
 ┣⊱  **porno*         
 ┣⊱  **buenasnoches*      
 ┣⊱  **buendia*        
 ┣⊱  **buenasnoches*      
 ┣⊱  **mia*           
 ┣⊱  **rize*                 
-┣⊱  **naruto*                             
-┣⊱                         
+┣⊱  **naruto*                                                 
 ╰────────────────
 
 ╭─「 INTELIGÊNCIA 」
@@ -259,6 +242,8 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  *canta*
 ┣⊱  *grita*                   
 ┣⊱  *gime*                   
+┣⊱  *yamete*                   
+┣⊱  *pasen*                   
 
 │                             
 ╰──────────────────╯`
