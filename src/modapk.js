@@ -1,10 +1,10 @@
 const modapk = () => { 
 	return `
 	*Mod de aplicativo*
-• Quer baixar algo?
+• Quiere bajar algo?
 
 
-👾 *APROVEITEM*
+👾 *APROVECHE*
 
 • Minecraft (Original)
 https://www.mediafire.com/file/4hixmktsfkhky91/Minecraft_v1.16.101.01_Terbaru.zip/file
@@ -132,9 +132,9 @@ https://realsht.mobi/exXCy
 • Template Solo
 https://realsht.mobi/MvYbm
 
-〽️FONTES
+〽️FUENTES
 
-• Coleção de fontes para citações
+• Colección de fuentes 
 https://realsht.mobi/JkmXx
 
 • 800 Font Picsay/Pixelab
