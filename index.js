@@ -2059,7 +2059,7 @@ if (text.includes("placa"))
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi
+                hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*alerta :V*')
 				break									
          case 'moddroid':
