@@ -2970,7 +2970,7 @@ break
                                         break
 			    case 'waifu':
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
+						res = await fetchJson(`https://api-gdr.herokuapp.com/api/waifu`, {method: 'get'})
 						buffer = await getBuffer(res.image)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ksksksks hmm'})
 					} catch (e) {
@@ -2980,7 +2980,7 @@ break
 					break
 			    case 'waifu2':
 					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
+					anu = await fetchJson(`https://api-gdr.herokuapp.com/api/waifu`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.image)
 					waifu = `*${anu.desc}`
