@@ -67,7 +67,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '*'
 blocked = []
 limitawal = '999999999'
-cr = '*Hatori*'
+cr = '*yulking95*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
