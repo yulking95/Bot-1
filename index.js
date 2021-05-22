@@ -225,7 +225,7 @@ async function starts() {
 				try {
 					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i.ibb.co/wSZW9Vk/images-21.jpg'
+					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
 				teks = `Hola mi estimad@ @${num.split('@')[0]}\nSea Bienvenido a  *${groupName}*\n\n lea las reglas en la descripción y evite ser baneado`
 				let buff = await getBuffer(ppimg)
@@ -657,9 +657,10 @@ if (text.includes("placa"))
 			reply("que rico la chupas brynz")
 	}
 
-		if (messagesC.includes("krai")){
+		if (messagesC.includes("*andy")){
 			client.updatePresence(from, Presence.composing)
-			reply("hehehe")
+			reply("que riko culito tiene el ⚡Andy🔥")
+			
 	}
 		if (messagesC.includes("*Andy")){
 			client.updatePresence(from, Presence.composing)
@@ -692,7 +693,7 @@ if (text.includes("placa"))
 			reply("Que rico la chupa")
 	}
 
-			if (messagesC.includes("porno")){
+			if (messagesC.includes("pasen")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/callacagada.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1204,11 +1205,11 @@ if (text.includes("placa"))
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, gpersona(prefix), text, { quoted: mek })
                     break
-                   case 'destrava':
+                   case 'destraba':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
-                   case 'packzera':
+                   case 'pack':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
                     break
@@ -1405,9 +1406,9 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://zeksapi.herokuapp.com/api/watercolour?text1=${coli1}&text2=${coli2}&apikey=xptnbot352`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'covidbr':
-                    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/covidbr`)
-                    resp = `Ativos: ${anu.ativo}\nCasos: ${anu.casos}\nCasos Hoje: ${anu.casos_hoje}\nCasos Criticos: ${anu.criticos}\nMortes: ${anu.mortes}\nMortes Hoje: ${anu.mortes_hoje}`
+                case 'covid':
+                    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/covid`)
+                    resp = `Activos: ${anu.ativo}\nCasos: ${anu.casos}\nCasos Hoy: ${anu.casos_hoje}\nCasos Criticos: ${anu.criticos}\nMuertes: ${anu.mortes}\nMuertes Hoy: ${anu.mortes_hoje}`
                     client.sendMessage(from, resp, text,  {quoted: mek})
                    break
 				case 'testing2':
@@ -1879,7 +1880,7 @@ if (text.includes("placa"))
 			     	await limitAdd(sender) 
 			     	break 
             case 'onichann':
-            case 'bodoh':
+            case 'onichan':
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
                 break
 				case 'daftar':
@@ -2006,7 +2007,8 @@ if (text.includes("placa"))
 					client.banUser (`${body.slice(7)}@c.us`, "add")
 					client.sendMessage(from, `Usted fue baneado ${body.slice(7)}@c.us`, text)
 					break
-				case 'playstore':
+				
+				/*case 'playstore':
 					kuji = body.slice(7)
 					reply(mess.wait)
 					anu = await getBuffer(`https://api.vhtear.com/playstore?query={kuji}&apikey=Aris komtol`, {method: 'get'})
@@ -2024,7 +2026,7 @@ if (text.includes("placa"))
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
-					break
+					break*/
                 case 'pinterest':
                     tels = body.slice(11)
 					client.updatePresence(from, Presence.composing) 
@@ -2057,7 +2059,7 @@ if (text.includes("placa"))
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
+                hasil = await getBuffer(randKey.result)https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi
                 sendImage(hasil, mek, '*alerta :V*')
 				break									
          case 'moddroid':
@@ -2087,7 +2089,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-				/*case 'animecry':
+				case 'animecry':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
@@ -2100,8 +2102,8 @@ if (text.includes("placa"))
 						fs.unlinkSync(rano)
 					})
 					await limitAdd(sender) 
-					break */
-case 'oni':
+					break 
+case 'onichan':
 tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
@@ -2650,7 +2652,7 @@ break
 			    case 'nsfwblowjob':
 				    try {
 						if (!isNsfw) return reply('❌ *FALSO* ❌')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
+						res = await fetchJson(`https://api-gdr.herokuapp.com/api/nekoblowjob`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Não faça ingredientes para o tio comum'})
 					} catch (e) {
@@ -2722,24 +2724,24 @@ break
 					break
 			    case 'nsfwneko':
 				    try {
-						if (!isNsfw) return reply('❌ *FALSO* ❌')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko`, {method: 'get'})
+						if (!isNsfw) return reply('❌ *ERROR* ❌')
+						res = await fetchJson(`https://api-gdr.herokuapp.com/api/nekohentai`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni anjim'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
+						reply('Su neko')
 					}
 					break
 				case 'nsfwtrap':
 				    try {
 						if (!isNsfw) return reply('❌ *FALSO* ❌')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap`, {method: 'get'})
+						res = await fetchJson(`https://api-gdr.herokuapp.com/api/nekotrap`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ni Anjim'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
+						reply('su trap, joto')
 					}
 					break
 				case 'animekiss':
@@ -4139,7 +4141,7 @@ break
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*Belle :V*')
 				break
-				 /* case 'belle1':
+				  case 'belle1':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7ot6RZPnXSJFFKVjPoeXHjTYyi6uk5W_mA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️'})
@@ -4154,11 +4156,11 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbo5EcVSGj-IvEVznHIgMZ9vjFptZfvprtg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
 					break
-				case 'canal':
+				/* 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎:*\n\n https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g'})
-					break
+					break*/
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhzKetbU3pzhoZdaIo6qBklCzwvmCCOznbg&usqp=CAU`)
@@ -4168,7 +4170,7 @@ break
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlc2hMIJ4PjW5tIXltrKe6xeBoKPLKTZMnQ&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '🤭'})
-					break*/
+					break
 				case 'buenasnoches':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/4HeRfuO`)
@@ -4220,18 +4222,18 @@ break
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
 					reply(`El prefijo fue alterado con éxito para : ${prefix}`)
-					break
-				case 'loli':
+					break /*
+				case/* 'loli':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'loli 7u7'})
 					})
-					break
+					break*/
                 case 'lolih':
                     gatauda = body.slice(6)
                     reply(mess.wait)
-                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
+                    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/nekohentai`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
                     client.sendMessage(from, buffer, image, {quoted: mek})
                     await limitAdd(sender)
@@ -4259,12 +4261,12 @@ break
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-					break
+					break*/
 				case 'tiktok':
-					if (args.length < 1) return reply('𝙲𝚊𝚍𝚎 𝚘 𝚕𝚒𝚗𝚔 𝚟𝚎𝚢?')
+					if (args.length < 1) return reply('falta el link tio?')
 					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/tiktok?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
+					anu = await FetchJson(https://api-gdr.herokuapp.com/api/tiktok?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {quoted: mek})
@@ -4321,7 +4323,7 @@ break
 						client.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 						fs.unlinkSync(rano)
 					})
-					break/*/
+					break
 				case 'marcar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
