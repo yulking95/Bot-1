@@ -19,7 +19,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱ Su link:
 │wa.me/${sender.split("@")[0]}   
 │                                       
-┣⊱ 𝐒𝐓𝐀𝐓𝐔𝐒: BRAVO          
+┣⊱ 𝐒𝐓𝐀𝐓𝐔𝐒: ACTIVO    
 │                                            
 ┣⊱ Velocidad:           
 │${process.uptime()}         
@@ -59,7 +59,8 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **owner*                    
 ┣⊱  **setfoto*         
 ┣⊱  **grupoinfo*       
-┣⊱  **ytmp4*           
+┣⊱  **ytmp4* 
+┣⊱. **play*
 ┣⊱  **buendia*          
 ┣⊱  **buenasnoches*                              
 ╰────────────────
@@ -70,8 +71,17 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **buendia*        
 ┣⊱  **buenasnoches*      
 ┣⊱  **mia*           
-┣⊱  **rize*                 
-┣⊱  **naruto*                                                 
+┣⊱  **rize* 
+┣⊱. **waifu*
+┣⊱. **malkova*
+┣⊱. **belle,belle1*
+┣⊱. **reislin*
+┣⊱. **lofi*
+┣⊱  **naruto* 
+┣⊱. **nsfwneko*
+┣⊱. **nsfwloli*
+┣⊱. **nsfwtrap*
+┣⊱. **nsfwblowjob*
 ╰────────────────
 
 ╭─「 INTELIGÊNCIA 」
@@ -121,7 +131,8 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **clonar*                  
 ┣⊱  **dueño*                        
 ┣⊱  **ping*                                            
-┣⊱  **wame*                                         
+┣⊱  **wame*
+┣⊱. **wa.me*
 ┣⊱  **setppbot*   
 ┣⊱  **pinterest*                                   
 ┣⊱  **timer*                       
@@ -132,15 +143,19 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **testime*                 
 ┣⊱  **tomp3*                   
 ┣⊱  **modoanime*               
-┣⊱  **modonsfw*                             
+┣⊱  **modonsfw*  
+
+
 ┣⊱  **moddroid*                                 
 ┣⊱  **nombregp*                                   
-┣⊱  **alerta*                                      
+┣⊱  **alerta*
+┣⊱. **infog*
+
 ╰──────────────────╯
 ╭──「 COMANDOS DE VOZ 」─
 │                                 
 ┣⊱  **ola*                        
-┣⊱  ***                         
+┣⊱  **risas*                         
 ┣⊱  ***                      
 ┣⊱  **sexo*                        
 ┣⊱  **a*                          
@@ -244,7 +259,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  *gime*                   
 ┣⊱  *yamete*                   
 ┣⊱  *pasen*                   
-
+┣⊱. *onichan*
 │                             
 ╰──────────────────╯`
 
