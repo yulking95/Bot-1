@@ -223,7 +223,7 @@ async function starts() {
 			if (anu.action == 'add') {
 				num = anu.participants[0]
 				try {
-					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
@@ -647,9 +647,9 @@ if (text.includes("placa"))
 		}, 0)
 	} 
 	
-	if (messagesC.includes("*hatori")){
+	if (messagesC.includes("*yue")){
 			client.updatePresence(from, Presence.composing)
-			reply("el mas penon👌")
+			reply("Joder que buenas patas se maneja la Julie")
 	}
 	
 		if (messagesC.includes("*brynz")){
@@ -659,7 +659,7 @@ if (text.includes("placa"))
 
 		if (messagesC.includes("*andy")){
 			client.updatePresence(from, Presence.composing)
-			reply("que riko culito tiene el ⚡Andy🔥")
+			reply("que riko culito tiene el Andy🔥")
 			
 	}
 		if (messagesC.includes("*Andy")){
@@ -667,9 +667,9 @@ if (text.includes("placa"))
 			reply("que riko culito tiene andy 🥰")
 	}
 						
-		if (messagesC.includes("pene")){
+		if (messagesC.includes("diosa")){
 			client.updatePresence(from, Presence.composing)
-			reply("quieres nepe?🥵🍆💦")
+			reply("me quiero coger su voz")
 	}
 	
 		if (messagesC.includes("eae")){
@@ -1207,7 +1207,7 @@ if (text.includes("placa"))
                     break
                    case 'destraba':
                     if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, destrava(prefix), text, { quoted: mek })
+                    client.sendMessage(from, destraba(prefix), text, { quoted: mek })
                     break
                    case 'pack':
                     if (!isPremium) return reply(mess.only.premium)
@@ -1879,7 +1879,7 @@ if (text.includes("placa"))
                     reply(teks.trim())
 			     	await limitAdd(sender) 
 			     	break 
-            case 'onichann':
+            case 'onichan':
             case 'onichan':
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
                 break
@@ -1936,7 +1936,7 @@ if (text.includes("placa"))
                     const latensi = speed() - timestamp
                     client.updatePresence(from, Presence.composing) 
 				uptime = process.uptime()
-                    client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *Xiaomi*\nRAM: *6/64*\nData: *Telkomsel*\nRede: *4G*\nStatus: *Anda sin datos*\nTipo do bot: *Termux Solamente*\n\n*El bot esta activo por*\n*${kyun(uptime)}*`, text, { quoted: mek})
+                    client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *Xiaomi*\nRAM: *6/64*\nData: *Telkomsel*\nRed: *4G*\nStatus: *Anda sin datos*\nTipo de bot: *Termux Solamente*\n\n*El bot esta activo por*\n*${kyun(uptime)}*`, text, { quoted: mek})
                     break
 				case 'delete':
 				case 'del':
@@ -2599,7 +2599,7 @@ break
                 break
 			case 'instaimg':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://alfians-api.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
+				    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
 				    client.sendMessage(from, insta, image, {quoted: mek})
@@ -2607,7 +2607,7 @@ break
 				    break  
 				case 'instavid':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://alfians-api.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
+				    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
 				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'instagram'.mp3, quoted: mek})
@@ -2662,7 +2662,7 @@ break
 					break
 				case 'testime':
 					setTimeout( () => {
-					client.sendMessage(from, 'O el tiempo acabo', text) // ur cods
+					client.sendMessage(from, ' 0 se acabo el tiempo', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, ' 5 segundos', text) // ur cods
@@ -2972,7 +2972,7 @@ break
 				    try {
 						res = await fetchJson(`https://api-gdr.herokuapp.com/api/waifu`, {method: 'get'})
 						buffer = await getBuffer(res.image)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ksksksks hmm'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'su waifu jsjsjs'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
@@ -3880,7 +3880,7 @@ break
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
-					dtt.length > 100
+					dtt.length > 200
 					? reply('La mayor parte del texto es mierda')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
@@ -3949,7 +3949,7 @@ break
 						client.sendMessage(from, bufferttt, image, {quoted: mek, caption: 'ksksks'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
+						reply('❌ *ERROR* ❌')
 					}
 					break
 					case 'dado':    
@@ -4433,7 +4433,7 @@ break
 						reply('Falló al añadir destino, quizas por que es una cuenta privada')
 					}
 					break
-				case 'ban':
+				case 'banear':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
