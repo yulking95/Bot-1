@@ -1880,7 +1880,7 @@ if (text.includes("placa"))
 			     	await limitAdd(sender) 
 			     	break 
             case 'onichann':
-            case 'oni:
+            case 'oni':
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
                 break
 				case 'daftar':
