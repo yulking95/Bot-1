@@ -1240,7 +1240,7 @@ if (text.includes("placa"))
                    reply(mess.wait)
 					if (args.length < 1) return reply('Falta el url, hum?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*Título* : ${anu.title}\n*Tamaño de archivo* : ${anu.filesize}`
 					thumb = await getBuffer(anu.thumb)
@@ -1665,11 +1665,11 @@ if (text.includes("placa"))
 				case 'ytsearch':
 					if (args.length < 1) return reply('Falta el texto tio?')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.arugaz.my.id/api/media/ytsearch?query=${body.slice(10)}`, {method: 'get'})
+					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/yt-search?q==${body.slice(10)}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result) {
-						teks += `\`\`\`Título\`\`\` : *${i.title}*\n\`\`\`Link\`\`\` : *https://youtu.be/${i.id}*\n\`\`\`Publicados\`\`\` : *${i.uploadDate}*\n\`\`\`Duracion\`\`\` : *${i.duration}*\n\`\`\`Visualizadores: \`\`\`*${h2k(i.viewCount)}*\n\`\`\`Canal:\`\`\` *${i.channel.name}*\n=================\n`
+						teks += `\`\`\`Título\`\`\` : *${i.title}*\n\`\`\`Link\`\`\` : *https://youtu.be/${i.id}*\n\`\`\`Publicado\`\`\` : *${i.uploadDate}*\n\`\`\`Duracion\`\`\` : *${i.duration}*\n\`\`\`Visualizadores: \`\`\`*${h2k(i.viewCount)}*\n\`\`\`Canal:\`\`\` *${i.channel.name}*\n=================\n`
 					}
 					reply(teks.trim())
 					await limitAdd(sender) 
@@ -1836,7 +1836,7 @@ if (text.includes("placa"))
 			      break
                   case 'playstore':
                 ps = `${body.slice(11)}`
-                  anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/playstore?q=%20free%20fire${ps}`, {method: 'get'})
+                  anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/playstore?q=${ps}`, {method: 'get'})
                   store = '======================\n'
                   for (let ply of anu.result){
                   store += `• *Nombre Apk:* ${ply.app.name}\n• *ID:* ${ply.app.id}\n• *Link Apk:* ${ply.app.url}\n===================°]\n`
@@ -1879,8 +1879,8 @@ if (text.includes("placa"))
                     reply(teks.trim())
 			     	await limitAdd(sender) 
 			     	break 
-            case 'onichan':
-            case 'onichan':
+            case 'onichann':
+            case 'oni:
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
                 break
 				case 'daftar':
@@ -1995,7 +1995,7 @@ if (text.includes("placa"))
                 case 'image':
 					if (args.length < 1) return reply('O que você quer procurar, mano?')
 					goo = body.slice(7)
-					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=NOT-PREMIUM`, {method: 'get'})
 					reply(mess.wait)
 				    var pol = JSON.parse(JSON.stringify(anu.result.result_search));
                     var tes2 =  pol[Math.floor(Math.random() * pol.length)];
@@ -2605,12 +2605,12 @@ break
 				    client.sendMessage(from, insta, image, {quoted: mek})
 				    await limitAdd(sender) 
 				    break  
-				case 'instavid':
-				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://api-gdr.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
+				case 'fb':
+				if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.lv)
+				    anu = await fetchJson(`http://api.fdci.se/sosmed/fb.php?url=${args[0]}`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
-				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'instagram'.mp3, quoted: mek})
+				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'facebook'.mp3, quoted: mek})
 				    await limitAdd(sender) 
 				    break  
 				    
@@ -2796,9 +2796,9 @@ break
 					reply(' Use ${prefix}leveling on para activar   ${prefix}leveling off para desactivar')
 					}
 					break
-			    case 'tinyurl':
+			    case 'kpop':
 			    reply(mess.wait)
-                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/tinyurl?url=${body.slice(9)}&apikey=${TobzApi}`)
+                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomkpop?=${body.slice(9)}&apikey=${APIKEYLU}`)
 			        tinyurl = `${anu.result}`
 			        reply(tinyurl)
 			        await limitAdd(sender) 
@@ -3292,9 +3292,9 @@ break
 				client.sendMessage(from, film, text, {quoted: mek})
 				await limitAdd(sender) 
 					break					
-				case 'randomcat':
+				case 'hentai':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=APIKEYLU`)
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result.url)
 					client.sendMessage(from, buffer, image, {quoted: mek})
@@ -4266,7 +4266,7 @@ break
 					if (args.length < 1) return reply('falta el link tio?')
 					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await FetchJson(`https://api-gdr.herokuapp.com/api/tiktok?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
+					anu = await FetchJson(`https://api.zeks.xyz/api/tiktok?url=${args[0]}&apiKey=${apivinz}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {quoted: mek})
