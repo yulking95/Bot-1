@@ -56,7 +56,7 @@ const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
 const BotName = '⚡HH BOT⚡'; 
-const instagram = 'http://www.instagram.com/'; 
+const facebook = 'http://www.facebook.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
@@ -216,37 +216,74 @@ async function starts() {
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 
 	client.on('group-participants-update', async (anu) => {
-		if (!welkom.includes(anu.jid)) return
-		try {
-			const mdata = await client.groupMetadata(anu.jid)
-			console.log(anu)
-			if (anu.action == 'add') {
-				num = anu.participants[0]
-				try {
-					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
-				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-				}
-				teks = `Hola mi estimad@ @${num.split('@')[0]}\nSea Bienvenido a  *${groupName}*\n\n lea las reglas en la descripción y evite ser baneado`
-				let buff = await getBuffer(ppimg)
-				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-			} else if (anu.action == 'remove') {
-				num = anu.participants[0]
-				try {
-					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
-				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-				}
-				teks = `Nadie lo conocia xd@${num.split('@')[0]} `
-				let buff = await getBuffer(ppimg)
-				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-			}
-		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		}
-	})
+		
+if (!welkom.includes(anu.jid)) return
 
+                    try {
+
+                            const imgur = require('imgur')
+
+                num = anu.participants[0]
+
+                const mdata = await client.groupMetadata(anu.jid)
+
+                try {
+
+                    var pp_user = await client.getProfilePicture(num)
+
+                } catch (e) {
+
+                    var pp_user = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+
+                }
+
+                exeone = await imageToBase64(JSON.stringify(pp_user).replace(/\"/gi, ''))
+
+                            exetwo = getRandom('.jpeg')
+
+                            fs.writeFileSync(exetwo, exeone, 'Base64')
+
+                            let psCAPA = await imgur.uploadFile(exetwo)
+
+                            fs.unlinkSync(exetwo)
+
+                if (anu.action == 'add') {
+
+                    ini_user = client.contacts[num]
+
+                    ini_img = await getBuffer(`https://api-exteam.herokuapp.com/api/welcome?nome=${pushname2}&gpnome=${encodeURIComponent(mdata.subject)}&perfil=${psCAPA.link}&fundo=https://pt-static.z-dn.net/files/df9/e66f1513bca9d94fefdea96e5a5c59de.jpg`)
+
+                    teks = `━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━
+
+    Bienvenido al Grupo! Lea las reglas del grupo y evite ser eliminado. 
+
+     ⚡HH-BOT⚡ 
+
+    ━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━`
+
+                    group_info = await client.groupMetadata(anu.jid)
+
+                    client.sendMessage(anu.jid, ini_img, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+
+                }
+
+                if (anu.action == 'remove') {
+
+                ini_user = client.contacts[num]
+
+                ini_img = await getBuffer(`https://api-exteam.herokuapp.com/api/goodbye?nome=${pushname2}&gpnome=${encodeURIComponent(mdata.subject)}&perfil=${psCAPA.link}&fundo=https://pt-static.z-dn.net/files/df9/e66f1513bca9d94fefdea96e5a5c59de.jpg`)
+
+                client.sendMessage(anu.jid, ini_img, MessageType.image)
+
+                }
+
+                    } catch (e) {
+
+                            console.log('Error : %s', color(e, 'red'))
+
+                    }
+
+    })
 	client.on('CB:Blocklist', json => {
             if (blocked.length > 2) return
 	    for (let i of json[1].blocklist) {
@@ -604,21 +641,14 @@ if (text.includes("placa"))
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado en 3 segundos😉`)
+		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado😉`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
+		
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos chau prro🤙")
+			reply(" chau prro🤙")
 		}, 0)
 	}
 	
@@ -629,21 +659,14 @@ if (text.includes("placa"))
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado dentro de 3 segundos`)
+		reply(`link detectado ${sender.split("@")[0]} Usted sera expulsado`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
+		
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos, chau prro 🤙")
+			reply(" chau prro 🤙")
 		}, 0)
 	} 
 	
