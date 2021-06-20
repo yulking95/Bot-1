@@ -2630,7 +2630,7 @@ break
 				    break  
 				case 'fb':
 				if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`http://api.fdci.se/sosmed/fb.php?url=${args[0]}`, {method: 'get'})
+				    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/facebook?url=https://www.facebook.com/watch/?v=1393572814172251&apikey=APIKEYLU${args[0]}`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
 				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'facebook'.mp3, quoted: mek})
