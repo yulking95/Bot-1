@@ -219,71 +219,71 @@ async function starts() {
 		
 if (!welkom.includes(anu.jid)) return
 
-                    try {
+		try {			const mdata = await client.groupMetadata(anu.jid)
 
-                            const imgur = require('imgur')
+			console.log(anu)
 
-                num = anu.participants[0]
+			if (anu.action == 'add') {
 
-                const mdata = await client.groupMetadata(anu.jid)
+				num = anu.participants[0]
 
-                try {
+				try {
 
-                    var pp_user = await client.getProfilePicture(num)
+					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 
-                } catch (e) {
+				} catch {
 
-                    var pp_user = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 
-                }
+				}
 
-                exeone = await imageToBase64(JSON.stringify(pp_user).replace(/\"/gi, ''))
+				teks = `Hola, mi estimad@ @${num.split('@')[0]}\nSea Bienvenid@ al grupo *${mdata.subject}*\n\nEspero que le agrade, lea las reglas y evite se baneado❤️`
 
-                            exetwo = getRandom('.jpeg')
+				let buff = await getBuffer(ppimg)
 
-                            fs.writeFileSync(exetwo, exeone, 'Base64')
+				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 
-                            let psCAPA = await imgur.uploadFile(exetwo)
+				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
-                            fs.unlinkSync(exetwo)
+			} else if (anu.action == 'remove') {
 
-                if (anu.action == 'add') {
+				num = anu.participants[0]
 
-                    ini_user = client.contacts[num]
+				try {
 
-                    ini_img = await getBuffer(`https://api-exteam.herokuapp.com/api/welcome?nome=${pushname2}&gpnome=${encodeURIComponent(mdata.subject)}&perfil=${psCAPA.link}&fundo=https://pt-static.z-dn.net/files/df9/e66f1513bca9d94fefdea96e5a5c59de.jpg`)
+					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
 
-                    teks = `━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━
+				} catch {
 
-    Bienvenido al Grupo! Lea las reglas del grupo y evite ser eliminado. 
+					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 
-     ⚡HH-BOT⚡ 
+				}
 
-    ━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━`
+				teks = `Nadie lo conocia@${num.split('@')[0]} xd`
 
-                    group_info = await client.groupMetadata(anu.jid)
+				let buff = await getBuffer(ppimg)
 
-                    client.sendMessage(anu.jid, ini_img, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 
-                }
+			}
 
-                if (anu.action == 'remove') {
+		} catch (e) {
 
-                ini_user = client.contacts[num]
+			console.log('Error : %s', color(e, 'red'))
 
-                ini_img = await getBuffer(`https://api-exteam.herokuapp.com/api/goodbye?nome=${pushname2}&gpnome=${encodeURIComponent(mdata.subject)}&perfil=${psCAPA.link}&fundo=https://pt-static.z-dn.net/files/df9/e66f1513bca9d94fefdea96e5a5c59de.jpg`)
+		}
 
-                client.sendMessage(anu.jid, ini_img, MessageType.image)
+	})
 
-                }
+                    
+                
+                            
 
-                    } catch (e) {
+                    
 
-                            console.log('Error : %s', color(e, 'red'))
-
-                    }
-
-    })
+       
+                    
+    
 	client.on('CB:Blocklist', json => {
             if (blocked.length > 2) return
 	    for (let i of json[1].blocklist) {
@@ -330,7 +330,7 @@ if (!welkom.includes(anu.jid)) return
 				},
 				only: {
 					group: 'Este comando solo puede ser usado en grupos prro',
-					premium: `Eh {pushname2} Solo usuarios PREMIUMS pueden usar este comando*`,
+					premium: `Eh ${pushname2} Solo usuarios PREMIUMS pueden usar este comando*`,
 					mod: 'ESTE PEDIDO ÉS ESPECÍFICO PARA LOS MODERADORES DE ⚡HH BOT⚡*',
 					benned: 'Usted fue baneado, contacte con el dueño para desbanear',
 					ownerG: 'Sólo Hatori puede usar este comando prro',
@@ -779,7 +779,7 @@ if (text.includes("placa"))
 	     	const d = fs.readFileSync('./sticker/gay.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
-          if (messagesC.includes("jajaja")){
+          if (messagesC.includes("jajajaja")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/kkk.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
