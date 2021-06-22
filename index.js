@@ -315,7 +315,7 @@ if (!welkom.includes(anu.jid)) return
 			const args = body.trim().split(/ +/).slice(1)
 			const isCmd = body.startsWith(prefix)
 			const insom = from.endsWith('@g.us')
-			const nameReq = isnom ? mek.participant : mek.key.remoteJid
+			const nameReq = insom ? mek.participant : mek.key.remoteJid
 			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
