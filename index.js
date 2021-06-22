@@ -2016,16 +2016,16 @@ if (text.includes("placa"))
 					client.sendMessage(from, `orden recibida, desbloquear a ${body.slice(9)}@c.us`, text)
 				    break
                 case 'image':
-					if (args.length < 1) return reply('O que você quer procurar, mano?')
+					if (args.length < 1) return reply('que deseas buscar prro?')
 					goo = body.slice(7)
-					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=NOT-PREMIUM`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=${NOT-PREMIUM}`, {method: 'get'})
 					reply(mess.wait)
 				    var pol = JSON.parse(JSON.stringify(anu.result.result_search));
                     var tes2 =  pol[Math.floor(Math.random() * pol.length)];
 					pint = await getBuffer(tes2)
-					client.sendMessage(from, pint, image, { caption: '*Google Image*\n\n*Resultado da pesquisa : '+goo+'*', quoted: mek })
+					client.sendMessage(from, pint, image, { caption: '*Google Image*\n\n*Resultado de la busqueda : '+goo+'*', quoted: mek })
 					break
-				case 'ban':
+				case 'banear':
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.banUser (`${body.slice(7)}@c.us`, "add")
 					client.sendMessage(from, `Usted fue baneado ${body.slice(7)}@c.us`, text)
@@ -2630,7 +2630,7 @@ break
 				    break  
 				case 'fb':
 				if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/facebook?url=https://www.facebook.com/watch/?v=1393572814172251&apikey=APIKEYLU${args[0]}`, {method: 'get'})
+				    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/facebook?url=https://www.facebook.com/watch/?v=1393572814172251&apikey=${APIKEYLU}`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
 				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'facebook'.mp3, quoted: mek})
@@ -4456,7 +4456,7 @@ break
 						reply('Falló al añadir destino, quizas por que es una cuenta privada')
 					}
 					break
-				case 'banear':
+				case 'ban':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
