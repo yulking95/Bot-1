@@ -51,7 +51,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 /*const { xp } = require('./database/menu/xp')
-const { limit } = require('./database/menu/limit*/
+const { limit } = require('./database/menu/limit')*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
@@ -219,7 +219,8 @@ async function starts() {
 		
 if (!welkom.includes(anu.jid)) return
 
-		try {			const mdata = await client.groupMetadata(anu.jid)
+		try {			
+			mdata = await client.groupMetadata(anu.jid)
 
 			console.log(anu)
 
@@ -275,14 +276,14 @@ if (!welkom.includes(anu.jid)) return
 
 	})
 
-                    
                 
-                            
+                
+                        
 
                     
 
        
-                    
+                   
     
 	client.on('CB:Blocklist', json => {
             if (blocked.length > 2) return
@@ -314,8 +315,8 @@ if (!welkom.includes(anu.jid)) return
 			const args = body.trim().split(/ +/).slice(1)
 			const isCmd = body.startsWith(prefix)
 			const insom = from.endsWith('@g.us')
-			const nameReq = insom ? mek.participant : mek.key.remoteJid
-			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
+			 /*const nameReq =romrommek.participant : mek.key.remoteJid
+			pcushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined*/
 
 			mess = {
 					wait: 'Espera prro, HH BOT esta trabajando ahora',
@@ -356,7 +357,7 @@ if (!welkom.includes(anu.jid)) return
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const groupId = isGroup ? groupMetadata.jid : ''
-			const time = moment.tz('America/Sao_Paulo').format('DD/MM HH:mm:ss')
+			const time = moment.tz('America/Lima').format('DD/MM HH:mm:ss')
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
