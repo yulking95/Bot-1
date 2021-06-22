@@ -315,8 +315,8 @@ if (!welkom.includes(anu.jid)) return
 			const args = body.trim().split(/ +/).slice(1)
 			const isCmd = body.startsWith(prefix)
 			const insom = from.endsWith('@g.us')
-			 /*const nameReq =romrommek.participant : mek.key.remoteJid
-			pcushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined*/
+			const nameReq = isnom ? mek.participant : mek.key.remoteJid
+			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
 					wait: 'Espera prro, HH BOT esta trabajando ahora',
@@ -336,7 +336,7 @@ if (!welkom.includes(anu.jid)) return
 					benned: 'Usted fue baneado, contacte con el dueño para desbanear',
 					ownerG: 'Sólo Hatori puede usar este comando prro',
 					ownerB: 'Sólo Hatori puede usar este comando prro',
-					userB: `──「 LISTA 」──\nHolá ${pushname} !\nUsted no esta registrado como amigo de mi dueño, pulsa para que el te añada como amigo\n\n──「 ⚡HH BOT ⚡ 」──`,
+					userB: `──「 LISTA 」──\nHolá ${pushname2} !\nUsted no esta registrado como amigo de mi dueño, pulsa para que el te añada como amigo\n\n──「 ⚡HH BOT ⚡ 」──`,
 					admin: 'Este comando soló puede ser usado por administradores de grupo!',
 					Badmin: 'Este comando solo puede ser usado cuando el ⚡HH BOT⚡ se vuelve Admin del grupo',
 				}
