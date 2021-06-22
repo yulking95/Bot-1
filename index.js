@@ -1597,9 +1597,9 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek })
                     await limitAdd(sender)
 					break
-              case 'asticker':
-    const pack = arg.split('|')[0]
-    const author = arg.split('|')[1]
+              case 'as':
+    const pack = arg.split('|')[0];
+    const author = arg.split('|')[1];
     if (isMedia && mimetype == 'image/jpeg') {
       await createExif(pack,author)
       await sleep(5000)
