@@ -55,6 +55,9 @@ const { limit } = require('./database/menu/limit')*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
+const tobz = 'APIKEYLU';
+const zeks = 'ZeksApi';
+const vhtear = 'NOT-PREMIUM'
 const BotName = '⚡HH BOT⚡'; 
 const facebook = 'http://www.facebook.com/'; 
 const aktif = '08:00 - 22:00';
@@ -1689,7 +1692,7 @@ if (text.includes("placa"))
 				case 'ytsearch':
 					if (args.length < 1) return reply('Falta el texto tio?')
 					reply(mess.wait)
-					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/yt-search?q==${body.slice(10)}`, {method: 'get'})
+					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/yt-search?q=${body.slice(10)}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result) {
@@ -2631,7 +2634,7 @@ break
 				    break  
 				case 'fb':
 				if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/facebook?url=https://www.facebook.com/watch/?v=1393572814172251&apikey=${APIKEYLU}`, {method: 'get'})
+				    anu = await fetchJson(`http://api.fdci.se/sosmed/fb.php?url=[MEDIA POST LINK]`, {method: 'get'})
 				    insta = getBuffer(anu.result)
 				    reply(mess.wait)
 				    client.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'facebook'.mp3, quoted: mek})
@@ -3904,7 +3907,7 @@ break
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
-					dtt.length > 200
+					dtt.length > 999
 					? reply('La mayor parte del texto es mierda')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
