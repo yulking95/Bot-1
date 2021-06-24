@@ -1,13 +1,13 @@
 const animes = (prefix, pushname2) => {
 
 	return `
-LISTA DE LOS MEJORES ANIMES
+*LISTA DE BUENOS ANIMES*
 
  
     *Faltan muchos que*
-  Despues ire añadiendo😜
+  Despues ire añadiendo😎
  
- 👇 *Esta es la lista de animes que ya ví:*👇
+  *Esta es la lista de animes que ya ví:*👇
  
 1. Fullmetal Alchemist: Brotherhood (2009)
 Género: Acción, Aventura, Comedia, Drama, Magia, Fantasía, Shounen
