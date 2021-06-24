@@ -760,6 +760,40 @@ if (text.includes("placa"))
 				client.sendMessage(from, Presence.composing)
 				reply("no, puta.")
 	}
+	 if (messagesC.includes("*plantilla")){
+				client.sendMessage(from, Presence.composing)
+				reply("社会❍Aɴɪᴍᴇ&sօcíҽԵվ❍🎎-✶⊶⊷⊷✶⊶⊷⊷✶
+
+------•------•------•------•------•------
+
+｡☆✼★━🄻🄴🅂 🅃🅁🄰🄴 ━★✼☆｡
+
+                     * *
+
+•----｡☆✼━━━━━━━━━━━✼☆｡•------
+
+•---- *↱Tipo:* 
+
+•---- *↱Género:* 
+
+•---- *↱Episodios:* 
+
+•---- *↱Estado:*
+
+•---- *↱Audio:* 
+
+•---- *↱Subtítulos:*
+
+•---- *↱Formato:*   
+
+•---- *↱Resolución:* 
+
+•----｡☆✼━━━━━━━━━━━✼☆｡•------
+
+╔❖•ೋ° *❦↱Sipnosis:*  °ೋ•❖╗
+
+╚══❖•ೋ° ❦°ೋ•❖═════╝")
+	}
 	
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
