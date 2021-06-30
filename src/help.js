@@ -2,11 +2,12 @@ const help = (prefix, sender, pushname, time) => {
 
 	return `
  <══════════════════>
-         *HH BOT*
+            *HH BOT*
  <══════════════════>
    💪 Comandos prro 💪
 
-  *Todo lo que necesita* ${pushname}?
+  *Todo lo que necesita* 
+      ${pushname}?
 
 ╭────「 INFO 」───────╮
 │                                            
@@ -70,18 +71,10 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **buenasnoches*      
 ┣⊱  **buendia*        
 ┣⊱  **buenasnoches*      
-┣⊱  **mia*           
-┣⊱  **rize* 
-┣⊱. **waifu*
-┣⊱. **malkova*
-┣⊱. **belle,belle1*
-┣⊱. **reislin*
-┣⊱. **lofi*
+┣⊱  **belle*
+┣⊱  **nsfwpatas*
 ┣⊱  **naruto* 
-┣⊱. **nsfwneko*
-┣⊱. **nsfwloli*
-┣⊱. **nsfwtrap*
-┣⊱. **nsfwblowjob*
+┣⊱  **nsfwtetas*
 ╰────────────────
 
 ╭─「 INTELIGÊNCIA 」
@@ -133,8 +126,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **ping*                                            
 ┣⊱  **wame*
 ┣⊱. **wa.me*
-┣⊱  **setppbot*   
-┣⊱  **pinterest*                                   
+┣⊱  **setppbot*                                      
 ┣⊱  **timer*                       
 │                                  
 ╰───────────────────╯
@@ -143,25 +135,50 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **testime*                 
 ┣⊱  **tomp3*                   
 ┣⊱  **modoanime*               
-┣⊱  **modonsfw*  
-
-
-┣⊱  **moddroid*                                 
+┣⊱  **modonsfw*                                  
 ┣⊱  **nombregp*                                   
 ┣⊱  **alerta*
-┣⊱. **infog*
-
+┣⊱  **infogp*
+┣⊱  **grupoinfo*
 ╰──────────────────╯
 ╭──「 COMANDOS DE VOZ 」─
-│                                 
-┣⊱  **ola*                        
-┣⊱  **risas*                         
-┣⊱  ***                      
+│
+┣⊱  **risas*                                              
 ┣⊱  **sexo*                        
-┣⊱  **a*                          
-┣⊱  ***                        
-┣⊱  **onichan*                      
-┣⊱  **beat1*                      
+┣⊱  **a*                                                  
+┣⊱  **onichan*                                            
+┣⊱  **rap1*                       
+┣⊱  **rap2*                       
+┣⊱  **rap3* 
+│                                 
+╰──────────────────
+╭──────「 OTROS/2 」──╮
+│                                               
+┣⊱  **antilink*             
+┣⊱  **antiracismo*    
+┣⊱  **setnombrebot*                                                             
+╰────────────────────╯
+╭──「 SIN PREFIJOS 」──╮
+│                            
+┣⊱  *ola*                                          
+┣⊱  *gemido*                      
+┣⊱  *canta*
+┣⊱  *grita*                   
+┣⊱  *gime*                   
+┣⊱  *yamete*                   
+┣⊱  *Pasen porno*                   
+┣⊱. *onichan*
+│                             
+╰──────────────────╯`
+
+function kyun(seconds){
+  function pad(s){
+    return (s < 10 ? '0' : '') + s;
+  }
+  var Horas = Math.floor(seconds / (60*60));
+  var Minutos = Math.floor(seconds % (60*60) / 60);
+  var Segundos = Math.floor(seconds % 60);
+/*┣⊱  **beat1*                      
 ┣⊱  **beat2*                      
 ┣⊱  **beat3*                      
 ┣⊱  **beat4*                      
@@ -237,40 +254,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **roc24*                      
 ┣⊱  **roc25*                      
 ┣⊱  **rap1*                       
-┣⊱  **rap2*                       
-┣⊱  **rap3*                       
-┣⊱  **rap4*                       
-┣⊱  **rap5*                       
-┣⊱  **glub*                       
-│                                 
-╰──────────────────
-╭──────「 OTROS/2 」──╮
-│                                               
-┣⊱  **antilink*             
-┣⊱  **antiracismo*    
-┣⊱  **setnombrebot*                                                             
-╰────────────────────╯
-╭──「 SIN PREFIJOS 」──╮
-│                            
-┣⊱  *ola*                                          
-┣⊱  *gemido*                      
-┣⊱  *canta*
-┣⊱  *grita*                   
-┣⊱  *gime*                   
-┣⊱  *yamete*                   
-┣⊱  *pasen*                   
-┣⊱. *onichan*
-│                             
-╰──────────────────╯`
-
-function kyun(seconds){
-  function pad(s){
-    return (s < 10 ? '0' : '') + s;
-  }
-  var Horas = Math.floor(seconds / (60*60));
-  var Minutos = Math.floor(seconds % (60*60) / 60);
-  var Segundos = Math.floor(seconds % 60);
-
+┣⊱  **rap2* */
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
   return `${pad(Horas)} Horas ${pad(Minutos)} Minutos ${pad(Segundos)} Segundos`
 
