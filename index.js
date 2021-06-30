@@ -2921,13 +2921,13 @@ break
 					reply(' Use ${prefix}leveling on para activar   ${prefix}leveling off para desactivar')
 					}
 					break
-			    case 'rnick':
+			    /*case 'rnick':
 			    reply(mess.wait)
                     anu = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=riywC4KC9yjS9SFCF4CO2PLKuMX=${body.slice(9)`,{method: 'get'})
 			        tinyurl = `${anu.result}`
 			        reply(tinyurl)
 			        await limitAdd(sender) 
-			        break 
+			        break*/ 
 				case 'slide':
 					if (args.length < 1) return reply('*Textnya mana gan?*')
 					teks = `${body.slice(7)}`
