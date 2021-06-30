@@ -2923,7 +2923,7 @@ break
 					break
 			    case 'rnick':
 			    reply(mess.wait)
-                    anu = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=riywC4KC9yjS9SFCF4CO2PLKuMX=${body.slice(9),{method: 'get'}`)
+                    anu = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=riywC4KC9yjS9SFCF4CO2PLKuMX=${body.slice(9)`,{method: 'get'})
 			        tinyurl = `${anu.result}`
 			        reply(tinyurl)
 			        await limitAdd(sender) 
