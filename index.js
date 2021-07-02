@@ -36,7 +36,7 @@ const toMs = require('ms')
 /*const fs = require('fs')*/
 
 const axios = require("axios")
-const yts = require( 'yt-search')
+const yts = require( "yt-search")
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
