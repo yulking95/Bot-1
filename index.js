@@ -763,7 +763,7 @@ if (text.includes("placa"))
 				client.sendMessage(from, Presence.composing)
 				reply("社会❍Aɴɪᴍᴇ&sօcíҽԵվ❍🎎")*/
 
-	}
+	
 	
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
