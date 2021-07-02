@@ -1519,7 +1519,7 @@ $(document).ready(function() {
 
 				case 'ytmp4':
 					if (args.length < 1) return reply('Falta el url tío')
-				        if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv
+				        if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://freerestapi.herokuapp.com/api/ytmp4?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*Titulo* : ${anu.title}\n*Peso del archivo * : ${anu.size}`
