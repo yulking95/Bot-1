@@ -10,7 +10,7 @@ const {
 const { color, bgcolor } = require('./lib/color')
 const { eu } = require('./Fxc7/eu')
 const { help } = require('./src/help')
-const {help1} = require('./src/help1')
+const { help1 } = require('./src/help1')
 const { modapk } = require('./src/modapk')
 const { animes } = require('./animes')
 const { pack } = require('./src/pack')
