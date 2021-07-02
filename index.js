@@ -381,11 +381,11 @@ if (!welkom.includes(anu.jid)) return
 			const sendMess = (hehe, teks) => {
 				client.sendMessage(hehe, teks, text)
 			}
-			 /*const isMedia = (type === 'imageMessage' || type === 'videoMessage')*/
+			 /*const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
-			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
+			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')*/
 			const mentions = (teks, memberr, id) => {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
@@ -868,7 +868,7 @@ if (text.includes("placa"))
 	}
 	
 			colors = ['red','white','black','blue','yellow','green']
-			const isMedia = type === 'imageMessage' || type === 'videoMessage')
+			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
