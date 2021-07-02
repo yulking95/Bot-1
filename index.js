@@ -31,6 +31,12 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
+const request = require('request')
+const toMs = require('ms')
+const fs = require('fs')
+
+const axios = require("axios")
+const yts = require( 'yt-search')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
@@ -40,7 +46,7 @@ const kagApi = require('@kagchi/kag-api')
 const fetch = require('node-fetch')
 const tiktod = require('tiktok-scraper')
 const { cekvip } = require('./src/cekvip')
-const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
+/*const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))*/
 const { VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const { daftarvip } = require('./src/daftarvip')
 const { iklan } = require('./src/iklan')
@@ -52,14 +58,25 @@ const lolis = require('lolis.life')
 const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-/*const { xp } = require('./database/menu/xp')
-const { limit } = require('./database/menu/limit')*/
+const { xp } = require('./database/menu/xp')
+const { limit } = require('./database/menu/limit')
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
 const tobz = 'APIKEYLU';
 const LolKey = 'save133';
 const zeks = 'ZeksApi';
+const BarBarKey = 'IDxO1TFYnKADlX4pxcHa'
+
+const VhtearKey = '1BlnApiIkyPake'
+
+const XteamKey = 'AbilGanss'
+
+const TobzApi = 'Bidmzz1sJ2L1TKyqaMEU'
+
+const ZeksApi = 'apivinz'
+
+
 const vhtear = 'NOT-PREMIUM'
 const BotName = '⚡HH BOT⚡'; 
 const facebook = 'http://www.facebook.com/'; 
@@ -81,9 +98,17 @@ const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
 const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
+const setiker = JSON.parse(fs.readFileSync('./temp/stik.json'))
+
+const audionye = JSON.parse(fs.readFileSync('./temp/vn.json'))
+
+const imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
+
+const videonye = JSON.parse(fs.readFileSync('./temp/video.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
+const { yta, ytv, igdl, upload } = require('./lib/ytdl')
 const getLevelingXp = (userId) => {
             let position = false
             Object.keys(_level).forEach((i) => {
@@ -375,13 +400,23 @@ if (!welkom.includes(anu.jid)) return
 			const reply = (teks) => {
 				client.sendMessage(from, teks, text, {quoted:mek})
 			}
+			
+const reply2 = (teks) => {
+
+				client.sendMessage(from, teks, text, {quoted: freply})			}
+	
+
+			}
 			const sendImage = (teks) => {
 		    client.sendMessage(from, teks, image, {quoted:mek})
 		    }
 			const sendMess = (hehe, teks) => {
 				client.sendMessage(hehe, teks, text)
 			}
-			 /*const isMedia = (type === 'imageMessage' || type === 'videoMessage')
+			
+const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": fake, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync(`media/FxBot.jpeg`)} } }
+
+ /*const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
@@ -989,7 +1024,7 @@ if (text.includes("placa"))
                             fs.unlinkSync(filePath)
                             fs.writeFileSync(file_name, body, "binary")
                             ini_buff = fs.readFileSync(file_name)
-                            client.sendMessage(from, ini_buff, sticker, { quoted: freply}).then(() => {
+                            client.sendMessage(from, ini_buff, sticker, { quoted: mek}).then(() => {
                                 fs.unlinkSync(file_name)
                             })
                         });
@@ -1098,7 +1133,7 @@ $(document).ready(function() {
 					teks += `- ${awokwkwk}\n`
 				}
 				teks += `\n*Total : ${setiker.length}*`
-				client.sendMessage(from, teks.trim(), extendedText, { quoted: freply, contextInfo: { "mentionedJid": setiker } })
+				client.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": setiker } })
 				
 					break
 				case 'github':
@@ -1233,7 +1268,7 @@ $(document).ready(function() {
                             fs.unlinkSync(filePath)
                             fs.writeFileSync(file_name, body, "binary")
                             ini_buff = fs.readFileSync(file_name)
-                            client.sendMessage(from, ini_buff, video, { quoted: freply, mimetype: "video/gif", filename: file_name }).then(() => {
+                            client.sendMessage(from, ini_buff, video, { quoted: mek, mimetype: "video/gif", filename: file_name }).then(() => {
                                 fs.unlinkSync(file_name)
                             })
                         });
@@ -1404,7 +1439,7 @@ $(document).ready(function() {
                 tabu = await getBuffer(anu.result.url_audio)
                 teks = `Nombre de la musica: ${text}\nTitulo: ${anu.result.title}\ndescripcion del video: ${anu.result.description}\nurl: ${anu.result.url}\nPublicado en: ${anu.result.publishDate}\n\nAGUARDE, ENVIANDO ÁUDIO...`
                 client.sendMessage(from, teks)
-                client.sendMessage(from, buffer, sticker)
+                client.sendMessage(from, buffer, image)
                 client.sendMessage(from, tabu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.url_audio}.mp3`, quoted: mek})
                 break
 					case 'play3':   
@@ -2938,7 +2973,7 @@ case 'listonline':
                 let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
                 let online = [...Object.keys(client.chats.get(ido).presences), client.user.jid]
                 client.sendMessage(from, 'Lista de los que estan en línea:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join `\n`, text, {
-                    quoted: freply,
+                    quoted: mek,
                     contextInfo: { mentionedJid: online }
                 })
                 break
