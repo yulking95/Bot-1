@@ -403,10 +403,11 @@ if (!welkom.includes(anu.jid)) return
 			
 const reply2 = (teks) => {
 
-				client.sendMessage(from, teks, text, {quoted: freply})			}
+				client.sendMessage(from, teks, text, {quoted: freply})			
+}
 	
 
-			}
+			
 			const sendImage = (teks) => {
 		    client.sendMessage(from, teks, image, {quoted:mek})
 		    }
