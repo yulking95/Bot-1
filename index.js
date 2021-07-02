@@ -98,13 +98,13 @@ const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
 const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
-const setiker = JSON.parse(fs.readFileSync('./temp/stik.json'))
+const setiker = JSON.parse(fs.readFileSync('./tmp/stik.json'))
 
-const audionye = JSON.parse(fs.readFileSync('./temp/vn.json'))
+const audionye = JSON.parse(fs.readFileSync('./tmp/vn.json'))
 
-const imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
+const imagenye = JSON.parse(fs.readFileSync('./tmp/image.json'))
 
-const videonye = JSON.parse(fs.readFileSync('./temp/video.json'))
+const videonye = JSON.parse(fs.readFileSync('./tmp/video.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
