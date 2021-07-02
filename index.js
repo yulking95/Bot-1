@@ -381,7 +381,7 @@ if (!welkom.includes(anu.jid)) return
 			const sendMess = (hehe, teks) => {
 				client.sendMessage(hehe, teks, text)
 			}
-			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
+			 /*const isMedia = (type === 'imageMessage' || type === 'videoMessage')*/
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
