@@ -33,7 +33,7 @@ const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const request = require('request')
 const toMs = require('ms')
-const fs = require('fs')
+/*const fs = require('fs')*/
 
 const axios = require("axios")
 const yts = require( 'yt-search')
@@ -1557,7 +1557,7 @@ $(document).ready(function() {
 				        if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://freerestapi.herokuapp.com/api/ytmp4?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Titulo* : ${anu.title}\n*Peso del archivo * : ${anu.size}`
+					teks = `*Titulo* : ${anu.title}\n*Peso del archivo* : ${anu.size}`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
