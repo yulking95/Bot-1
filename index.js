@@ -60,6 +60,7 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const { xp } = require('./database/menu/xp')
 const { limit } = require('./database/menu/limit')
+const { yta, ytv, igdl, upload } = require('./lib/ytdl')
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
@@ -108,7 +109,7 @@ const videonye = JSON.parse(fs.readFileSync('./tmp/video.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
-const { yta, ytv, igdl, upload } = require('./lib/ytdl.js')
+
 const getLevelingXp = (userId) => {
             let position = false
             Object.keys(_level).forEach((i) => {
