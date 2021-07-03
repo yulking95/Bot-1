@@ -108,7 +108,7 @@ const videonye = JSON.parse(fs.readFileSync('./tmp/video.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
-const { yta, ytv, igdl, upload } = require('./lib/ytdl')
+const { yta, ytv, igdl, upload } = require('./lib/ytdl.js')
 const getLevelingXp = (userId) => {
             let position = false
             Object.keys(_level).forEach((i) => {
